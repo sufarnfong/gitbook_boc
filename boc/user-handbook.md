@@ -46,11 +46,11 @@ The `ETHi Vault` differently to the `USDi Vault` has a gas fee estimation.
 
 After successfully connecting the wallet, we can complete the withdrawal by selecting vault we what to do use, on the `USDi Vault` is the possibility to withdraw a single stablecoin or mix we complete with the desired USDi and clicking `WITHDRAW`.
 
-![](../.gitbook/assets/pic-8.PNG)
+![](../.gitbook/assets/pic-8.png)
 
 On the `ETHi Vault` there is the possibility to withdraw only ETH we complete with the desired ETHi and clicking `WITHDRAW`.
 
-![](../.gitbook/assets/withdraw_eth.png)
+![](../.gitbook/assets/withdraw_eth.PNG)
 
 **Exchanged**: Exchange function enablement. Each strategy in the BOC uses different stablecoins. When we withdraw money, we will do it according to the strategy APY from low to high. If a non-USDT strategy is obtained, the stable currency of the corresponding strategy will be returned, e.g. if Yearn LUSD is obtained, LUSD will be returned and if the exchange is closed, the corresponding value of LUSD will be returned to our account. If redemption is enabled, the Slippage parameter needs to be set.
 
