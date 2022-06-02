@@ -38,7 +38,7 @@ Once the wallet has been successfully connected, we can complete the deposit by 
 
 On the `ETHi Vault` we will have the possibility of investing ETH by selecting the desired amount and then clicking on `DEPOSIT`.
 
-![](../.gitbook/assets/depositpage\_eth.PNG)
+![](../.gitbook/assets/depositpage_eth.PNG)
 
 The `ETHi Vault` differently to the `USDi Vault` has a gas fee estimation.
 
@@ -46,11 +46,11 @@ The `ETHi Vault` differently to the `USDi Vault` has a gas fee estimation.
 
 After successfully connecting the wallet, we can complete the withdrawal by selecting vault we what to do use, on the `USDi Vault` is the possibility to withdraw a single stablecoin or mix we complete with the desired USDi and clicking `WITHDRAW`.
 
-![](https://github.com/Francisco-Rua/boc\_gitbook/blob/master/.gitbook/assets/pic-8.PNG)
+![](../.gitbook/assets/pic-8.PNG)
 
 On the `ETHi Vault` there is the possibility to withdraw only ETH we complete with the desired ETHi and clicking `WITHDRAW`.
 
-![](https://github.com/Francisco-Rua/boc\_gitbook/blob/master/.gitbook/assets/withdraw\_eth.png)
+![](../.gitbook/assets/withdraw_eth.png)
 
 **Exchanged**: Exchange function enablement. Each strategy in the BOC uses different stablecoins. When we withdraw money, we will do it according to the strategy APY from low to high. If a non-USDT strategy is obtained, the stable currency of the corresponding strategy will be returned, e.g. if Yearn LUSD is obtained, LUSD will be returned and if the exchange is closed, the corresponding value of LUSD will be returned to our account. If redemption is enabled, the Slippage parameter needs to be set.
 
@@ -68,7 +68,8 @@ The advanced setup parameters are:
 
 If the USDi is not shown on your wallet, you need to add it manually, we make it really easy you just to click on the `+` next to your USDi balance and press `Add Token`. Then you will see you USDi balance on your metamask wallet.
 
-<iframe width="900" height="490" src="https://www.youtube.com/embed/53kB-HakZCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- It´s neccesary to delete this line to run locally, but notice that works when it´s upload. -->
+ {% embed url="https://www.youtube.com/embed/53kB-HakZCk" %}
 
 Analogously, ETHi can be added to the wallet in the same way.
 
