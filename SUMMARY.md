@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Contact Information](README.md)
+* [Contact Information](intro.md)
 
 ## BOC
 
