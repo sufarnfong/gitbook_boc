@@ -8,7 +8,7 @@
 * [User Handbook](boc/user-handbook.md)
 * [Development Planning](boc/development-planning.md)
 
-## How it works?
+## Protocol mechanisms
 
 * [Protocol Components](how-it-works/protocol-components.md)
 * [Protocol Algorithm Design](how-it-works/protocol-algorithm-design.md)
