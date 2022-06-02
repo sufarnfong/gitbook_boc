@@ -1,7 +1,5 @@
 # Table of contents
 
-* [Contact Information](intro.md)
-
 ## BOC
 
 * [Introduction to BOC](boc/introduction-to-boc.md)
@@ -20,4 +18,5 @@
 * [Glossary](more/appendix.md)
 * [FAQs](more/faqs.md)
 * [References](more/references.md)
+* [Contact Information](intro.md)
 
