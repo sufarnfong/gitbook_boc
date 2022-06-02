@@ -34,8 +34,8 @@ The maximum supply of BOC tokens is 1 billion. Tokenholders will receive a BOC m
 
 ## Audit
 
-All BOC smart contracts are audited by independent labs as SlowMist among others.
+All BOC smart contracts are audited by independent high-rated auditors.
 
 ## Bug Bounty Program
 
-By collaborating with third parties, BOC will establish a way in which the community will help to improve the quality of the smart contracts used. Potential third-party organisations includes the premier bug bounty platform and the DeFi Project. In those organizations, security researchers review code, disclose vulnerabilities, have the incentive to help to make smart contracts more secure.
+By collaborating with third parties, BOC will establish a way in which the community will help to improve the quality of the smart contracts used. Potential third-party organizations includes the premier bug bounty platform and the DeFi Project. In those organizations, security researchers review code, disclose vulnerabilities, have the incentive to help to make smart contracts more secure.

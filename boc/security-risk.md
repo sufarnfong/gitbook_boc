@@ -5,8 +5,8 @@ The DeFi ecosystem is a new financial ecosystem. Before entering DeFi, users mus
 The following is a non-exhaustive list of security measures that were implemented.
 
 1. To be able to avoid losses caused by code vulnerabilities, all protocols shall be audited by reputable auditors.
-2. To reduce the risk of oracle attack, the quotation of the stablecoin must be based on a [decentralized oracle](https://chain.link/).
-3. In order to avoid the chain system risk caused by nested tokens and LEGO combinations, the access to the aggregated financial management protocol needs to have a long-term security operation record and obtain the voting permission of the community.
+2. To reduce the risk of oracle attack, the quotation of the stablecoin must be based on [Chainlink oracle](https://chain.link/).
+3. In order to avoid the chain system risk caused by nested tokens and LEGO combinations, the access to the aggregated financial management protocol needs to have a long-term security operation record.
 4. In order to avoid impermanent losses caused by market fluctuations, the protocol for obtaining capital returns by providing risky services will not be accessed for the time being. At the same time leverage is not being used to magnify capital returns for the time being.
 
 ## Yield Dilution Risk
