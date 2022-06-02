@@ -21,6 +21,9 @@ git clone https://github.com/Bank-of-Chain-DeFi/gitbook_boc.git
 ```
 gitbook install
 ```
+
+In case this step failure we recommend this solution: [LINK](https://flaviocopes.com/cb-apply-not-a-function/)
+
 ### Cd to you repo location
 ```
 cd path/to/repo
