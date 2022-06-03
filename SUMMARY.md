@@ -2,7 +2,7 @@
 
 ## BOC
 
-* [Introduction to BOC](boc/introduction-to-boc.md)
+* [Introduction to BOC](README.md)
 * [User Handbook](boc/user-handbook.md)
 * [Development Planning](boc/development-planning.md)
 
@@ -18,5 +18,4 @@
 * [Glossary](more/appendix.md)
 * [FAQs](more/faqs.md)
 * [References](more/references.md)
-* [Contact Information](intro.md)
-
+* [Contact Information](more/contact-information.md)
