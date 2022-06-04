@@ -2,7 +2,7 @@
 
 ## 区块链选择
 
-BOC选择兼容[EVM](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%99%9A%E6%8B%9F%E6%9C%BAevm)的区块链，目前已经对接Ethereum、BNB Chain和Polygon链。
+BOC选择兼容[EVM](../more/appendix.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%99%9A%E6%8B%9F%E6%9C%BAevm)的区块链，目前已经对接Ethereum、BNB Chain和Polygon链。
 
 ### Ethereum
 
@@ -12,7 +12,7 @@ BOC选择兼容[EVM](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_vers
 
 ### BNB Chain
 
-\*\*[币安智能链](https://www.binance.com/zh-CN)\*\*是一条兼容[以太坊虚拟机](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%99%9A%E6%8B%9F%E6%9C%BAevm)、与币安链并行的区块链。通过引入[权益权威证明（PoSA）](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E6%9D%83%E7%9B%8A%E6%9D%83%E5%A8%81%E8%AF%81%E6%98%8E-posa)[共识机制](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6-consensus-mechanism)，BNB Chain创建了一个允许节点、代币持有者、开发者和用户都能够从区块链中获益的生态系统。
+\*\*[币安智能链](https://www.binance.com/zh-CN)\*\*是一条兼容[以太坊虚拟机](../more/appendix.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%99%9A%E6%8B%9F%E6%9C%BAevm)、与币安链并行的区块链。通过引入[权益权威证明（PoSA）](../more/appendix.md#%E6%9D%83%E7%9B%8A%E6%9D%83%E5%A8%81%E8%AF%81%E6%98%8E-posa)[共识机制](../more/appendix.md#%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6-consensus-mechanism)，BNB Chain创建了一个允许节点、代币持有者、开发者和用户都能够从区块链中获益的生态系统。
 
 2022年2月15日，币安交易所发布消息，原币安智能链更名为BNB Chain。BNB是币安交易所的平台币，以及币安智能链的生态代币。
 
@@ -24,11 +24,11 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ## 稳定币选择
 
-为避免数字货币价格大幅度波动产生的心理恐惧，并引发做市资金的[无偿损失](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E6%97%A0%E5%81%BF%E6%8D%9F%E5%A4%B1-impermanent-loss)，BOC协议只针对[稳定币](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E7%A8%B3%E5%AE%9A%E5%B8%81stablecoin)资产，且仅限于由法币提供足额抵押或由蓝筹数字资产提供超额抵押生成的稳定币。稳定币需要满足以下条件：
+为避免数字货币价格大幅度波动产生的心理恐惧，并引发做市资金的[无偿损失](../more/appendix.md#%E6%97%A0%E5%81%BF%E6%8D%9F%E5%A4%B1-impermanent-loss)，BOC协议只针对[稳定币](../more/appendix.md#%E7%A8%B3%E5%AE%9A%E5%B8%81stablecoin)资产，且仅限于由法币提供足额抵押或由蓝筹数字资产提供超额抵押生成的稳定币。稳定币需要满足以下条件：
 
 1. 通过审计。
 2. 具有保险。
-3. 为减少[预言机](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E9%A2%84%E8%A8%80%E6%9C%BA-oracle)攻击， 稳定币报价必须基于[Chainlink](https://chain.link/)而不是协议本身。
+3. 为减少[预言机](../more/appendix.md#%E9%A2%84%E8%A8%80%E6%9C%BA-oracle)攻击， 稳定币报价必须基于[Chainlink](https://chain.link/)而不是协议本身。
 4. 规模大于10亿美元。
 
 目前挑选出的策略稳定币种有：DAI、USDC、USDT、BUSD、USDP、TUSD、LUSD。
@@ -63,16 +63,16 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ## 协议策略选择
 
-当选定稳定币后，BOC挑选的[策略](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E7%AD%96%E7%95%A5strategy)将只使用到这些稳定币，且策略需要满足以下条件：
+当选定稳定币后，BOC挑选的[策略](../more/appendix.md#%E7%AD%96%E7%95%A5strategy)将只使用到这些稳定币，且策略需要满足以下条件：
 
 * 无提取费。
 * 无入场费。
 * 无锁定期（部分策略存在锁定期，短时间内无法取回资金）。
 * 无投资限额（部分策略对资金有限额）。
 * 所有的协议均经过严格审计，避免代码漏洞造成的损失。
-* 为避免[嵌套代币](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E5%B5%8C%E5%A5%97%E4%BB%A3%E5%B8%81nested-tokens)、[乐高组合](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E4%B9%90%E9%AB%98%E5%BC%8F%E7%BB%84%E5%90%88-lego-combination)产生的连锁性系统风险，接入的聚合理财协议需要有长期的安全运营记录，并得到社区投票许可。
+* 为避免[嵌套代币](../more/appendix.md#%E5%B5%8C%E5%A5%97%E4%BB%A3%E5%B8%81nested-tokens)、[乐高组合](../more/appendix.md#%E4%B9%90%E9%AB%98%E5%BC%8F%E7%BB%84%E5%90%88-lego-combination)产生的连锁性系统风险，接入的聚合理财协议需要有长期的安全运营记录，并得到社区投票许可。
 * 为避免市场波动导致损失，暂不接入通过提供风险服务获取资金回报的协议，暂不通过杠杆放大资金回报。
-* 首批接入的[DEX](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E4%BA%A4%E6%98%93%E6%89%80-dex)和[借贷协议](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E5%80%9F%E8%B4%B7%E5%8D%8F%E8%AE%AElending-protocol)均为各区块链上的首选一线协议，并有良好的安全运营记录。
+* 首批接入的[DEX](../more/appendix.md#%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E4%BA%A4%E6%98%93%E6%89%80-dex)和[借贷协议](../more/appendix.md#%E5%80%9F%E8%B4%B7%E5%8D%8F%E8%AE%AElending-protocol)均为各区块链上的首选一线协议，并有良好的安全运营记录。
 * 协议提供资金链内择优分配服务，该分配兼具回报最大化及资金风险分散两项原则。
 
 目前挑选出的协议主要有：
@@ -85,7 +85,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 \*\*[Aave](https://app.aave.com/)\*\*是一个开源的去中心化借贷协议, 为用户提供存款和借贷服务。借贷双方用户的存款利率与贷款利率根据平台借款量和存款量计算得到，并且平台采用Chainlink预言机保证抵押物价格的公平性。
 
-根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Aave的总资金锁仓量约为117.9亿美元，DeFi应用[锁仓量](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E9%94%81%E4%BB%93%E9%87%8F%E6%80%BB%E9%94%81%E5%AE%9A%E4%BB%B7%E5%80%BC-tvl)排名第2名。
+根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Aave的总资金锁仓量约为117.9亿美元，DeFi应用[锁仓量](../more/appendix.md#%E9%94%81%E4%BB%93%E9%87%8F%E6%80%BB%E9%94%81%E5%AE%9A%E4%BB%B7%E5%80%BC-tvl)排名第2名。
 
 ### Curve
 
@@ -125,7 +125,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### DODO
 
-\*\*[DODO](https://app.dodoex.io/)\*\*是一个去中心化交易所，它使用独创的[主动做市商（PMM）](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/appendix/README.md#%E4%B8%BB%E5%8A%A8%E5%81%9A%E5%B8%82%E5%95%86-pmm)算法为Web3资产提供高效的链上流动性，让每个人都能轻松地发行和交易Web3资产。DODO既自己提供流动性，也聚合其它交易所的流动性。这使得DODO可以提供全网较好好的价格。
+\*\*[DODO](https://app.dodoex.io/)\*\*是一个去中心化交易所，它使用独创的[主动做市商（PMM）](../more/appendix.md#%E4%B8%BB%E5%8A%A8%E5%81%9A%E5%B8%82%E5%95%86-pmm)算法为Web3资产提供高效的链上流动性，让每个人都能轻松地发行和交易Web3资产。DODO既自己提供流动性，也聚合其它交易所的流动性。这使得DODO可以提供全网较好好的价格。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，DODO的总资金锁仓量约为4.77千万美元，DeFi应用锁仓量排名第52名。
 

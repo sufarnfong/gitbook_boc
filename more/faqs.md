@@ -18,13 +18,13 @@ USDi是用户存入稳定币时所铸造出来的抵押凭证。用户所获得�
 
 ### 在铸造和销毁UDSi/ETHi时会有手续费吗？
 
-ETHi: 铸造和销毁时的汇率取决于预言机Chainlink，BOC协议本身不收取任何费用，详细参见 [Mint & Burn](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/more/protocol-algorithm-design/README.md#%E9%93%B8%E9%80%A0mint%E9%94%80%E6%AF%81burn%E6%B5%81%E7%A8%8B%E7%A4%BA%E6%84%8F%E5%9B%BE),此机制的目的是保护协议，防止套利。
+ETHi: 铸造和销毁时的汇率取决于预言机Chainlink，BOC协议本身不收取任何费用，详细参见 [Mint & Burn](../more/appendix.md#%E9%93%B8%E9%80%A0mint%E9%94%80%E6%AF%81burn%E6%B5%81%E7%A8%8B%E7%A4%BA%E6%84%8F%E5%9B%BE),此机制的目的是保护协议，防止套利。
 
-USDi: 铸造和销毁时的汇率取决于预言机Chainlink，BOC协议本身不收取任何费用，详细参见 [Mint & Burn](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/more/protocol-algorithm-design/README.md#%E9%93%B8%E9%80%A0mint%E9%94%80%E6%AF%81burn%E6%B5%81%E7%A8%8B%E7%A4%BA%E6%84%8F%E5%9B%BE)。此机制的目的是保护协议，防止套利。
+USDi: 铸造和销毁时的汇率取决于预言机Chainlink，BOC协议本身不收取任何费用，详细参见 [Mint & Burn](../more/appendix.md#%E9%93%B8%E9%80%A0mint%E9%94%80%E6%AF%81burn%E6%B5%81%E7%A8%8B%E7%A4%BA%E6%84%8F%E5%9B%BE)。此机制的目的是保护协议，防止套利。
 
 ### 当我存入稳定币后，钱包中的UDSi每隔多久会增加？
 
-每次Rebase后如果产生新收益，用户钱包中的USDi数量将会相应增加。用户在存取币时也都会触发rebase。目前详细信息参见[Rebase](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/more/protocol-algorithm-design/README.md#rebase)和[Harvest](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/more/protocol-algorithm-design/README.md#harvest)。当前平均每天Harvest一次。
+每次Rebase后如果产生新收益，用户钱包中的USDi数量将会相应增加。用户在存取币时也都会触发rebase。目前详细信息参见[Rebase](../more/appendix.md#rebase)和[Harvest](../more/appendix.md#harvest)。当前平均每天Harvest一次。
 
 ### 术语
 

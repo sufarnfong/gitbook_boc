@@ -2,11 +2,11 @@
 
 ## 总体流程说明
 
-BOC目前提供[USD耕种理财](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/protocol-algorithm-design/README.md#usd%E7%90%86%E8%B4%A2)和[ETH耕种理财](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/protocol-algorithm-design/README.md#eth%E7%90%86%E8%B4%A2)。
+BOC目前提供USD耕种理财和ETH耕种理财。
 
 ### USD理财:
 
-![pic2](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/images/pic-2.png)
+![](<../.gitbook/assets/pic-2.png>)
 
 1.
    * **存入`deposit`**：BOC协议支持用户将手中的三大稳定币（USDT、USDC、DAI）以任意组合、任意数量的形式存入，并`mint`出相应价值的USDi返回给用户。
@@ -32,7 +32,7 @@ BOC目前提供[USD耕种理财](https://github.com/Francisco-Rua/boc\_gitbook/b
 
 ### 铸造(Mint)/销毁(Burn)流程示意图
 
-![mint](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/images/mint.png)
+![](<../.gitbook/assets/mint.png>)
 
 上图为用户存入稳定币并`mint`出等价的USDi的规则流程图。
 
@@ -52,7 +52,7 @@ BOC目前提供[USD耕种理财](https://github.com/Francisco-Rua/boc\_gitbook/b
 100 DAI = 100 x 0.99 = 99 USDi (预言机价格 < 1USD，按预言机价格算)\
 100 USDC = 100 x 1.00 = 100 USDi (预言机价格 = 1USD，按1USD算)
 
-![burn](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/images/burn.png)
+![](<../.gitbook/assets/burn.png>)
 
 当用户取出池中稳定币时，需要提供并销毁(`burn`)手上的抵押凭证USDi。
 
@@ -86,7 +86,7 @@ ETH耕种理财机制目前与USD耕种理财机制一样，唯一区别是EHT�
 
 ### doHardWork
 
-将第三方协议官方APY、每个策略投资/赎回所需要的gas、兑换滑点限制、[资金调配规则](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/introduction-to-boc/README.md#%E8%B5%84%E9%87%91%E5%88%86%E9%85%8D%E8%A7%84%E5%88%99)等作为调仓算法入参，输出待投资金应投资的策略以及金额。
+将第三方协议官方APY、每个策略投资/赎回所需要的gas、兑换滑点限制、[资金调配规则](../more/appendix.md#%E8%B5%84%E9%87%91%E5%88%86%E9%85%8D%E8%A7%84%E5%88%99)等作为调仓算法入参，输出待投资金应投资的策略以及金额。
 
 | 设置参数                                  | Ethereum   | BNB Chain  | Polygon    |
 | ------------------------------------- | ---------- | ---------- | ---------- |
@@ -95,7 +95,7 @@ ETH耕种理财机制目前与USD耕种理财机制一样，唯一区别是EHT�
 
 ### allocation
 
-与`doHardWork`相比，`allocation`多做了一步：将低APY策略的资金取出，然后再将第三方协议官方APY、每个策略投资/赎回所需要的gas、兑换滑点限制、[资金调配规则](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/how-it-works/introduction-to-boc/README.md#%E8%B5%84%E9%87%91%E5%88%86%E9%85%8D%E8%A7%84%E5%88%99)等作为调仓算法入参，输出应投资的策略以及待投金额。
+与`doHardWork`相比，`allocation`多做了一步：将低APY策略的资金取出，然后再将第三方协议官方APY、每个策略投资/赎回所需要的gas、兑换滑点限制、[资金调配规则](../more/appendix.md#%E8%B5%84%E9%87%91%E5%88%86%E9%85%8D%E8%A7%84%E5%88%99)等作为调仓算法入参，输出应投资的策略以及待投金额。
 
 | 设置参数                                    | Ethereum  | BNB Chain | Polygon   |
 | --------------------------------------- | --------- | --------- | --------- |

@@ -6,7 +6,7 @@
 
 ## 连接钱包
 
-您可以通过[MetaMask](https://metamask.io/#/) 和 [WalletConnect](https://walletconnect.com/#/)与BOC进行交互, 点击“CONNET WALLET”按钮连接您的[钱包](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/boc/appendix/README.md#wallet)。
+您可以通过[MetaMask](https://metamask.io/#/) 和 [WalletConnect](https://walletconnect.com/#/)与BOC进行交互, 点击“CONNET WALLET”按钮连接您的[钱包](../more/appendix.md#wallet)。
 
 ![](<../.gitbook/assets/connectwallet.png>)
 
@@ -18,7 +18,7 @@
 
 ### 跨链桥
 
-BOC提供[Polygon](https://wallet.polygon.technology/#/)和[Binance](https://www.binance.com/#/)两种[跨链桥](https://github.com/Francisco-Rua/boc\_gitbook/blob/zh\_version/boc/appendix/README.md#bridge)，方便您实现加密资产跨链。点击页面左上方的“Bridge”即可选择跨链桥。
+BOC提供[Polygon](https://wallet.polygon.technology/#/)和[Binance](https://www.binance.com/#/)两种[跨链桥](../more/appendix.md#bridge)，方便您实现加密资产跨链。点击页面左上方的“Bridge”即可选择跨链桥。
 
 ![](<../.gitbook/assets/chainbridge.png>)
 
