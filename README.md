@@ -2,9 +2,9 @@
 
 ## ¿Qué es BOC?
 
-Bank of Chain (BOC) es una forma nueva e innovadora de interactuar con ecosistema de las [finanzas descentralizadas](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/boc/appendix/README.md#finanzas-descentralizadas-defi) (DeFi). Es una plataforma indispensable que ayuda a los inversores ordinarios a obtener una herramienta de gestión de activos para generar ganancias "sin riesgo".
+Bank of Chain (BOC) es una forma nueva e innovadora de interactuar con ecosistema de las [finanzas descentralizadas](../more/appendix.md#finanzas-descentralizadas-defi) (DeFi). Es una plataforma indispensable que ayuda a los inversores ordinarios a obtener una herramienta de gestión de activos para generar ganancias "sin riesgo".
 
-La plataforma BOC conecta [protocolos](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/boc/appendix/README.md#protocolo) cuidadosamente seleccionados dentro del ecosistema criptográfico, incluidos los Automated Market Makers (AMMs), [protocolos de préstamo](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/boc/appendix/README.md#protocolo-de-pr%C3%A9stamos), [agregadores de rendimiento](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/boc/appendix/README.md#agregadores-de-rendimiento), etc. Consulte el [dashboard](https://dashboard.bankofchain.io/) para obtener más detalles.
+La plataforma BOC conecta [protocolos](../more/appendix.md#protocolo) cuidadosamente seleccionados dentro del ecosistema criptográfico, incluidos los Automated Market Makers (AMMs), [protocolos de préstamo](../more/appendix.md#protocolo-de-pr%C3%A9stamos), [agregadores de rendimiento](../more/appendix.md#agregadores-de-rendimiento), etc. Consulte el [dashboard](https://dashboard.bankofchain.io/) para obtener más detalles.
 
 Al acceder a estrategias de protocolo de alta calidad, el BOC puede ser de 300 a 500 puntos básicos (3 a 5 %) más alto que otros fondos administrados en USD similares.
 

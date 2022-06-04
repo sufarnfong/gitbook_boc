@@ -10,8 +10,8 @@
 
 * [Componentes del protocolo](how-it-works/protocol-components.md)
 * [Diseño del algoritmo del protocolo](how-it-works/protocol-algorithm-design.md)
-* [Seguridad y Riesgos](boc/seguridad-y-riesgos.md)
-* [Gobernanza](boc/governance.md)
+* [Seguridad y Riesgos](how-it-works/security-risks.md)
+* [Gobernanza](how-it-works/governance.md)
 
 ## More
 

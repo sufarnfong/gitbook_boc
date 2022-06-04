@@ -30,15 +30,15 @@ Se emitirá en junio de 2022.
 
 ### ¿Con qué frecuencia aumentará mi saldo una vez que tenga USDi o ETHi?
 
-La cantidad de USDi o ETHi en su cartera crecerá cada vez que se produzca un evento de rebase positivo. Puedes leer más sobre esto en [Rebase](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/more/protocol-algorithm-design/README.md#rebase). Actualmente, el rebase se activa una vez al día y suele estar correlacionado con el número de personas que acuñan y queman en un día.
+La cantidad de USDi o ETHi en su cartera crecerá cada vez que se produzca un evento de rebase positivo. Puedes leer más sobre esto en [Rebase](../more/appendix.md#rebase). Actualmente, el rebase se activa una vez al día y suele estar correlacionado con el número de personas que acuñan y queman en un día.
 
 ### ¿Cuáles son los costes de acuñar y quemar USDi y ETHi?
 
-Cada vez que mentas o quemas, habrá un tipo de cambio aplicado a tus stablecoins depositados o retirados el tipo de cambio depende de [Oracles](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/more/appendix/README.md#oracle), estos puede variar. Ver más detalles en [Mint & Burn](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/more/protocol-algorithm-design/README.md#reglas-de-acu%C3%B1aci%C3%B3n-y-quema-burn--mint). El objetivo de este mecanismo es proteger el protocolo del arbitraje, el protocolo BOC no cobra nada en este proceso.
+Cada vez que mentas o quemas, habrá un tipo de cambio aplicado a tus stablecoins depositados o retirados el tipo de cambio depende de [Oracles](../more/appendix.md#oracle), estos puede variar. Ver más detalles en [Mint & Burn](../more/appendix.md#reglas-de-acu%C3%B1aci%C3%B3n-y-quema-burn--mint). El objetivo de este mecanismo es proteger el protocolo del arbitraje, el protocolo BOC no cobra nada en este proceso.
 
 ### Glosario
 
-Si no estás seguro de algún término específico, no dudes en consultar el [Glosario](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/more/appendix/README.md#glossary).
+Si no estás seguro de algún término específico, no dudes en consultar el [Glosario](../more/appendix.md#glossary).
 
 ### ¿Hay una cantidad mínima o máxima para depositar?
 

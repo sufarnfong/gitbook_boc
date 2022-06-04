@@ -2,31 +2,31 @@
 
 Esta es una guía rápida para interactuar e invertir con la plataforma BOC. En primer lugar, para completar la inversión en BOC tenemos que empezar en la página de inversión del usuario. Nos dirigimos a la [página de inicio](https://bankofchain.io/#/) y hacemos clic en el botón `LAUNCH APP`.
 
-![launchapp](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/launchapp.png)
+![launchapp](../.gitbook/assets/launchapp.png)
 
 ## Conexión de Wallet (Billetera)
 
-Podemos interactuar con BOC a través de una [wallets](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/boc/appendix/README.md#wallet) (billetera digital), la APP es compatible [MetaMask](https://metamask.io/) y [WalletConnect](https://walletconnect.com/), pulsando el botón `CONNECT WALLET`.
+Podemos interactuar con BOC a través de una [wallets](../more/appendix.md#wallet) (billetera digital), la APP es compatible [MetaMask](https://metamask.io/) y [WalletConnect](https://walletconnect.com/), pulsando el botón `CONNECT WALLET`.
 
-![connectwallet](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/connectwallet.png)
+![connectwallet](../.gitbook/assets/connectwallet.png)
 
 Después de conectar el monedero, podemos ver el saldo de USDT en nuestra cuenta.
 
-![pic4](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/pic-4.png)
+![pic4](../.gitbook/assets/pic-4.png)
 
 ## Ajustes de los parámetros
 
 ### Cross-chain Bridge
 
-BOC proporciona opciones de [cross-chain bridge](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/boc/appendix/README.md#puentes-de-blockchain), en caso de que necesitemos implementar una operación cross-chain.
+BOC proporciona opciones de [cross-chain bridge](../more/appendix.md#puentes-de-blockchain), en caso de que necesitemos implementar una operación cross-chain.
 
-![chainbridge](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/chainbridge.png)
+![chainbridge](../.gitbook/assets/chainbridge.png)
 
 ### Cambiar de cadena
 
 En la actualidad, BOC trabaja en Ethereum, BNB Chain y Polygon. Si necesitamos cambiar de cadena, pueden hacerlo a través de `NETWORKS`.
 
-![networkchange](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/networkchange.png)
+![networkchange](../.gitbook/assets/networkchange.png)
 
 ## Inversión y reembolso
 
@@ -34,37 +34,37 @@ En la actualidad, BOC trabaja en Ethereum, BNB Chain y Polygon. Si necesitamos c
 
 Una vez que el monedero se ha conectado con éxito, podemos completar el depósito seleccionando la cantidad deseada o seleccionando el saldo "Max", y luego haciendo clic en `DEPOSIT`.
 
-![pic7](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/pic-7.png)
+![pic7](../.gitbook/assets/pic-7.png)
 
 ### Retirada de fondos
 
 Después de conectar con éxito el monedero, podemos completar la retirada seleccionando el saldo deseado o seleccionando la el saldo "Max" y haciendo clic en `WITHDRAW`.
 
-![pic8](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/pic-8.png)
+![pic8](../.gitbook/assets/pic-8.png)
 
 ### Retirada Parámetros avanzados
 
-![advancesetting](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/advancesetting.png)
+![advancesetting](../.gitbook/assets/advancesetting.png)
 
 Los parámetros de las opciones avanzadas son:
 
 **Pérdida máxima**: La pérdida máxima en los retiros. Cuando especifiquemos la cuota de retirada, se mostrarán los activos totales con el valor neto actual, pero estos no son los fondos que podemos obtener finalmente, y pueden producirse pérdidas durante el proceso de retirada, incluidas las pérdidas por deslizamiento de cambio. Si nuestros activos totales se estiman en $1000 en este momento, y elegimos Max Loss=0,3%, entonces obtendremos no menos de $997.
 
-**Slippage**: [Slippage](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/boc/appendix/README.md#slippage) (deslizamiento) entre diferentes monedas. Podemos especificar el deslizamiento que aceptamos.
+**Slippage**: [Slippage](../more/appendix.md#slippage) (deslizamiento) entre diferentes monedas. Podemos especificar el deslizamiento que aceptamos.
 
 ### Añadir USDi a tu monedero
 
 Si el USDi no aparece en su monedero, tiene que añadirlo manualmente, logramos hacerlo realmente facil, sólo hay que hacer clic en el `+` junto a su saldo de USDi dentro de la app y pulsar `Añadir Token`. Entonces verás tu saldo de USDi en tu monedero de Metamask.
 
-![addtoken](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/addtoken.png)
+![addtoken](../.gitbook/assets/addtoken.png)
 
 ## Dashboard (Tablero de mandos)
 
-Desde el [dashboard](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/boc/appendix/README.md#dashboard) podemos obtener la siguiente información relevante sobre nuestros activos y los protocolos que interactúan con ellos.
+Desde el [dashboard](../more/appendix.md#dashboard) podemos obtener la siguiente información relevante sobre nuestros activos y los protocolos que interactúan con ellos.
 
 [https://dashboard.bankofchain.io](https://dashboard.bankofchain.io)
 
-![dashboard](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/dashboard.jpg)
+![dashboard](../.gitbook/assets/dashboard.jpg)
 
 Cada dato se describe como sigue:
 
@@ -88,7 +88,7 @@ Gráficas BOC:
 
 Tome SushiUsdcUsdtStrategy como ejemplo, entre en la página de detalles de la estrategia como se muestra en la figura:
 
-![detail](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/detail.jpg)
+![detail](../.gitbook/assets/detail.jpg)
 
 Cada dato se describe como sigue:
 
@@ -111,13 +111,13 @@ Cada dato se describe como sigue:
 
 Entre en la página de análisis de inversiones personales para ver los ingresos de las inversiones personales.
 
-![personalpage](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/personalpage.jpg)
+![personalpage](../.gitbook/assets/personalpage.jpg)
 
 Cada dato se describe como sigue:
 
 1. Valoración del activo total de la inversión personal (calculada en USDT).
 2. Acción de BOC adquirida.
-3. Pasar 30 días [APY](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/boc/appendix/README.md#annual-yield-apy).
+3. Pasar 30 días [APY](../more/appendix.md#annual-yield-apy).
 4. Ganancias no retiradas (calculadas en USDT).
 5. Ganancias retiradas (calculadas en USDT).
 6. Activos totales personales históricos.

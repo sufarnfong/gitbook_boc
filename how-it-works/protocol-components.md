@@ -2,11 +2,11 @@
 
 ## Blockchains incorporados
 
-BOC seleccionó [blockchain](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/how-it-works/appendix/README.md#blockchain-network) son compatibles con [Ethereum Virtual Machine (EVM)](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/how-it-works/appendix/README.md#ethereum-virtual-machine-evm), en realidad BOC está conectado con Ethereum, BNB Chain y Polygon chain.
+BOC seleccionó [blockchain](../more/appendix.md#blockchain-network) son compatibles con [Ethereum Virtual Machine (EVM)](../more/appendix.md#ethereum-virtual-machine-evm), en realidad BOC está conectado con Ethereum, BNB Chain y Polygon chain.
 
 ### Ethereum
 
-**Ethereum** es una plataforma blockchain descentralizada de código abierto con funciones de [contrato inteligente](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/how-it-works/appendix/README.md#smart-contract), cuya [criptomoneda](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/how-it-works/appendix/README.md#criptomoneda) nativa es ETH. En diciembre de 2021, Ethereum se convirtió en la segunda criptomoneda más valiosa por capitalización de mercado después de Bitcoin, y en la blockchain más utilizada.
+**Ethereum** es una plataforma blockchain descentralizada de código abierto con funciones de [contrato inteligente](../more/appendix.md#smart-contract), cuya [criptomoneda](../more/appendix.md#criptomoneda) nativa es ETH. En diciembre de 2021, Ethereum se convirtió en la segunda criptomoneda más valiosa por capitalización de mercado después de Bitcoin, y en la blockchain más utilizada.
 
 El concepto de Ethereum fue propuesto por primera vez entre 2013 y 2014 por el programador Vitalik Buterin tras inspirarse en Bitcoin como "la próxima generación de criptodivisas y plataforma de aplicaciones descentralizadas". El desarrollo de Ethereum comenzó a través del crowdfunding ICO en 2014.
 
@@ -24,7 +24,7 @@ El 15 de febrero de 2022, la bolsa de criptomonedas Binance anunció que la cade
 
 ## Incorporación de Stablecoins
 
-Con el fin de evitar el miedo psicológico causado por las fluctuaciones del valor de la moneda digital y las pérdidas de los fondos de creación de mercado, el protocolo BOC ha seleccionado sólo [activos de moneda estable](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/how-it-works/appendix/README.md#stablecoin), y solo se limita a aquellos con plena [garantía](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/how-it-works/appendix/README.md#colateral) proporcionada por moneda legal o por stablecoins.
+Con el fin de evitar el miedo psicológico causado por las fluctuaciones del valor de la moneda digital y las pérdidas de los fondos de creación de mercado, el protocolo BOC ha seleccionado sólo [activos de moneda estable](../more/appendix.md#stablecoin), y solo se limita a aquellos con plena [garantía](../more/appendix.md#colateral) proporcionada por moneda legal o por stablecoins.
 
 Las stablecoins deben cumplir las siguientes condiciones
 

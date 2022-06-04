@@ -2,7 +2,7 @@
 
 ## Descripción del proceso
 
-![pic-2](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/pic-2.png)
+![pic-2](../.gitbook/assets/pic-2.png)
 
 1. "Depositar" - El protocolo BOC permite a los usuarios `depositar` las tres principales stablecoins (USDT, USDC, DAI) en cualquier combinación y en cualquier cantidad, y acuñar USDi de valor correspondiente para devolver al usuario.\
    "Retirar" - Los usuarios pueden `retirar` USDi las tres principales stablecoins en cualquier momento a través del protocolo BOC. Por defecto, se devolverán según la proporción de las tres principales stablecoins en la [Bóveda](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/how-it-works/appendix/README.md#b%C3%B3veda) en ese momento, o pueden especificar una determinada moneda a devolver.
@@ -45,7 +45,7 @@ El precio actual de Chainlink es:
 100 DAI = 100 x 0.99 = 99 USDi (Chainlink < 1 USD，precio final = precio de Chainlink)\
 100 USDC = 100 x 1.00 = 100 USDi (Chainlink = 1 USD，precio final = 1 USD)
 
-![mint](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/mint.png)
+![mint](../.gitbook/assets/mint.png)
 
 Ahora, Alice decide `quemar` los USDi para retirar sus stablecoins. Ella tiene 299 USDi y cuando ella quema, dependiendo de la proporción de USDT/USDC/DAI de la Bóveda, el contrato inteligente de quema distribuirá en la misma proporción los USDi en cada stablecoin, en este caso cuando redimimos hay un poco menos de USDT en la Bóveda, por lo que la distribución de cambio será:
 
@@ -69,7 +69,7 @@ Por lo tanto, Alicia quema 299 USDi para retirar:
 100 USDi = 100/1.00 = 100 DAI (Chainlink < 1 USD, precio final = 1 USD)\
 100 USDi = 100/1.00 = 100 USDC (Chainlink = 1 USD, precio final = 1 USD)
 
-![burn](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/burn.png)
+![burn](../.gitbook/assets/burn.png)
 
 Los números en el gráfico es solo un ejemplo numérico para entender mejor las reglas de acuñación y quema en BOC. En el mundo real la fluctuación de USDi es mucho menor, lo que significa que los usuarios nunca se encontrarán con una posible pérdida como esta. De hecho, la posible pérdida será inferior al 0,01%. El objetivo de estas reglas es evitar [arbitrajes](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/how-it-works/appendix/README.md#arbitraje) en nuestra plataforma y proteger el protocolo.
 

@@ -18,7 +18,7 @@ Por el momento, la gobernanza de BOC es lograr la cogestión de los tokenholders
 
 El suministro máximo de tokens BOC es de mil millones. Los tenedores de tokens recibirán una tarifa de administración de BOC de acuerdo con la proporción de tenencia. Una vez que los tokens están bloqueados, pueden participar en la gobernanza y compartir los beneficios. Está previsto que los tokens específicos se distribuyan en las siguientes 4 partes: equipo, inversores, comunidad y parte reservada.
 
-![TokenDistribution](https://github.com/Francisco-Rua/boc\_gitbook/blob/es\_version/images/TokenDistribution.png)
+![TokenDistribution](../.gitbook/assets/TokenDistribution.png)
 
 | \*_Equipo_ \*\*                                                                                          | **20.00%**  | **200M** |
 | -------------------------------------------------------------------------------------------------------- | ----------- | -------- |
