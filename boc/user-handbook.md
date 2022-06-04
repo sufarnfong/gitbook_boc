@@ -2,17 +2,17 @@
 
 Esta es una guía rápida para interactuar e invertir con la plataforma BOC. En primer lugar, para completar la inversión en BOC tenemos que empezar en la página de inversión del usuario. Nos dirigimos a la [página de inicio](https://bankofchain.io/#/) y hacemos clic en el botón `LAUNCH APP`.
 
-![launchapp](../.gitbook/assets/launchapp.png)
+![](../.gitbook/assets/launchapp.png)
 
 ## Conexión de Wallet (Billetera)
 
 Podemos interactuar con BOC a través de una [wallets](../more/appendix.md#wallet) (billetera digital), la APP es compatible [MetaMask](https://metamask.io/) y [WalletConnect](https://walletconnect.com/), pulsando el botón `CONNECT WALLET`.
 
-![connectwallet](../.gitbook/assets/connectwallet.png)
+![](../.gitbook/assets/connectwallet.png)
 
 Después de conectar el monedero, podemos ver el saldo de USDT en nuestra cuenta.
 
-![pic4](../.gitbook/assets/pic-4.png)
+![](../.gitbook/assets/pic-4.png)
 
 ## Ajustes de los parámetros
 
@@ -20,13 +20,13 @@ Después de conectar el monedero, podemos ver el saldo de USDT en nuestra cuenta
 
 BOC proporciona opciones de [cross-chain bridge](../more/appendix.md#puentes-de-blockchain), en caso de que necesitemos implementar una operación cross-chain.
 
-![chainbridge](../.gitbook/assets/chainbridge.png)
+![](../.gitbook/assets/chainbridge.png)
 
 ### Cambiar de cadena
 
 En la actualidad, BOC trabaja en Ethereum, BNB Chain y Polygon. Si necesitamos cambiar de cadena, pueden hacerlo a través de `NETWORKS`.
 
-![networkchange](../.gitbook/assets/networkchange.png)
+![](../.gitbook/assets/networkchange.png)
 
 ## Inversión y reembolso
 
@@ -34,17 +34,17 @@ En la actualidad, BOC trabaja en Ethereum, BNB Chain y Polygon. Si necesitamos c
 
 Una vez que el monedero se ha conectado con éxito, podemos completar el depósito seleccionando la cantidad deseada o seleccionando el saldo "Max", y luego haciendo clic en `DEPOSIT`.
 
-![pic7](../.gitbook/assets/pic-7.png)
+![](../.gitbook/assets/pic-7.png)
 
 ### Retirada de fondos
 
 Después de conectar con éxito el monedero, podemos completar la retirada seleccionando el saldo deseado o seleccionando la el saldo "Max" y haciendo clic en `WITHDRAW`.
 
-![pic8](../.gitbook/assets/pic-8.png)
+![](../.gitbook/assets/pic-8.png)
 
 ### Retirada Parámetros avanzados
 
-![advancesetting](../.gitbook/assets/advancesetting.png)
+![](../.gitbook/assets/advancesetting.png)
 
 Los parámetros de las opciones avanzadas son:
 
@@ -56,7 +56,7 @@ Los parámetros de las opciones avanzadas son:
 
 Si el USDi no aparece en su monedero, tiene que añadirlo manualmente, logramos hacerlo realmente facil, sólo hay que hacer clic en el `+` junto a su saldo de USDi dentro de la app y pulsar `Añadir Token`. Entonces verás tu saldo de USDi en tu monedero de Metamask.
 
-![addtoken](../.gitbook/assets/addtoken.png)
+![](../.gitbook/assets/addtoken.png)
 
 ## Dashboard (Tablero de mandos)
 
@@ -64,7 +64,7 @@ Desde el [dashboard](../more/appendix.md#dashboard) podemos obtener la siguiente
 
 [https://dashboard.bankofchain.io](https://dashboard.bankofchain.io)
 
-![dashboard](../.gitbook/assets/dashboard.jpg)
+![](../.gitbook/assets/dashboard.jpg)
 
 Cada dato se describe como sigue:
 
@@ -88,7 +88,7 @@ Gráficas BOC:
 
 Tome SushiUsdcUsdtStrategy como ejemplo, entre en la página de detalles de la estrategia como se muestra en la figura:
 
-![detail](../.gitbook/assets/detail.jpg)
+![](../.gitbook/assets/detail.jpg)
 
 Cada dato se describe como sigue:
 
@@ -111,7 +111,7 @@ Cada dato se describe como sigue:
 
 Entre en la página de análisis de inversiones personales para ver los ingresos de las inversiones personales.
 
-![personalpage](../.gitbook/assets/personalpage.jpg)
+![](../.gitbook/assets/personalpage.jpg)
 
 Cada dato se describe como sigue:
 
