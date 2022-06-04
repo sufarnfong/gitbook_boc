@@ -15,7 +15,7 @@
 
 ## More
 
-* [Apéndice](more/glossary.md)
+* [Apéndice](more/appendix.md)
 * [Preguntas frecuentes (FAQs)](more/faqs.md)
 * [Bibliografía](more/references.md)
 * [Información de contacto](more/informacion-de-contacto.md)
