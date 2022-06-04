@@ -127,7 +127,9 @@ Each data is described as follows:
 
 Enter the personal investment analysis page to see the personal investment income.
 
-![](<../.gitbook/assets/personalpage.jpg>) Each data is described as follows:
+![](<../.gitbook/assets/personalpage.jpg>) 
+
+Each data is described as follows:
 
 1. Personal investment total asset valuation (calculated in USDT).
 2. Acquired BOC share.
