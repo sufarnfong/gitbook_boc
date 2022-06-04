@@ -2,17 +2,17 @@
 
 Here is a quick guide to interact and invest with the BOC platform. First, to complete the investment in BOC we need to start on the user investment page. We go to the [home page](https://bankofchain.io/#/) and click on `LAUNCH APP` button.
 
-![](<../.gitbook/assets/launchapp (1).png>)
+![](<../.gitbook/assets/launchapp.png>)
 
 ## Wallet Connection
 
 We can interact with BOC through [wallets](../more/appendix.md#wallet), the APP is compatible [MetaMask](https://metamask.io/) and [WalletConnect](https://walletconnect.com/), by clicking on the `CONNECT WALLET` button.
 
-![](<../.gitbook/assets/connectwallet (1).png>)
+![](<../.gitbook/assets/connectwallet.png>)
 
 After connecting the wallet, we can see the USDT balance in our account.
 
-![](<../.gitbook/assets/pic-4 (1).png>)
+![](<../.gitbook/assets/pic-4.png>)
 
 ## Parameter Settings
 
@@ -20,13 +20,13 @@ After connecting the wallet, we can see the USDT balance in our account.
 
 BOC provides [cross-chain bridge](../more/appendix.md#bridge) options, in case it's necessary to do cross-chain operations.
 
-![](<../.gitbook/assets/chainbridge (1).png>)
+![](<../.gitbook/assets/chainbridge.png>)
 
 ### Switch Chain
 
 At the present, BOC works on Ethereum, BNB Chain and Polygon. If we need to switch chains, they can do it through `NETWORKS`.
 
-![](<../.gitbook/assets/networkchange (1).png>)
+![](<../.gitbook/assets/networkchange.png>)
 
 ## Investment and Redemption
 
@@ -34,11 +34,11 @@ At the present, BOC works on Ethereum, BNB Chain and Polygon. If we need to swit
 
 Once the wallet has been successfully connected, we can complete the deposit by choosing the vault we what to use, on the `USDi Vault` we will have the stablecoin to use and selecting the desired amount and then clicking on `DEPOSIT`.
 
-![](<../.gitbook/assets/pic-7 (1).png>)
+![](<../.gitbook/assets/pic-7.png>)
 
 On the `ETHi Vault` we will have the possibility of investing ETH by selecting the desired amount and then clicking on `DEPOSIT`.
 
-![](<../.gitbook/assets/depositpage\_eth (1).PNG>)
+![](<../.gitbook/assets/depositpage\_eth.PNG>)
 
 The `ETHi Vault` differently to the `USDi Vault` has a gas fee estimation.
 
@@ -56,7 +56,7 @@ On the `ETHi Vault` there is the possibility to withdraw only ETH we complete wi
 
 ### Withdrawal Advanced Parameters
 
-![](<../.gitbook/assets/advancesetting (1).png>)
+![](<../.gitbook/assets/advancesetting.png>)
 
 The advanced setup parameters are:
 
@@ -72,7 +72,7 @@ If the USDi is not shown on your wallet, you need to add it manually, we make it
 
 Analogously, ETHi can be added to the wallet in the same way.
 
-![](<../.gitbook/assets/addtoken\_ethi (1).png>)
+![](<../.gitbook/assets/addtoken\_ethi.png>)
 
 ## Dashboard
 
@@ -80,7 +80,7 @@ From the [dashboard](../more/appendix.md#dashboard) we can get the next relevant
 
 [https://dashboard.bankofchain.io](https://dashboard.bankofchain.io)
 
-![](<../.gitbook/assets/dashboard (1).jpg>)
+![](<../.gitbook/assets/dashboard.jpg>)
 
 Each data is described as follows:
 
@@ -104,7 +104,7 @@ BOC subgraph:
 
 Take SushiUsdcUsdtStrategy as an example, enter the strategy details page as shown in the figure:
 
-![](<../.gitbook/assets/detail (1).jpg>)
+![](<../.gitbook/assets/detail.jpg>)
 
 Each data is described as follows:
 
@@ -127,7 +127,7 @@ Each data is described as follows:
 
 Enter the personal investment analysis page to see the personal investment income.
 
-![](<../.gitbook/assets/personalpage (1).jpg>) Each data is described as follows:
+![](<../.gitbook/assets/personalpage.jpg>) Each data is described as follows:
 
 1. Personal investment total asset valuation (calculated in USDT).
 2. Acquired BOC share.
