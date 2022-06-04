@@ -10,8 +10,8 @@
 
 * [Protocol Components](how-it-works/protocol-components.md)
 * [Protocol Algorithm Design](how-it-works/protocol-algorithm-design.md)
-* [Security Risks](boc/security-risk.md)
-* [Governance](boc/governance.md)
+* [Security Risks](how-it-works/security-risk.md)
+* [Governance](how-it-works/governance.md)
 
 ## More
 
