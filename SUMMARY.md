@@ -18,4 +18,8 @@
 * [Glossary](more/appendix.md)
 * [FAQs](more/faqs.md)
 * [References](more/references.md)
+* [Join us](more/join-us.md)
+* [Contributions](more/join-us.md)
 * [Contact Information](more/contact-information.md)
+* [APP](https://bankofchain.io/#/)
+
