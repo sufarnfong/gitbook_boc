@@ -18,7 +18,7 @@
 * [Glossary](more/appendix.md)
 * [FAQs](more/faqs.md)
 * [References](more/references.md)
-* [Join us](more/join-us.md)
+* [Volunteering](more/volunteering.md)
 * [Contributions](more/contributions.md)
 * [Contact Information](more/contact-information.md)
 * [APP](https://bankofchain.io/#/)
