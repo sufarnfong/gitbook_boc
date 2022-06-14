@@ -5,4 +5,4 @@ One of the keystones of decentralized environments is the community. At BOC we e
 | NAME        | TASK                         |
 | ----------- | ----------------------------------- |
 | [Kadibia Ikevude](https://twitter.com/Mr_kadibia)| Public relations volunteer|
-| Ola | Discord volunteer|
+| [Olatayo](https://twitter.com/AasaTahir) | Discord volunteer |
