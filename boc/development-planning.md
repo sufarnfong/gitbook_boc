@@ -7,8 +7,9 @@
     1. [x] Logo design completed by March 2022.
     2. [x] Formulation of token issuance rules completed by March 2022.
     3. [x] White paper will be completed by April 2022.
-    4. [x] AWS server leasing and deployment will be completed by May 2022.
-    5. [x] Code development and testing will be completed by July 2022.
+    4. [x] ETH vault release May 2022
+    5. [] AWS server leasing and deployment will be completed by June 2022.
+    6. [] Code development and testing will be completed by July 2022.
 3. [ ] Security audit will be completed by August 2022.
 4. [ ] Leveraging services will be provided by September 2022 and publicly issued BOC Version 2.0 thereafter.
 
