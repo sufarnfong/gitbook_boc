@@ -2,7 +2,15 @@
 
 ## Roadmap
 
-![](../.gitbook/assets/roadmap.JPG)
+1. [x] Friend & Family Testing was launched by March 4, 2022. In this testing phase of the project, the capital scale was small, and the final verification before the product was publicized was mainly carried out.
+2. BOC 1.5 version public released by May 2022.
+    1. [x] Logo design completed by March 2022.
+    2. [x] Formulation of token issuance rules completed by March 2022.
+    3. [x] White paper will be completed by April 2022.
+    4. [x] AWS server leasing and deployment will be completed by May 2022.
+    5. [x] Code development and testing will be completed by July 2022.
+3. [ ] Security audit will be completed by August 2022.
+4. [ ] Leveraging services will be provided by September 2022 and publicly issued BOC Version 2.0 thereafter.
 
 ## Future Planning
 
