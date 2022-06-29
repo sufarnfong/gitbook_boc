@@ -2,9 +2,9 @@
 
 [BOC](https://v1.bankofchain.io/#/)（Bank Of Chain）是帮助普通投资者获取链上“无风险”保本理财的一款[去中心化金融](../more/appendix.md#%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8Ddefi)[协议](../more/appendix.md#%E5%8D%8F%E8%AE%AEprotocol)。
 
-BOC平台连接加密生态系统内诸多协议，例如[AMM](../more/appendix.md#%E8%87%AA%E5%8A%A8%E5%81%9A%E5%B8%82%E5%95%86amm)、[借贷协议](../more/appendix.md#%E5%80%9F%E8%B4%B7%E5%8D%8F%E8%AE%AElending-protocol)、[收益聚合器等](../more/appendix.md#%E6%94%B6%E7%9B%8A%E8%81%9A%E5%90%88%E5%99%A8yield-aggregators)(详情参见[Dashboard](https://dashboard-v1.bankofchain.io/#/))。通过接入高质量低风险的协议[策略](../more/appendix.md#%E7%AD%96%E7%95%A5strategy)，BOC能实现比其他美元托管基金高300\~500个基点，这将是BOC吸引数亿美元的基础。
+BOC平台连接加密生态系统内诸多协议，例如[AMM](../more/appendix.md#%E8%87%AA%E5%8A%A8%E5%81%9A%E5%B8%82%E5%95%86amm)、[借贷协议](../more/appendix.md#%E5%80%9F%E8%B4%B7%E5%8D%8F%E8%AE%AElending-protocol)、[收益聚合器等](../more/appendix.md#%E6%94%B6%E7%9B%8A%E8%81%9A%E5%90%88%E5%99%A8yield-aggregators)(详情参见[Dashboard](https://dashboard-v1.bankofchain.io/#/))。通过接入高质量低风险的协议[策略](../more/appendix.md#%E7%AD%96%E7%95%A5strategy)，BOC能实现其APY比其他类似的美元管理基金高出4-5%。
 
-BOC对于加密行业的新人来说是进入数字资产投资回报生态系统的最佳渠道。作为一键复合理财平台，BOC将为行业带来新的革命。
+对于加密行业的新人来说，BOC是进入数字资产投资回报生态系统的最佳渠道。作为一键复合理财平台，BOC将为行业带来新的革命。
 
 ## 为什么要开发BOC
 
@@ -31,38 +31,54 @@ BOC对于加密行业的新人来说是进入数字资产投资回报生态系�
 
 ## 为何BOC与众不同
 
-BOC作为开放式平台，通过连接加密生态众多协议实现分散投资，创建了长期的稳定的收益，避免了大部分风险。BOC竞争力体现在:
+BOC是首个去中心化银行(DeB)，用户存放其加密资产，BOC的智能合约连接加密生态众多协议实现分散投资，以创造接近“无风险”的长期稳定收益。
 
-1. 易用：
-   * 仅存取两项操作，无需进行[收割](../more/appendix.md#%E6%94%B6%E5%89%B2-harvest)、兑换、调仓等复杂操作并支付费用。
+BOC与线下银行非常类似:
+
+1. 用户交互：
+   * 与线下银行一样，用户只有仅存取两项操作，无需进行[收割](../more/appendix.md#%E6%94%B6%E5%89%B2-harvest)、兑换、调仓等复杂操作及支付费用。
    * 收益自动复投，资金随存随取。
    * 历史及动态收益直观可见。
-2. 安全：
-   * 合格稳定币已发行规模均超过10亿美元。
-   * 合格区块链上的锁仓量已超过50亿美元。
+2. 服务业务：
+   * 是区块链上的财富管理工具。
+   * 借贷业务 (即将推出)。
+3. 押金/凭证代币 (USDi & ETHi)：
+   * 保持所有资金的流动性。
+   * 与存入代币1:1锚定。
+   * 所有存入资产均是有息的。
+   * 所有代币可随时取出。
+
+与其他DeFi协议相比，BOC的竞争力体现在：
+
+1. 安全：
+   * 所用稳定币的发行规模均超过10亿美元。
+   * 所用区块链的锁仓量已超过50亿美元。
    * BOC通过第三方严格审计。
    * 不使用第三方[跨链桥](../more/appendix.md#%E8%B7%A8%E9%93%BE%E6%A1%A5bridge)。
    * 报价基于[Chainlink](https://chain.link/)。
-3. 风控：
+
+2. 风控：
    * 稳定币脱锚风险：不使用算法稳定币，部分抵押稳定币，[长尾](../more/appendix.md#%E9%95%BF%E5%B0%BE-the-long-tail)资产抵押生成稳定币。
    * 无偿损失的风险：做市限于稳定币资产交易对。
    * 连锁系统性风险：排除[嵌套代币](../more/appendix.md#%E5%B5%8C%E5%A5%97%E4%BB%A3%E5%B8%81nested-tokens)和[乐高协议](../more/appendix.md#%E4%B9%90%E9%AB%98%E5%BC%8F%E7%BB%84%E5%90%88-lego-combination)。
    * 长尾风险：不通过提供风险服务获取回报，如保险、期权。
    * 杠杆风险：未使用杠杆放大风险与回报。
-4. 智能：
+
+3. 智能：
    * 定期评估各资金池收益变化，权衡调仓成本与收益。
    * 通过聚合器，寻找兑换最佳路径。
    * 进行外汇收益套利，并根据汇率和收益波动自动增减杠杆。
    * 设置复杂做市及借贷策略参数。
 
-综上所述，BOC与市场上的类似产品相比，它在易用性、安全性、风控能力和智能投资方面，将带来行业革命和新市场增长。
+综上所述，BOC与市场上的类似产品相比，它在易用性、安全性、风控能力和智能投资方面，将带来新市场增长和行业革命。
+
 
 |       竞品名称       |     [BOC](https://bankofchain.io)    |    [Yearn](http://yearn.finance/)   |     [OUSD](https://www.ousd.com/)     | [Aladdin DAO](https://aladdin.club/) | [enzyme](https://enzyme.finance/) |                     [Harvest](https://harvest.finance/)                    |        [beefy](https://beefy.finance/)        |                [alpha](https://alphafinance.io/)               | [yield app](https://www.yield.app/) |
 | :--------------: | :----------------------------------: | :---------------------------------: | :-----------------------------------: | :----------------------------------: | :-------------------------------: | :------------------------------------------------------------------------: | :-------------------------------------------: | :------------------------------------------------------------: | :---------------------------------: |
 |        分类        |                DeFi银行                |                收益聚合器                |                 算法稳定币                 |                 收益聚合器                |               链上资产管理              |                                    收益聚合器                                   |                     收益聚合器                     |                              收益聚合器                             |                DeFi银行               |
-|       竞品介绍       | BOC是帮助普通投资者获取链上“无风险”保本理财的一款去中心化金融协议。 | Yearn Finance是区块链上的收益聚合器，由YFI持有人治理。 | Origin Dollar（OUSD）是在Ethereum上推出的稳定币。 |     AladdinDAO协议通过群体智慧优化DeFi资产分配。    |       Enzyme可以快速高效自定义构建投资策略。      | Harvest Finance是Ethereum、BNB Chain和Polygon上的收益聚合平台，使用户的资产在DeFi生态系统中获得最大收益。 | Beefy Finance是多链收益聚合器，使用户的资产在DeFi生态系统中获得最大收益。 | Alpha Finance Lab是一个跨链DeFi产品生态系统。Alpha Homora是第一款产品，是一种杠杆挖矿协议。 |    Yield App 是一个链接传统金融和去中心金融的桥梁。    |
+|       竞品介绍       | BOC是帮助普通投资者获取链上近“零风险”保本理财的一款去中心化金融协议。 | Yearn Finance是区块链上的收益聚合器，由YFI持有人治理。 | Origin Dollar（OUSD）是在Ethereum上推出的稳定币。 |     AladdinDAO协议通过群体智慧优化DeFi资产分配。    |       Enzyme可以快速高效自定义构建投资策略。      | Harvest Finance是Ethereum、BNB Chain和Polygon上的收益聚合平台，使用户的资产在DeFi生态系统中获得最大收益。 | Beefy Finance是多链收益聚合器，使用户的资产在DeFi生态系统中获得最大收益。 | Alpha Finance Lab是一个跨链DeFi产品生态系统。Alpha Homora是第一款产品，是一种杠杆挖矿协议。 |    Yield App 是一个链接传统金融和去中心金融的桥梁。    |
 |        支持链       |      Ethereum、BNB Chain、Polygon      |           Ethereum、Fantom           |                Ethereum               |               Ethereum               |              Ethereum             |                         Ethereum、BNB Chain、Polygon                         |           BNB Chain、Arbitrum、Fantom等          |                  Ethereum、BNB Chain、Avalanche                  |         Ethereum 、BNB Chain         |
-| 锁仓量（截止2020年4月2日） |                  80万                 |                30.5亿                |                1.5582亿                |                 576万                 |              2.2931亿              |                                   2.2225亿                                  |                    10.215亿                    |                             8.278亿                             |               5.1271亿               |
+| 锁仓量（截止2022年3月8日） |                  3.1万                 |                30.5亿                |                1.5582亿                |                 576万                 |              2.2931亿              |                                   2.2225亿                                  |                    10.215亿                    |                             8.278亿                             |               5.1271亿               |
 |       治理代币       |                  暂无                  |                 YFI                 |                  OGN                  |                  ALD                 |                MLN                |                                    FARM                                    |                      BIFI                     |                              ALPHA                             |                 YLD                 |
 |     是否需要KYC认证    |                   否                  |                  否                  |                   否                   |                   否                  |                 否                 |                                      否                                     |                       否                       |                                否                               |                  是                  |
 |       是否开源       |                   是                  |                  是                  |                   是                   |                   是                  |                 是                 |                                      是                                     |                       是                       |                                是                               |                  否                  |
@@ -79,3 +95,5 @@ BOC作为开放式平台，通过连接加密生态众多协议实现分散投�
 |     支持杠杆借贷投资     |                  暂无                  |                否，已剥离                |                   否                   |                   否                  |                 否                 |                                      否                                     |                       否                       |                                是                               |                  否                  |
 |      支持随时提取      |                   是                  |                  是                  |                   是                   |                   是                  |                 是                 |                                      是                                     |                       是                       |                                是                               |                  是                  |
 |       费用收取       |                 收益提成                 |               收益提成 管理费              |                收益提成 提取费               |                 收益提成                 |            收益提成、入场费、管理费           |                                    收益提成                                    |                    收益提成、管理费                   |                              收益提成                              |                 收益提成                |
+
+*注: 竞品的稳定币回报率需要确二次确认，目前仅显示该产品的官方数据，即不考虑代币激励和补贴。

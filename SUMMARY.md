@@ -18,4 +18,5 @@
 * [附录](more/appendix.md)
 * [常见问题 (FAQs)](more/faqs.md)
 * [参考文献](more/references.md)
+* [BOC志愿者](more/Contributions.md)
 * [联系我们](more/intro.md)
