@@ -6,19 +6,19 @@ BOC选择兼容[EVM](../more/appendix.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%99%9A%E6
 
 ### Ethereum
 
-\*\*[以太坊](https://ethereum.org/en/)\*\*是一个去中心化的开源的有智能合约功能的公共区块链平台。以太币是以太坊的原生加密货币。
+[**以太坊**](https://ethereum.org/en/)是一个去中心化的开源的有智能合约功能的公共区块链平台。以太币是以太坊的原生加密货币。
 
 以太坊的概念在2013至2014年间由程序员Vitalik Buterin受比特币启发后首次提出，意为“下一代加密货币与去中心化应用平台”。以太坊在2014年通过ICO众筹得以开始发展。
 
 ### BNB Chain
 
-\*\*[币安智能链](https://www.binance.com/zh-CN)\*\*是一条兼容[以太坊虚拟机](../more/appendix.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%99%9A%E6%8B%9F%E6%9C%BAevm)、与币安链并行的区块链。通过引入[权益权威证明（PoSA）](../more/appendix.md#%E6%9D%83%E7%9B%8A%E6%9D%83%E5%A8%81%E8%AF%81%E6%98%8E-posa)[共识机制](../more/appendix.md#%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6-consensus-mechanism)，BNB Chain创建了一个允许节点、代币持有者、开发者和用户都能够从区块链中获益的生态系统。
+[**币安智能链**](https://www.binance.com/zh-CN)是一条兼容[以太坊虚拟机](../more/appendix.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%99%9A%E6%8B%9F%E6%9C%BAevm)、与币安链并行的区块链。通过引入[权益权威证明（PoSA）](../more/appendix.md#%E6%9D%83%E7%9B%8A%E6%9D%83%E5%A8%81%E8%AF%81%E6%98%8E-posa)[共识机制](../more/appendix.md#%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6-consensus-mechanism)，BNB Chain创建了一个允许节点、代币持有者、开发者和用户都能够从区块链中获益的生态系统。
 
 2022年2月15日，币安交易所发布消息，原币安智能链更名为BNB Chain。BNB是币安交易所的平台币，以及币安智能链的生态代币。
 
 ### Polygon
 
-\*\*[Polygon](https://wallet.polygon.technology/)\*\*是一种用于构建和互连与以太坊兼容的区块链网络的协议。
+[**Polygon**](https://wallet.polygon.technology/)是一种用于构建和互连与以太坊兼容的区块链网络的协议。
 
 Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月，项目更名为Polygon。Polygon项目的加密货币名称为MATIC。
 
@@ -35,7 +35,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### DAI
 
-\*\*[DAI](https://makerdao.com/en/)\*\*是一种稳定币加密货币，旨在通过以太坊区块链上的智能合约自动化系统将其价值保持在尽可能接近一美元的水平。
+[**DAI**](https://makerdao.com/en/)是一种稳定币加密货币，旨在通过以太坊区块链上的智能合约自动化系统将其价值保持在尽可能接近一美元的水平。
 
 ### USDC
 
@@ -59,7 +59,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### LUSD
 
-\*\*[LUSD](https://www.liquity.org/)\*\*是由Liquity协议发行的一种稳定币，它以1:1的锚定美元。
+[**LUSD**](https://www.liquity.org/)是由Liquity协议发行的一种稳定币，它以1:1的锚定美元。
 
 ## 协议策略选择
 
@@ -83,73 +83,73 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### Aave
 
-\*\*[Aave](https://app.aave.com/)\*\*是一个开源的去中心化借贷协议, 为用户提供存款和借贷服务。借贷双方用户的存款利率与贷款利率根据平台借款量和存款量计算得到，并且平台采用Chainlink预言机保证抵押物价格的公平性。
+[**Aave**](https://app.aave.com/)是一个开源的去中心化借贷协议, 为用户提供存款和借贷服务。借贷双方用户的存款利率与贷款利率根据平台借款量和存款量计算得到，并且平台采用Chainlink预言机保证抵押物价格的公平性。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Aave的总资金锁仓量约为117.9亿美元，DeFi应用[锁仓量](../more/appendix.md#%E9%94%81%E4%BB%93%E9%87%8F%E6%80%BB%E9%94%81%E5%AE%9A%E4%BB%B7%E5%80%BC-tvl)排名第2名。
 
 ### Curve
 
-\*\*[Curve](https://curve.fi/)\*\*是部署在以太坊上的去中心化交易所。Curve通过自动化做市商协议，专为以低手续费和滑点进行稳定币之间的交易而设计。它是一个去中心化的流动性聚合器，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
+[**Curve**](https://curve.fi/)是部署在以太坊上的去中心化交易所。Curve通过自动化做市商协议，专为以低手续费和滑点进行稳定币之间的交易而设计。它是一个去中心化的流动性聚合器，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Curve的总资金锁仓量约为107.9亿美元，DeFi应用锁仓量排名第3名。
 
 ### Convex
 
-\*\*[Convex](https://www.convexfinance.com/)\*\*是以太坊上一个致力于简化Curve使用流程的"CRV 质押和流动性挖矿一站式平台"。作为以太坊链上的收益聚合器，Convex旨在借助CVX代币，通过简单易用的界面，简化Curve和CRV锁定、质押的过程，并提高CRV持币者、流动性提供者的报酬，以此促进CRV生态系统发展。
+[**Convex**](https://www.convexfinance.com/)是以太坊上一个致力于简化Curve使用流程的"CRV 质押和流动性挖矿一站式平台"。作为以太坊链上的收益聚合器，Convex旨在借助CVX代币，通过简单易用的界面，简化Curve和CRV锁定、质押的过程，并提高CRV持币者、流动性提供者的报酬，以此促进CRV生态系统发展。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Convex的总资金锁仓量约为101亿美元，DeFi应用锁仓量排名第4名。
 
 ### Uniswap
 
-\*\*[Uniswap](https://uniswap.org/)\*\*是部署在以太坊上的去中心化交易所。Uniswap协议通过使用智能合约促进以太坊区块链上的加密货币之间的自动化交易。
+[**Uniswap**](https://uniswap.org/)是部署在以太坊上的去中心化交易所。Uniswap协议通过使用智能合约促进以太坊区块链上的加密货币之间的自动化交易。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Uniswap的总资金锁仓量约为70.4亿美元，DeFi应用锁仓量排名第6名。
 
 ### Balancer
 
-\*\*[Balancer](https://balancer.fi/)\*\*是部署在以太坊上的去中心化交易所。Balancer使用\[自动做市商]协议(appendix#自动做市商amm)，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
+[**Balancer**](https://balancer.fi/)是部署在以太坊上的去中心化交易所。Balancer使用[自动做市商]协议(appendix#自动做市商amm)，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Balancer的总资金锁仓量约为21.9亿美元，DeFi应用锁仓量排名第6名。
 
 ### SushiSwap
 
-\*\*[SushiSwap](https://app.sushi.com/swap)\*\*最初是Uniswap的分叉，以Uniswap的代码为基础构建而成，同时引入了一些关键差异，即流动性提供者的奖励以协议的原生代币SUSHI发放。与Uniswap不同，即使在停止提供流动性之后，SUSHI持有者仍能继续赚取收益。
+[**SushiSwap**](https://app.sushi.com/swap)最初是Uniswap的分叉，以Uniswap的代码为基础构建而成，同时引入了一些关键差异，即流动性提供者的奖励以协议的原生代币SUSHI发放。与Uniswap不同，即使在停止提供流动性之后，SUSHI持有者仍能继续赚取收益。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Sushiswap的总资金锁仓量约为16.8亿美元，DeFi应用锁仓量排名第11名。
 
 ### Quickswap
 
-\*\*[Quickswap](https://quickswap.exchange/#/)\*\*是一个layer2的去中心化交易所，与Uniswap、Sushiswap相似，Quickswap使用自动做市商协议，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益，并且再次质押流动性代币来赚取收益。QUICK是Quickswap的治理代币。
+[**Quickswap**](https://quickswap.exchange/#/)是一个layer2的去中心化交易所，与Uniswap、Sushiswap相似，Quickswap使用自动做市商协议，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益，并且再次质押流动性代币来赚取收益。QUICK是Quickswap的治理代币。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Quickswap的总资金锁仓量约为4.73亿美元，DeFi应用锁仓量排名第22名。
 
 ### DODO
 
-\*\*[DODO](https://app.dodoex.io/)\*\*是一个去中心化交易所，它使用独创的[主动做市商（PMM）](../more/appendix.md#%E4%B8%BB%E5%8A%A8%E5%81%9A%E5%B8%82%E5%95%86-pmm)算法为Web3资产提供高效的链上流动性，让每个人都能轻松地发行和交易Web3资产。DODO既自己提供流动性，也聚合其它交易所的流动性。这使得DODO可以提供全网较好好的价格。
+[**DODO**](https://app.dodoex.io/)是一个去中心化交易所，它使用独创的[主动做市商（PMM）](../more/appendix.md#%E4%B8%BB%E5%8A%A8%E5%81%9A%E5%B8%82%E5%95%86-pmm)算法为Web3资产提供高效的链上流动性，让每个人都能轻松地发行和交易Web3资产。DODO既自己提供流动性，也聚合其它交易所的流动性。这使得DODO可以提供全网较好好的价格。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，DODO的总资金锁仓量约为4.77千万美元，DeFi应用锁仓量排名第52名。
 
 ### dForce
 
-\*\*[dForce](https://dforce.network/)\*\*致力于构建一个集成、互通的开放式金融协议和货币协议矩阵，包括借贷协议（全球流动性池、生息市场）、资产类协议（多货币稳定币、合成资产等）流动性协议（交易聚合器、自动做市商）三大类。
+[**dForce**](https://dforce.network/)致力于构建一个集成、互通的开放式金融协议和货币协议矩阵，包括借贷协议（全球流动性池、生息市场）、资产类协议（多货币稳定币、合成资产等）流动性协议（交易聚合器、自动做市商）三大类。
 
 截止2022年3月30日，dForce的总资金锁仓量约为1.54千万美元，DeFi应用锁仓量排名第69名。
 
 ### Synapse
 
-\*\*[Synapse](https://synapseprotocol.com/landing)\*\*是一个跨链的去中心化交易所和去中心化金融生态系统。该协议结合了新的代币、高收益流动性矿池、跨链桥等，为用户创造了无缝的去中心化金融体验。Synapse由原BNB Chain上的匿名跨链流动性协议Nerve Finance升级更名而来。
+[**Synapse**](https://synapseprotocol.com/landing)是一个跨链的去中心化交易所和去中心化金融生态系统。该协议结合了新的代币、高收益流动性矿池、跨链桥等，为用户创造了无缝的去中心化金融体验。Synapse由原BNB Chain上的匿名跨链流动性协议Nerve Finance升级更名而来。
 
 ### Venus
 
-\*\*[Venus](https://app.venus.io/dashboard)\*\*是BNB Chain上的一个合成稳定币驱动的去中心化金融系统，它是一个加密货币的借贷解决方案。Venus的独特之处在于它在加密货币的生态系统中推行了自己的合成稳定币VAI。XVS是平台治理代币。
+[**Venus**](https://app.venus.io/dashboard)是BNB Chain上的一个合成稳定币驱动的去中心化金融系统，它是一个加密货币的借贷解决方案。Venus的独特之处在于它在加密货币的生态系统中推行了自己的合成稳定币VAI。XVS是平台治理代币。
 
 ### Pancakeswap
 
-\*\*[Pancakeswap](https://pancakeswap.finance/)\*\*是BNB Chain上的去中心化交易所。用户可以通过向平台提供流动性赚取做市收益，通过质押来赚取Cake代币。
+[**Pancakeswap**](https://pancakeswap.finance/)是BNB Chain上的去中心化交易所。用户可以通过向平台提供流动性赚取做市收益，通过质押来赚取Cake代币。
 
 ### Alpaca
 
-\*\*[Alpaca](https://app.alpacafinance.org/lend)\*\*是BNB Chain上最大的杠杆借贷协议，其本质是一个为去中心化做市商提供服务的衍生品和货币市场。做市商可以通过Alpaca协议撬动更大的做市本金，提升自己做市的绝对收益；出借人则可以通过出借资金获得出借利息。对于去中心化交易所来说，Alpaca为其提供了流动性，通过连接借款人（做市商）和贷方来提高其资本效率。由于通过Alpaca借贷挖矿会使用到杠杆，所以用户在挖矿的同时也是一个做空做多资产的过程。Alpaca实际上提供的是借贷+杠杆服务，目前主要的场景在自动化做市商交易平台的流动性挖矿。
+[**Alpaca**](https://app.alpacafinance.org/lend)是BNB Chain上最大的杠杆借贷协议，其本质是一个为去中心化做市商提供服务的衍生品和货币市场。做市商可以通过Alpaca协议撬动更大的做市本金，提升自己做市的绝对收益；出借人则可以通过出借资金获得出借利息。对于去中心化交易所来说，Alpaca为其提供了流动性，通过连接借款人（做市商）和贷方来提高其资本效率。由于通过Alpaca借贷挖矿会使用到杠杆，所以用户在挖矿的同时也是一个做空做多资产的过程。Alpaca实际上提供的是借贷+杠杆服务，目前主要的场景在自动化做市商交易平台的流动性挖矿。
 
 ## 预言机选择
 
@@ -157,7 +157,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### Chainlink
 
-\*\*[Chainlink](https://chain.link/)\*\*是一个去中心化的预言机网络，它弥合了智能合约（如以太坊上的合约）与其外部数据之间的差距。 区块链本身无法以受信任的方式连接到外部应用程序。Chainlink不是一个单一的预言机网络，而是一个由许多并行运行的去中心化预言机网络组成的生态系统。Chainlink平台代币为LINK。
+[**Chainlink**](https://chain.link/)是一个去中心化的预言机网络，它弥合了智能合约（如以太坊上的合约）与其外部数据之间的差距。 区块链本身无法以受信任的方式连接到外部应用程序。Chainlink不是一个单一的预言机网络，而是一个由许多并行运行的去中心化预言机网络组成的生态系统。Chainlink平台代币为LINK。
 
 ## 对接的第三方协议
 

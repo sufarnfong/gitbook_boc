@@ -38,7 +38,7 @@ BOC提供Ethereum、BNB Chain和Polygon三条链，进入页面左上方的“NE
 
 用户可以在 “ETHi Vault” 中存入ETH。
 
-![](<../.gitbook/assets/depositpage_eth.png>)
+![](<../.gitbook/assets/depositpage\_eth.PNG>)
 
 ### 取币
 
@@ -48,7 +48,7 @@ BOC提供Ethereum、BNB Chain和Polygon三条链，进入页面左上方的“NE
 
 用户可以在 “ETHi Vault” 中取出ETH。
 
-![](<../.gitbook/assets/withdraw_eth.png>)
+![](../.gitbook/assets/withdraw\_eth.PNG)
 
 #### 取币的高级参数设置
 
@@ -63,7 +63,7 @@ BOC提供Ethereum、BNB Chain和Polygon三条链，进入页面左上方的“NE
 
 在您成功存币后，如果您的钱包中没有显示USDi，您需要手动将USDi添加至钱包，以方便看到当前USDi余额。如下图所示，点击“+”按钮，再点击“Add Token”,添加完成。
 
-视频教程：https://youtu.be/53kB-HakZCk
+点击此处观看 [视频教程](https://youtu.be/53kB-HakZCk) 。
 
 ![](<../.gitbook/assets/addtoken.png>)
 
