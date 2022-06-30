@@ -9,4 +9,4 @@
 | [Olatayo](https://twitter.com/AasaTahir)        | Discord志愿者   |
 
 ## 加入BOC志愿者
-BOC欢迎任何有志有能力的人加入，如想成为BOC志愿者，请填写此表格：https://docs.google.com/forms/d/e/1FAIpQLScj-J4PhhZCeoRy5MvwlXj1EqipYp6wZWhx5QwIvasuFllnTg/viewform
+BOC欢迎任何有志有能力的人加入，如想成为BOC志愿者，请填写[此表格](https://docs.google.com/forms/d/e/1FAIpQLScj-J4PhhZCeoRy5MvwlXj1EqipYp6wZWhx5QwIvasuFllnTg/viewform)。
