@@ -6,8 +6,10 @@ BOC is a disruptive blockchain innovation that aims to change the DeFi ecosystem
 
 By the moment, the governance of BOC is through Gnosis multi-signature. In the future, governance will be assumed by the DAO.
 
-The DAO will use [snapshot](https://snapshot.org/) for off-chain voting and the execution proposals by on-chain smart contracts.
-
+The DAO will use governance forum and snapshot for off-chain voting and the execution proposals by on-chain smart contracts. Click the following link to enter:  
+BOC [snapshot](https://snapshot.org/#/bankofchain.eth)  
+BOC [Habor](https://governance.bankofchain.io/)
+  
 The Governance tokens are yet to be developed but will be launched soon.
 
 ## Tokenomics

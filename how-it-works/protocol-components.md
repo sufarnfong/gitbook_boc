@@ -28,7 +28,7 @@ In order to avoid the psychological fear caused by the fluctuations of digital c
 
 Stablecoins need to meet the following conditions:
 
-* The corresponding issuers should pass the audit.
+* The corresponding issuers should pass our due diligence check. 
 * No algorithmic stablecoin allowed.
 * Insurance available.
 * Stablecoin quotes must be based on ChainLink.
