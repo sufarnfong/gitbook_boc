@@ -28,11 +28,11 @@ In order to avoid the psychological fear caused by the fluctuations of digital c
 
 Stablecoins need to meet the following conditions:
 
-* Pass audit.
-* Don't be an algorithmic stablecoin.
+* The corresponding issuers should pass the audit.
+* No algorithmic stablecoin allowed.
 * Insurance available.
 * Stablecoin quotes must be based on ChainLink.
-* Market capital greater than $1 billion USD.
+* Market capital greater than $500 million / 200,000 ETH.
 
 The currently selected strategic stablecoins are: DAI, USDC, USDT, BUSD, USDP, TUSD, LUSD.
 
