@@ -26,10 +26,10 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 为避免数字货币价格大幅度波动产生的心理恐惧，并引发做市资金的[无偿损失](../more/appendix.md#%E6%97%A0%E5%81%BF%E6%8D%9F%E5%A4%B1-impermanent-loss)，BOC协议只针对[稳定币](../more/appendix.md#%E7%A8%B3%E5%AE%9A%E5%B8%81stablecoin)资产，且仅限于由法币提供足额抵押或由蓝筹数字资产提供超额抵押生成的稳定币。稳定币需要满足以下条件：
 
-1. 通过审计。
+1. 其发行者需通过严格审核。
 2. 具有保险。
 3. 为减少[预言机](../more/appendix.md#%E9%A2%84%E8%A8%80%E6%9C%BA-oracle)攻击， 稳定币报价必须基于[Chainlink](https://chain.link/)而不是协议本身。
-4. 规模大于10亿美元。
+4. 规模大于5亿美元/20万ETH。
 
 目前挑选出的策略稳定币种有：DAI、USDC、USDT、BUSD、USDP、TUSD、LUSD。
 
