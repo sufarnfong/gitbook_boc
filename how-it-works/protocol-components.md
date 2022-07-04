@@ -24,7 +24,7 @@ On February 15, 2022, the cryptocurrency exchange Binance announced that the ori
 
 ## Incorporated Stablecoins
 
-In order to avoid the psychological fear caused by the fluctuations of digital currency value and the losses of market-making funds, BOC has selected only stable currency assets([stablecoins](../more/appendix.md#stablecoin)), and is only limited to those with full [collateral](../more/appendix.md#collateral) provided by legal currency or by stablecoins.
+In order to avoid the psychological fear caused by the fluctuations of digital currency value and the losses of market-making funds, BOC has selected only stable currency assets([stablecoins](../more/appendix.md#stablecoin)), and is only limited to those with full [collateral](../more/appendix.md#collateral) provided by fiat currency or by stablecoins.
 
 Stablecoins need to meet the following conditions:
 
