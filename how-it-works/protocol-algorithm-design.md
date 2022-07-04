@@ -90,7 +90,7 @@ If any of the above conditions are met, the strategy can do `harvest` work:
 | Set parameters                                                                                                                                                             | ETH               | BNB Chain         | Polygon           |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----------------- | ----------------- |
 | Scheduled task trigger cycle                                                                                                                                               | 6:00 am every day | 6:00 am every day | 6:00 am every day |
-| Maximum time interval for triggering strategie “harvest” (if the interval between current “harvest” and last “harvest” is greater than this value, “harvest” must be done) | 2.5 days          | 2.5 days          | 2.5 days          |
+| Maximum time interval for triggering strategie “harvest” (if the interval between current “harvest” and last “harvest” is greater than this value, “harvest” must be done) | 3 days          | 1 days          | 1 days          |
 | The benefit-cost ratio factor X of the trigger strategy “harvest” (“harvest” profit>=cost\*X, then “harvest” can be done.)                                                 | 5                 | 5                 | 5                 |
 
 ### Rebase
@@ -105,7 +105,7 @@ The input into the position adjustment of the algorithm are the official [APY](.
 
 | Set parameters                                                                                           | ETH                    | BNB Chain              | Polygon                |
 | -------------------------------------------------------------------------------------------------------- | ---------------------- | ---------------------- | ---------------------- |
-| Scheduled Task Trigger Cycle                                                                             | 7 am every Wed. & Sat. | 7 am every Wed. & Sat. | 7 am every Wed. & Sat. |
+| Scheduled Task Trigger Cycle                                                                             | 7 am everyday except Mon. | 7 am everyday except Mon. | 7 am everyday except Mon. |
 | Cost-benefit Calculation Period X (If the profit of investment X days >= cost, “doHardwork” can be done) | 365 days               | 365 days               | 365 days               |
 
 #### Allocation
@@ -114,7 +114,7 @@ Compared with `doHardWork`, `allocation` has done one more step: take out the fu
 
 | Set parameters                                                                                            | ETH               | BNB Chain         | Polygon           |
 | --------------------------------------------------------------------------------------------------------- | ----------------- | ----------------- | ----------------- |
-| Pre-adjusted position report trigger timing                                                               | 6:50 am every day | 6:50 am every day | 6:50 am every day |
+| Pre-adjusted position report trigger timing                                                               | every Sun. (after doHardWork) | every Sun. (after doHardWork) | every Sun. (after doHardWork) |
 | Scheduled task trigger cycle                                                                              | 7 am every Monday | 7 am every Monday | 7 am every Monday |
 | Cost-benefit calculation period X (If the profit of rebalancing X days >= cost, “allocation” can be done) | 30 days           | 30 days           | 30 days           |
 
@@ -224,8 +224,8 @@ Use python scipy's `optimize.minimize` to find the current optimal rebalancing s
 
 | Set parameters                                                                                | ETH        | BNB Chain  | Polygon    |
 | --------------------------------------------------------------------------------------------- | ---------- | ---------- | ---------- |
-| Fund allocation calculation Exchange slippage settings                                        | 0.25%      | 0.25%      | 0.25%      |
-| Gas configuration (including strategy deposit and withdrawal Gas, exchange Gas, harvest cost) | Actual Gas | Actual Gas | Actual Gas |
+| Fund allocation calculation Exchange slippage settings                                        | 0.15%      | 0.15%      | 0.15%      |
+| Gas configuration (including strategy deposit and withdrawal Gas, exchange Gas, harvest cost) | 0 (become actual gas when asset > $5 million) | Actual Gas | Actual Gas |
 
 #### Official APY Calculation Rules
 
