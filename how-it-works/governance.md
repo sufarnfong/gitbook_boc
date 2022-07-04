@@ -8,7 +8,7 @@ By the moment, the governance of BOC is through Gnosis multi-signature. In the f
 
 The DAO will use governance forum and snapshot for off-chain voting and the execution proposals by on-chain smart contracts. Click the following link to enter:  
 BOC [snapshot](https://snapshot.org/#/bankofchain.eth)  
-BOC [Habor](https://governance.bankofchain.io/)
+BOC [Forum](https://governance.bankofchain.io/)
   
 The Governance tokens are yet to be developed but will be launched soon.
 
