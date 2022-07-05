@@ -2,16 +2,34 @@
 
 ## Roadmap
 
-1. [x] Friend & Family Testing was launched by March 4, 2022. In this testing phase of the project, the capital scale was small, and the final verification before the product was publicized was mainly carried out.
-2. BOC 1.5 version public released by May 2022.
-    1. [x] Logo design completed by March 2022.
-    2. [x] Formulation of token issuance rules completed by March 2022.
-    3. [x] White paper will be completed by April 2022.
-    4. [x] ETH vault release May 2022
-    5. [ ] AWS server leasing and deployment will be completed by June 2022.
-    6. [ ] Code development and testing will be completed by July 2022.
-3. [ ] Security audit will be completed by August 2022.
-4. [ ] Leveraging services will be provided by September 2022 and publicly issued BOC Version 2.0 thereafter.
+[x] May 2022:   
+
+1. [x] Friend & Family Testing was launched.   
+
+2. [x] 3 chains were available: Ethereum, BNB Chain and Polygon.  
+
+[x] June 2022:   
+
+1. [x] BOC USDi and ETHi farming mechanism completed. 
+
+2. [x] Exploring new blockchains (Avalanche, Solana, Fantom etc.)    
+
+July 2022:  
+
+1. Alt-coins farming through lending (Sushi,Yearn, Convex etc.)  
+
+2. Smart contract insurance will be provided.  
+
+3. Governance token will be released.
+
+August 2022 and futher:  
+
+1. BOC will be run as a personal bank DeB. 
+
+2. DeB will become a payment solutions. 
+
+3. Institutional services will be provided. 
+
 
 ## Future Planning
 
