@@ -2,7 +2,7 @@
 
 ## Introduction.
 
-Official documentation for BOC. This repo is used to sync changes from Markdown files (.md) with the DOC's website. Different GitHub branches are tracked by GitBook to feed each language variant.
+Official documentation for BOC. This repo is used to sync changes from Markdown files (.md) with the DOC's website. The different repository branches are tracked by GitBook to feed each language variant on the documentation.
 
 ## Updating versions
 
