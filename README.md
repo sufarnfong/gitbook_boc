@@ -27,7 +27,7 @@ Volunteers who wish to help improve our translations can volunteer using this [f
 
 ## How to test locally.
 
-Is highly recommended, especially on the first interactions with GitBook and Markdown to test locally the plotting of the changes done.
+Is highly recommended to test locally the plotting of the changes done, especially on the first interactions with GitBook and Markdown 
 
 ### Install npm
 ```
