@@ -1,14 +1,37 @@
-# How to use locally.
+# Bank of Chain Documentation
 
-## Serve Docs Locally
+## Introduction.
+
+Official documentation for BOC. This repo is used to sync changes with the DOC's website. Different GitHub branches are tracked by GitBook to feed each lenguage variant.
+
+## Updating versions
+
+Use the following steps to update a specific version. For example, to update the Chinese docs:
+
+- Clone the repo and change to the branch you want to work on.
+```
+git clone https://github.com/Bank-of-Chain-DAO/gitbook_boc.git
+git checkout zh
+```
+- You will update, ```add``` and ```commit``` everything and push the zh branch to Github
+```
+git add .
+git commit -m "new commit"
+git push
+```
+- Go to documentation website and confirm everything updated as expected. It may take a minute or two for the changes to sync.
+
+## Volunteer
+
+Volunteers who wish to help improve our translations can volunteer using this [form](https://docs.google.com/forms/d/e/1FAIpQLScj-J4PhhZCeoRy5MvwlXj1EqipYp6wZWhx5QwIvasuFllnTg/viewform).
+
+## How to test locally.
 
 ### Install npm
-
 ```
 apt-get install npm
 ```
 ### Install gitbook
-
 ```
 npm install gitbook-cli -g
 ```
@@ -21,7 +44,6 @@ git clone https://github.com/Bank-of-Chain-DeFi/gitbook_boc.git
 ```
 gitbook install
 ```
-
 In case this step failure we recommend this solution: [LINK](https://flaviocopes.com/cb-apply-not-a-function/)
 
 ### Cd to you repo location
@@ -37,5 +59,4 @@ gitbook build
 gitbook serve
 ```
 ### Browse
-
 The documentation is served at localhost:4000 by default.
