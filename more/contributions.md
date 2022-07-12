@@ -4,8 +4,8 @@ One of the keystones of decentralized environments is the community. At BOC we e
 
 | NOMBRE        | TAREA                         |
 | ----------- | ----------------------------------- |
-| [Kadibia Ikevude](https://twitter.com/Mr_kadibia)| Tareas de Relaciones Públicas|
-| [Olatayo](https://twitter.com/AasaTahir) | Configuración de Discord |
-| [Nicolas]() | Traducciones de la documentación |
-| [Leo]() | Traducciones de la documentación |
-| [Su Farm]() | Moderación de Discord |
+| [Kadibia Ikevude](https://twitter.com/Mr_kadibia)| Public Relations Task|
+| [Olatayo](https://twitter.com/AasaTahir) | Discord Setup |
+| [Nicolas]() | Documentation translation |
+| [Leo]() | Documentation translation |
+| [Su Farm]() | Discord Moderation |
