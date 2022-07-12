@@ -21,7 +21,7 @@ git push
 ```
 - Go to documentation website and confirm everything updated as expected. It may take a minute or two for the changes to sync.
 
-## Volunteer
+## Volunteering
 
 Volunteers who wish to help improve our translations can volunteer using this [form](https://docs.google.com/forms/d/e/1FAIpQLScj-J4PhhZCeoRy5MvwlXj1EqipYp6wZWhx5QwIvasuFllnTg/viewform).
 
