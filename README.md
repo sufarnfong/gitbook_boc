@@ -2,7 +2,7 @@
 
 ## Introduction.
 
-Official documentation for BOC. This repo is used to sync changes with the DOC's website. Different GitHub branches are tracked by GitBook to feed each lenguage variant.
+Official documentation for BOC. This repo is used to sync changes from Markdown files (.md) with the DOC's website. Different GitHub branches are tracked by GitBook to feed each language variant.
 
 ## Updating versions
 
@@ -27,6 +27,8 @@ Volunteers who wish to help improve our translations can volunteer using this [f
 
 ## How to test locally.
 
+Is highly recommended, especially on the first interactions with GitBook and Markdown to test locally the plotting of the changes done.
+
 ### Install npm
 ```
 apt-get install npm
@@ -38,7 +40,7 @@ npm install gitbook-cli -g
 
 ### Clone Repository
 ```
-git clone https://github.com/Bank-of-Chain-DeFi/gitbook_boc.git
+git clone https://github.com/Bank-of-Chain-DAO/gitbook_boc.git
 ```
 ### Install Plugins
 ```
