@@ -72,7 +72,7 @@ The main characteristics that make BOC a unique product are:
 **Equipped with Risk Control Measures:**
 
 1. It minimizes the de-anchoring risk of stablecoins.
-2. It restrains the risk of impermanent loss. BOC uses market-making for [stablecoin](../more/appendix.md#stablecoin) pairs only.
+2. It reduces the risk of impermanent loss. BOC uses market-making for [stablecoin](../more/appendix.md#stablecoin) pairs only.
 3. The systemic risk is optimized by the highly selective wrapped [tokens](../more/appendix.md#token) and yield aggregators.
 4. Algorithmic stablecoin are prohibited.
 5. Any leverage function is provided.
