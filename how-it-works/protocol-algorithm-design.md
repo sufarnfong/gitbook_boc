@@ -8,14 +8,14 @@ BOC provides the [USD Stablecoins Farming](https://github.com/Francisco-Rua/boc\
 
 ![](../.gitbook/assets/pic-2.png)
 
-1. “Deposit” - The BOC protocol supports users to `deposit` the three major stablecoins (USDT, USDC, DAI) in any combination and in any amount, and mint USDi of corresponding value to return to the user.\
-   “Withdraw” - Users can `withdraw` USDi all the three major stablecoins at any time through the BOC protocol. By default, they will be returned according to the proportion of the three major stablecoins in the [Vault](../more/appendix.md#vaults) at that time, or they can specify a certain currency to be returned.
-2. After Vault receives the stablecoin, `queryTokenPrice` queries the price of the user's transfer of the [stablecoin](../more/appendix.md#stablecoin) through an external oracle. When the price returned by the [oracle](../more/appendix.md#oracle) is higher than 1 USD, it is calculated at 1 USD, and when it is lower than 1 USD, it is calculated at the price of the oracle.
+1. “Deposit” - The BOC protocol supports users with the `deposit` function - to deposit the three major stablecoins (USDT, USDC, DAI) in any desired combination and amount. BOC also allows minting of USDi of the corresponding value to be returned to the user.\
+   “Withdraw” - Users can `withdraw` USDi which consists of the three major stablecoins at their convenience through the BOC protocol. By default, they will be returned according to the proportion of the three major stablecoins in the [Vault](../more/appendix.md#vaults) at that time, or they can specify a certain currency to be returned.
+2. After the Vault receives the stablecoin, `queryTokenPrice` queries the price of the user's transfer of the [stablecoin](../more/appendix.md#stablecoin) through an external oracle. When the price returned by the [oracle](../more/appendix.md#oracle) is higher than 1 USD, it is calculated at 1 USD, whereas while it is lower than 1 USD, it is calculated at the price of the oracle.
 3. Based on the calculated value, `mint/burn` will [mint/burn](../more/appendix.md#burnmint) an equivalent value of USDi.
 4. The [Keeper](../more/appendix.md#keeper) module reaches the trigger condition of `doHardWork` and triggers `doHardWork`.
 5. Vault calls the aggregate exchange module `swapTokenToWants`.
 6. The aggregated exchange module `swapTokens` completes the exchange.
-7. Vault receives the target currency exchanged by the aggregate exchange module.
+7. Vault receives the targetted currency exchanged by the aggregate exchange module.
 8. Vault puts stablecoin `deposits` into the strategy according to the currency required by the strategy.
 9. The [strategy](../more/appendix.md#strategy) invests stablecoin `deposits` into third-party protocols.
 10. The Keeper module reaches the `harvest` trigger condition and triggers the `harvest`.
@@ -26,16 +26,16 @@ BOC provides the [USD Stablecoins Farming](https://github.com/Francisco-Rua/boc\
 15. Harvester `sendProfitToVault` transfers stablecoins into Vault.
 16. The Keeper module reaches the `rebase` trigger condition and triggers the `rebase`.
 17. Vault calls `changeTotalSupply` to issue additional USDi.
-18. Vault collects 20% of the yields, which is transferred to the `Treasury`.
+18. Vault collects 20% of the yield, which is transferred to the `Treasury`.
 19. The [treasury](../more/appendix.md#daos-treasury) will benefit users from using `buyback` to repurchase the BOC governance token.
 
 ### Mint & Burn rules
 
 Here is a numerical example of minting and burning USDi tokens.
 
-Let’s assume that Alice deposits 100 USDT, 100 DAI and 100 USDC.
+Assume that Alice deposits 100 USDT, 100 DAI and 100 USDC.
 
-According to the BOC mint rule: the transaction price is 1 USD when the price from Chainlink is higher than 1 USD, otherwise the transaction price is equal to the price from Chainlink.
+According to the BOC mint rule: the transaction price is 1 USD when the price from Chainlink is higher than 1 USD. Otherwise, the transaction price is equal to the price from Chainlink.
 
 Thus, Alice will `mint` 299 USDi in total:
 
@@ -51,9 +51,9 @@ The current price from Chainlink is:
 
 ![](../.gitbook/assets/mint.png)
 
-Now, Alice decides to `burn` the USDi to withdraw her stablecoins. She has 299 USDi now and when she burns depending on the proportion of USDT/USDC/DAI of the Vault the burning smart contract will distribute the same proportion the USDi on each stablecoin, in this case when we redeem there is a little less of USDT on the Vault, so the distribution will be 99 of them for USDT, 100 of them for DAI, and the rest 100 for USDC. Assume the current price from Chainlink does not change.
+Now, Alice decides to `burn` the USDi to withdraw her stablecoins. She has 299 USDi now and when she burns depending on the proportion of USDT/USDC/DAI of the Vault. The burning smart contract will distribute the same proportion the USDi on each stablecoin. In this case when we redeem there is slightly less USDT on the Vault, so the distribution will be 99 of them for USDT, 100 for DAI, and the rest 100 for USDC (assuming that the current price from Chainlink remains unchanged).
 
-The rule of burning is opposite to that of minting: the transaction price is 1 USD when the price from Chainlink is less than 1 USD, otherwise the transaction price is equal to the price from Chainlink.
+The rule of burning is opposite to that of minting: the transaction price is 1 USD when the price from Chainlink is less than 1 USD. Otherwise, the transaction price is equal to the price from Chainlink.
 
 Therefore, Alice burns 299 USDi to withdraw:
 
@@ -69,48 +69,48 @@ Chainlink prices:
 
 ![](../.gitbook/assets/burn.png)
 
-The numbers in the chart here are only a numerical example for a better understanding of the rules of minting and burning in BOC. In the real world, the fluctuation of USDi is much smaller, which means users will never encounter a possible loss like this. In fact, the possible loss here will be less than 0.01%. The objective of these rules is to avoid arbitrage and protect the protocol's vault.
+The numbers in the chart here are only numerical examples for a better understanding of the rules of minting and burning in BOC. In reality, the fluctuation of USDi is much smaller, indicating that users will never encounter such possible loss. In fact, the possible loss here will be less than 0.01%. The objectives of these rules are to avoid arbitrage and to protect the protocol's vault.
 
 ### Harvest
 
-The `harvestTrigger` is triggered every day to determine whether the `harvest` condition is met. The two harvest conditions are:
+The `harvestTrigger` is triggered daily to determine whether the `harvest` conditions are met. The two conditions are:
 
 1. Maximum time interval is exceeded.
-2. The harvest rule met:
+2. The harvest rules are met:
 
 $$
 Profit \times 20\% > harvest cost
 $$
 
-If any of the above conditions are met, the strategy can do `harvest` work:
+If any of the above conditions are met, the strategy can perform `harvest`:
 
 1. Execute the yield transfer Harvester (for the strategy with yield production and reach the yield selling threshold);
 2. Report the current asset from the strategy.
 
 | Set parameters                                                                                                                                                             | ETH               | BNB Chain         | Polygon           |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----------------- | ----------------- |
-| Scheduled task trigger cycle                                                                                                                                               | 6:00 am every day | 6:00 am every day | 6:00 am every day |
+| Scheduled task trigger cycle                                                                                                                                               | 6:00 am daily | 6:00 am daily | 6:00 am daily |
 | Maximum time interval for triggering strategie “harvest” (if the interval between current “harvest” and last “harvest” is greater than this value, “harvest” must be done) | 3 days          | 1 days          | 1 days          |
 | The benefit-cost ratio factor X of the trigger strategy “harvest” (“harvest” profit>=cost\*X, then “harvest” can be done.)                                                 | 5                 | 5                 | 5                 |
 
 ### Rebase
 
-When the total assets of the Vault are greater than the total issuance of USDi, it means that new income has been generated. At this time, the value of USDi compared with the US dollar will be revised, and the number of USDi will be increased, so that the total value of USDi is consistent with the total value of Vault assets, ensuring 1 USDi is anchored at 1USD. At the same time, 20% of the additional USDi will be transferred to the DAO treasury as a management fee.
+When the total assets of the Vault are greater than the total issuance of USDi, this indicates that new income has been generated. Hence, the value of USDi compared to the US dollar will be revised, and the number of USDi will be increased, so that the total value of USDi is consistent with the total value of Vault assets, ensuring that 1 USDi is anchored at 1 USD. Concurrently, 20% of the additional USDi will be transferred to the DAO treasury as the management fee.
 
 ### Fund Allocation
 
 #### doHardWork
 
-The input into the position adjustment of the algorithm are the official [APY](../more/appendix.md#annual-yield-apy) of the third-party protocol, the gas required for investment of each strategy, the limit of exchange [slippage](../more/appendix.md#slippage), and the [rules of fund allocation](https://github.com/Francisco-Rua/boc\_gitbook/blob/master/how-it-works/introduction-to-boc/README.md#fund-allocation-rules), and the strategy and amount of the funds to be invested are the output.
+The inputs into the position adjustment of the algorithm are the official [APY](../more/appendix.md#annual-yield-apy) of the third-party protocol, the gas required for investment of each strategy, the limit of exchange [slippage](../more/appendix.md#slippage), and the [rules of fund allocation](https://github.com/Francisco-Rua/boc\_gitbook/blob/master/how-it-works/introduction-to-boc/README.md#fund-allocation-rules). Meanwhile, the strategy and amount of the funds to be invested are the outputs.
 
 | Set parameters                                                                                           | ETH                    | BNB Chain              | Polygon                |
 | -------------------------------------------------------------------------------------------------------- | ---------------------- | ---------------------- | ---------------------- |
-| Scheduled Task Trigger Cycle                                                                             | 7 am everyday except Mon. | 7 am everyday except Mon. | 7 am everyday except Mon. |
+| Scheduled Task Trigger Cycle                                                                             | 7 am daily besides Mon. | 7 am daily besides Mon. | 7 am daily besides Mon. |
 | Cost-benefit Calculation Period X (If the profit of investment X days >= cost, “doHardwork” can be done) | 365 days               | 365 days               | 365 days               |
 
 #### Allocation
 
-Compared with `doHardWork`, `allocation` has done one more step: take out the funds of the low APY strategy, and then use the official APY of the third-party protocols, the gas required for investment of each strategy, the exchange slippage limit, fund allocation rules, the position adjustment algorithm as an input, and the output is the strategy and the amount of the awaiting investment funds.
+Compared with `doHardWork`, `allocation` has an additional step: it withdraws the funds of the low APY strategy, then uses the official APY of the third-party protocols, the gas required for investment of each strategy, the exchange slippage limit, fund allocation rules, and the position adjustment algorithm as inputs, and the outputs are the strategy and the amount of the awaiting investment funds.
 
 | Set parameters                                                                                            | ETH               | BNB Chain         | Polygon           |
 | --------------------------------------------------------------------------------------------------------- | ----------------- | ----------------- | ----------------- |
@@ -122,26 +122,26 @@ Compared with `doHardWork`, `allocation` has done one more step: take out the fu
 
 | Variable       | Meaning                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| "durationDays" | The cycle of rebalancing needs to ensure that in a cycle after rebalancing, the profit after rebalancing - the profit before rebalancing - the cost of rebalancing > 0                                                    |
+| "durationDays" | The cycle of rebalancing needs to ensure that in a cycle after rebalancing, $$the profit after rebalancing - the profit before rebalancing - the cost of rebalancing > 0$$ (has to be greater than 0)                                                    |
 | "yearDays"     | 365days                                                                                                                                                                                                                   |
 | "asset1"       | The original assets of the strategy                                                                                                                                                                                       |
-| "apr1"         | The strategy apr before the position adjustment (APY needs to be converted into apr), the current value of the APY of the position adjustment algorithm is the 7-day average of APY calculated outside the strategy chain |
-| "deltaAsset"   | Assume the capital change value of the strategy rebalancing                                                                                                                                                               |
+| "apr1"         | The strategy apr before the position adjustment (APY needs to be converted into apr). The current value of the APY of the position adjustment algorithm is the 7-day average of APY calculated outside the strategy chain |
+| "deltaAsset"   | Assumed as the capital change value of the strategy rebalancing                                                                                                                                                               |
 | "poolAssets1"  | The TVL of the strategic target investment pool is used as a parameter for the change of apr after the position adjustment                                                                                                |
 
-Profit before position adjustment
+**Profit before position adjustment**
 
 $$
 gain1 = \frac{asset1 \times apr1 \times durationDays}{yearDays}
 $$
 
-Changed earnings
+**Changed earnings**
 
 $$
 gain2 = \frac{(asset1+deltaAsset-exchangeLoss)\times apr2 \times durationDays}{yearDays}
 $$
 
-changed apr
+**Changed apr**
 
 $$
 apr2 = \frac{apr1 \times poolAssets1}{(poolAssets1+deltaAsset-exchangeLoss)}
@@ -153,13 +153,13 @@ $$
 gain2=\frac{apr1 \times durationDays/yearDays \times (asset1+deltaAsset) \times poolAssets1}{poolAssets1+deltaAsset-exchangeLoss}
 $$
 
-Then the relationship between the changed income of a single strategy and the changed assets is:
+Hence the relationship between the changed income of a single strategy and the changed assets is:
 
 $$
 deltaGain = gain2-gain1 = \frac{deltaAsset \times (poolAsset1-asset1) \times apr1 \times durationDays}{(poolAsset1+deltaAsset-exchangeLoss) \times yearDays}
 $$
 
-Cost of changing funds for a single strategy
+**Cost of changing funds for a single strategy**
 
 | variable name    | Details                                                                                        |
 | ---------------- | ---------------------------------------------------------------------------------------------- |
@@ -206,17 +206,17 @@ $$
 - operateFee_i - exchangeLoss_i - harvestFee_i)
 $$
 
-Total Change Profit ProfitChange In this formula, the only variable is the deltaAsset for each strategy. At the same time, the solution needs to be limited by:
+In the formula above (profitChange), the only variable is the deltaAsset for each strategy. Meanwhile, the solution needs to be limited by:
 
-Restrictions
+**Restrictions**
 
 1. The same protocol strategy (multiple constraints) funds do not exceed 30% of the total funds.
 2. The sum of all asset changes in and out is 0.
 
-Boundary conditions
+**Boundary conditions**
 
-1. Strategic assets cannot exceed 20% of total assets.
-2. The strategic funds cannot exceed 50% of the target pool assets.
+1. Strategic assets do not exceed 20% of the total assets.
+2. The strategic funds do not exceed 50% of the targetted pool assets.
 
 Use python scipy's `optimize.minimize` to find the current optimal rebalancing scheme.
 
@@ -229,7 +229,7 @@ Use python scipy's `optimize.minimize` to find the current optimal rebalancing s
 
 #### Official APY Calculation Rules
 
-The official APY are needed as a reference when allocating funds. The sources of official APY are as follows: vfat.tools, coingecko, zapper, Official APY, apy.vision Fee, etc. If the official APY source channel does not include the APY calculation of the protocol strategy, the BOC directly copies the official APY calculation rules of the protocol strategy. Generally speaking, the official APY of the protocol strategy consists of market-making revenue and mining coin revenue. Taking the “ConvexLusdStrategy” strategy that BOC has already docked as an example, its APY consists from the contents of following table:
+The official APY rules are needed as a reference when allocating funds. The sources of official APY are as follows: vfat.tools, coingecko, zapper, Official APY, apy.vision Fee, etc. If the APY calculation of the protocol strategy is not included in the official APY source channel, BOC will copy the official APY calculation rules of the protocol strategy. In general, the official APY of the protocol strategy consists of market-making revenue and mining coin revenue. Taking the “ConvexLusdStrategy” strategy that BOC has already docked as an example, its APY consists of the contents in following table:
 
 | APY Mark | APR         | APY              | Compound Interest | Calculation Method   | Data Source                                                                        |
 | -------- | ----------- | ---------------- | ----------------- | -------------------- | ---------------------------------------------------------------------------------- |
@@ -249,4 +249,4 @@ The actual APY of the strategy is calculated based on the standard return of the
 
 ## ETH Farming Mechanism
 
-The mechanism of ETH farming is exactly the same as that of the USD stablecoins farming at present. The only difference is that the collateral of USD stablecoins is USDi, thus, that of ETH is called ETHi.
+The mechanism of ETH farming is exactly the same as that of the USD stablecoins farming at present. The only difference is that the collateral of USD stablecoins is USDi, thus that of ETH is called ETHi.
