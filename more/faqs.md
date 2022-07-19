@@ -8,7 +8,7 @@ Blockchain is a system of recording information in a way that makes it difficult
 
 ### What problem does the blockchain solve?
 
-Digital assets are easily copied and redistributed. On music and film industry it's a severe problem, that anyone can copy songs and movies and distribute them. Blockchain technology provides a database where it is registered every movement, and it can be distinguished whether it is authentic. This fits perfectly with the digital currency. We can distinguish one token (like a USDT) from another, and assets can now be managed in a decentralized way.
+Digital assets are easily copied and redistributed. In the music and film industry, it has been a severe problem that songs and movies could be copied and distributed wildly since copyrights could sometimes be abused. Blockchain technology provides a database where every movement or changes will be strictly registered, and its authenticity could be easily distinguished. This fits perfectly with the digital currency. We can distinguish one token (like a USDT) from another, and assets can now be managed in a decentralized way.
 
 ### What is the difference between cryptocurrency and blockchain?
 
