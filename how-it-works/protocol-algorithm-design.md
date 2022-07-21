@@ -90,7 +90,7 @@ If any of the above conditions are met, the strategy can perform `harvest`:
 | Set parameters                                                                                                                                                             | ETH               | BNB Chain         | Polygon           |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----------------- | ----------------- |
 | Scheduled task trigger cycle                                                                                                                                               | 6:00 am daily | 6:00 am daily | 6:00 am daily |
-| Maximum time interval for triggering strategie “harvest” (if the interval between current “harvest” and last “harvest” is greater than this value, “harvest” must be done) | 3 days          | 1 days          | 1 days          |
+| Maximum time interval for triggering strategie “harvest” (if the interval between current “harvest” and last “harvest” is greater than this value, “harvest” must be done) | 3 days          | 1 day          | 1 day          |
 | The benefit-cost ratio factor X of the trigger strategy “harvest” (“harvest” profit>=cost\*X, then “harvest” can be done.)                                                 | 5                 | 5                 | 5                 |
 
 ### Rebase
