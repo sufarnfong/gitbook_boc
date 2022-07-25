@@ -32,7 +32,7 @@ Members of the community that wish to help improve our translations can apply ou
 
 ## How to test locally.
 
-Is highly recommended to test locally the plotting of the changes done, especially on the first interactions with GitBook and Markdown 
+Is highly recommended to test locally the plotting of the changes done, especially on the firsts interactions with GitBook and Markdown. 
 
 ### Install npm
 ```
