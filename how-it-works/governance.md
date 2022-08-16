@@ -24,13 +24,15 @@ The maximum supply of BOC tokens is 1 billion. Tokenholders will receive a BOC m
 | Sales & Marketing                                                                                | 2.00%       | 20M      |
 | Founders                                                                                         | 8%          | 80M      |
 | **Investors**                                                                                    | **20.00%**  | **200M** |
-| \*\*Community \*\*                                                                               | **55.00%**  | **550M** |
+| **Community**                                                                                    | **55.00%**  | **550M** |
+| Learn to earn                                                                                    | 3.00%       | 30M      |
+| Airdrop                                                                                          | 2.00%       | 20M      |
 | Liquidity from DEX (USD trading on Balancer for 12 months)                                       | 5.00%       | 50M      |
-| Liquidity Mining (increased returns for investors in the early stage, for a period of 12 months) | 50.00%      | 500M     |
+| Liquidity Mining (increased returns for investors in the early stage, for a period of 12 months) | 45.00%      | 450M     |
 | **Future Development**                                                                           | **5.00%**   | **50M**  |
 | Team (recruit new team members in the future)                                                    | 3.00%       | 30M      |
 | Consultants (important and influential people in the industry)                                   | 2.00%       | 20M      |
-| \*\*Total \*\*                                                                                   | **100.00%** | **1B**   |
+| **Total**                                                                                        | **100.00%** | **1B**   |
 
 \*Note: The total percentage will be 10% in the first year, 20% in the second year, 30% in the third year, and 40% in the fourth year
 
