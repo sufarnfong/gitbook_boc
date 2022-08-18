@@ -1,32 +1,154 @@
-<mxfile host="app.diagrams.net" modified="2022-08-18T23:14:14.084Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="o-V_iCBqOz3VE7MFQiKP" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-18T23:34:37.294Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="I9-sGHd9E58hh_JMY5s9" version="20.2.5" type="github">
   <diagram id="_vFJqaGQAh5Z3tcA5GTo" name="Página-1">
-    <mxGraphModel dx="2105" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2105" dy="1716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="jvoHZDlcRhFGuNJNGTSo-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-1" target="jvoHZDlcRhFGuNJNGTSo-2">
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-2" target="jvoHZDlcRhFGuNJNGTSo-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jvoHZDlcRhFGuNJNGTSo-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="130" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jvoHZDlcRhFGuNJNGTSo-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-2" target="jvoHZDlcRhFGuNJNGTSo-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="jvoHZDlcRhFGuNJNGTSo-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-2" value="Deposit:&lt;br&gt;$ 100,000 USDC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="130" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jvoHZDlcRhFGuNJNGTSo-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-4" target="jvoHZDlcRhFGuNJNGTSo-6">
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-6" target="jvoHZDlcRhFGuNJNGTSo-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jvoHZDlcRhFGuNJNGTSo-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="130" width="120" height="60" as="geometry" />
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-6" value="USDi Tickets&lt;br&gt;$ 100,000" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="36" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jvoHZDlcRhFGuNJNGTSo-6" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="650" y="130" width="120" height="60" as="geometry" />
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-10" target="jvoHZDlcRhFGuNJNGTSo-2">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jvoHZDlcRhFGuNJNGTSo-8" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="-10" y="130" width="30" height="60" as="geometry" />
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-10" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.containers.userMale;strokeColor=#666666;strokeColor2=#008cff;" vertex="1" parent="1">
+          <mxGeometry x="90" y="110" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-15" target="jvoHZDlcRhFGuNJNGTSo-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="504" y="66" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-15" target="jvoHZDlcRhFGuNJNGTSo-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-15" target="jvoHZDlcRhFGuNJNGTSo-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-15" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/finance-152/64/1-128.png" vertex="1" parent="1">
+          <mxGeometry x="440" y="170" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-21" target="jvoHZDlcRhFGuNJNGTSo-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="934" y="360" />
+              <mxPoint x="504" y="360" />
+              <mxPoint x="504" y="318" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-21" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/success-filloutline/64/Income-cash-money-banking-business-128.png" vertex="1" parent="1">
+          <mxGeometry x="870" y="170" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-23" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Funds Allocation&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="650" y="200" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-25" value="&lt;span style=&quot;&quot;&gt;$ 100,000 USDC - $ 10,000 USDC (10% Fee)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="585" y="240" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-28" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Strategies&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="889" y="140" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-29" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Alice&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="211" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-31" target="jvoHZDlcRhFGuNJNGTSo-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-31" value="Deposit:&lt;br&gt;$ 100,000 USDC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="-306" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-33" target="jvoHZDlcRhFGuNJNGTSo-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-33" value="USDi Tickets&lt;br&gt;$ 100,000" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="-400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-35" target="jvoHZDlcRhFGuNJNGTSo-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-35" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.containers.userMale;strokeColor=#666666;strokeColor2=#008cff;" vertex="1" parent="1">
+          <mxGeometry x="90" y="-326" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-38" target="jvoHZDlcRhFGuNJNGTSo-33">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="504" y="-370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-38" target="jvoHZDlcRhFGuNJNGTSo-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-38" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/finance-152/64/1-128.png" vertex="1" parent="1">
+          <mxGeometry x="440" y="-340" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-40" target="jvoHZDlcRhFGuNJNGTSo-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="934" y="-146" />
+              <mxPoint x="504" y="-146" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-40" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/success-filloutline/64/Income-cash-money-banking-business-128.png" vertex="1" parent="1">
+          <mxGeometry x="870" y="-340" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-41" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Funds Allocation&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="655" y="-306" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-42" value="&lt;span style=&quot;&quot;&gt;$ 100,000 USDC - $ 10,000 USDC (10% Fee)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="-266" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-43" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Strategies&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="895" y="-376" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-44" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;James&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="105" y="-216" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-45" target="jvoHZDlcRhFGuNJNGTSo-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-45" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.containers.userMale;strokeColor=#666666;strokeColor2=#008cff;" vertex="1" parent="1">
+          <mxGeometry x="90" y="250" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-46" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Bob&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="115" y="351" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-47" target="jvoHZDlcRhFGuNJNGTSo-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-47" value="Deposit:&lt;br&gt;$ 10,000 USDC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="jvoHZDlcRhFGuNJNGTSo-50" target="jvoHZDlcRhFGuNJNGTSo-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-50" value="USDi Tickets&lt;br&gt;$ 100,000" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-53" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.containers.userMale;strokeColor=#666666;strokeColor2=#008cff;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="185" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-54" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;James&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="295" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-55" value="$ 100,000 Held" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="110" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
