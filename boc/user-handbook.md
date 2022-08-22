@@ -129,19 +129,19 @@ From the [dashboard](../more/appendix.md#dashboard) you could obtain the next re
 
 [https://dashboard.bankofchain.io](https://dashboard.bankofchain.io)
 
-![](<../.gitbook/assets/dashboard.jpg>)
+![](<../.gitbook/assets/user_handbook_dashboard.png>)
 
 The data presented are described as follows:
 
-1. On-chain Vault lock-up amount, read the subgraph interface.
-2. The number of investment users, read the subgraph interface.
+1. On-chain Vault lock-up amount, read from the subgraph interface.
+2. The number of investment users, read from the subgraph interface.
 3. APY for the last 30 days based on net worth.
-4. Proportion of protocol funds, query the subgraph interface.
+4. Proportion of protocol funds, queried from the subgraph interface.
 5. The total assets of each strategy, read the contract interface.
-6. Official APY, regularly pulled every morning.
-7. Currency standard weekly profit, weekly APY.
+6. Official APY, regularly pulled weekly.
+7. Currency standard Weekly Realised APY, Weekly Unrealised APY, and weekly Realised Profit.
 8. Strategy Address.
-9. Vault operation records, displayed with the blockchain browser.
+9. Vault operation records (of recent activities), displayed with the blockchain browser.
 
 BOC subgraph:
 
@@ -151,39 +151,37 @@ BOC subgraph:
 
 ## Strategy Details
 
-Take SushiUsdcUsdtStrategy as an example, enter the strategy details page as shown in the figure:
+Take DForceLendDaiStrategy as an example, enter the strategy details page as shown in the figure:
 
-![](<../.gitbook/assets/detail.jpg>)
+![](<../.gitbook/assets/user_handbook_strategy_details.png>)
+![](<../.gitbook/assets/user_handbook_strategy_details2.png>)
 
 The data presented are described as follows:
 
-1. Strategy Details
-   * Strategy name
-   * Stablecoins accepted by the strategy
-   * The current total assets of the strategy (valued in USDT)
-   * The total assets of the strategy's historical investment (valued in USDT)
-2. Strategy Historical Return APY Performance
-   * Historical official APY(yellow line)
-   * Historical weekly APY(blue line)
-3. Total Strategy Assets (Currency Standard)
-4. Strategy Operation Asset Changes (Currency Standard)
-5. Strategy Action Type
-   * “harvest:: The strategy completes a mine sale and reinvestment, and reports the total asset valuation
-   * “lend”: Vault puts funds into the strategy, and this action occurs in fund allocation (“doHardWork”, “allocation”)
-   * “redeem”: Vault withdraws funds from the strategy, and this action occurs in the allocation of funds (“allocation”)
+1. Strategy details:
+   * Strategy name.
+   * Stablecoins accepted by the strategy.
+   * The current total assets of the strategy (valued in USD).
+   * The current status of the strategy.
+2. Strategy historical return APY performance:
+   * Historical official weekly APY(purple line).
+   * Historical weekly APY(green line).
+3. Total strategy assets (currency standard).
+4. Strategy operation asset changes (currency standard).
+5. Strategy operation date.
 
 ## Personal Investment Analysis
 
 Enter the personal investment analysis page to see the personal investment income.
 
-![](<../.gitbook/assets/personalpage.jpg>) 
+![](<../.gitbook/assets/user_handbook_personal_dashboard.png>) 
 
 The data presented are described as follows:
 
-1. Personal investment total asset valuation (calculated in USDT).
-2. Acquired BOC share.
-3. Pass 30 days [APY](../more/appendix.md#annual-yield-apy).
-4. Unwithdrawn earnings (calculated in USDT).
-5. Withdrawn earnings (calculated in USDT).
-6. Historical personal total assets.
+1. Personal USDi balance.
+2. Unwithdrawn earnings (calculated in USDi).
+3. Withdrawn earnings (calculated in USDi).
+4. Last 7 days [APY](../more/appendix.md#annual-yield-apy).
+5. Last 30 days APY.
+6. Daily USDi amount.
 7. Monthly income.
