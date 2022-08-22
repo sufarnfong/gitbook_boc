@@ -1,62 +1,107 @@
 # User Handbook
 
-Here is a quick guide to interact and invest with the BOC platform. To complete the investment in BOC, we first start off on the user investment page. Go to the [home page](https://bankofchain.io/#/) and click on the `LAUNCH APP` button. You will now be directed to the main page of the APP.
+Here is a quick guide on interacting and investing with the BOC platform. To complete the investment in BOC, we first start off from the user investment page. Go to the [home page](https://bankofchain.io/#/) and click on the `LAUNCH APP` button. You will now be directed to the main page of the APP.
 
-![](<../.gitbook/assets/launchapp.png>)
+![](<../.gitbook/assets/user_handbook_LaunchApp1.png>)
 
 ## Wallet Connection
 
 We can interact with BOC through [wallets](../more/appendix.md#wallet). The APP is compatible with [MetaMask](https://metamask.io/) and [WalletConnect](https://walletconnect.com/). By clicking on the `CONNECT WALLET` button, your wallet could be connected. 
 
-![](<../.gitbook/assets/connectwallet.png>)
+![](<../.gitbook/assets/user_handbook_ConnectWallet.png>)
 
-After connecting your wallet, you can see the USDT balance in your account.
+If your wallet has been successfully connected, your wallet address will appear on the `CONNECT WALLET` button. 
 
-![](<../.gitbook/assets/pic-4.png>)
+![](<../.gitbook/assets/user_handbook_wallet_connected.png>)
 
 ## Parameter Settings
 
 ### Cross-chain Bridge
 
-BOC provides two [cross-chain bridge](../more/appendix.md#bridge) options, which are the Polygon Bridge and the BNB Bridge, to fulfill the demand of cross-chain operations.
+BOC provides two [cross-chain bridge](../more/appendix.md#bridge) options, which are the Polygon Bridge and the BNB Bridge, to fulfil the demand of cross-chain operations.
 
-![](<../.gitbook/assets/chainbridge.png>)
+![](<../.gitbook/assets/user_handbook_bridge.png>)
 
 ### Switch Chain
 
 At present, BOC works on Ethereum, BNB Chain and Polygon. If chain switching is required, this could be carried out by clicking on `NETWORKS` to select the desired chain to be switched to.
 
-![](<../.gitbook/assets/networkchange.png>)
+![](<../.gitbook/assets/user_handbook_network.png>)
 
 ## Investment and Redemption
 
 ### Deposit
+ha
+Once your wallet has been successfully connected, you can deposit by entering the desired amount of any combinations of the stablecoin. The figure below uses `USDi Vault` as an example. Under the `DEPOSIT` tab, we have the stablecoins to be used (USDT, UTDC & DAI). By entering the desired amount for each and clicking on `DEPOSIT`, depositing is hence completed.
 
-Once your wallet has been successfully connected, you can deposit by selecting the desired vault, either the `Vault for USDi` or the `Vault for ETHi`. On the `USDi Vault` under the `DEPOSIT` tab, we have the stablecoins to be used (USDT, UTDC & DAI). By entering the desired amount for each and clicking on `DEPOSIT`, depositing is hence completed. 
+![](<../.gitbook/assets/user_handbook_deposit2.png>)
 
-![](<../.gitbook/assets/pic-7.png>)
+To demonstrate, we will deposit 10000 USDT, 20000 USDC and 30000 DAI into the protocol. The steps are illustrated by the four screenshots as follows:
 
-As on the `ETHi Vault`, you could only invest ETH by entering the desired amount and clicking on `DEPOSIT`.
 
-![](<../.gitbook/assets/depositpage\_eth.PNG>)
+**Figure 1:** Enter the desired amount for each type of stablecoins.
 
-The main difference between the `ETHi Vault` and the `USDi Vault` is that the `ETHi Vault` has a gas fee estimation.
+![](<../.gitbook/assets/user_handbook_deposit_exp.png>)
+
+**Figure 2:** After hitting the `DEPOSIT` button, we will proceed to the next step, which is to obtain the USDi ticket and to reconfirm the deposit amounts. 
+
+![](<../.gitbook/assets/user_handbook_est_USDi_ticket.png>)
+
+**Figure 3:** After hitting `CONTINUE`, the METAMASK window appears, displaying the approved amount, protocol address and other related details for confirmation. This process repeats for each stablecoins (USDT, USDC and DAI). Figure 3 here only displays that of USDT.
+
+![](<../.gitbook/assets/user_handbook_deposit_confirmation.png>)
+
+After confirming on the details, you shall be redirected to the deposit main page. If the stablecoins have been successfully deposited into the Vault, your current balance of each stablecoin should be updated and displayed as shown. The BOC protocol will allocate your funds into third-party protocols based on the fund allocation rules, which prioritizes liquidity pool of higher yields and adjusts automatically to ensure the most cost-efficient position. During this allocation process, your USDi ticket balance will be shown on-screen. 
+
+**Figure 4:** USDi ticket balance during fund allocation.
+
+![](<../.gitbook/assets/user_handbook_deposit_completed.png>)
+
+After the fund allocation, the protocol exchanges the USDi ticket for USDi. After deducting the first allocation fee, USDi will then be distributed into your account, with the balance now viewable. 
+
+By hitting the `Switch to ETHi` tab, users will be directed to the ETHi Vault page for ETH depositing. 
+
+![](<../.gitbook/assets/user_handbook_switchtoETHi.png>)
+
+The figure below illustrates the ETHi page for depositing:
+
+![](<../.gitbook/assets/user_handbook_ETHi.png>)
+
+As on the ETHi Vault, you could only invest ETH by entering the desired amount and clicking on `DEPOSIT`. The main difference between the ETHi Vault and the USDi Vault is that the former has a gas fee estimation, as shown in the figure above.
 
 ### Withdrawal
 
-After successfully connecting your wallet, you can complete the withdrawal by selecting the vault you would wish to use. on the `USDi Vault`, there is an option to either withdraw a single type of stablecoin or mixed. You proceed with the desired USDi and click `WITHDRAW`.
+After successfully depositing and ensuring that your wallet remains connected, you are now prepared to withdraw your funds. For instance on the USDi Vault, there is an option to either withdraw a single type of stablecoin or mixed. You are also required to enter the desired amount of each stablecoin to withdraw or you could simply select `Max` to withdraw all funds. After all parameters were entered correctly, you then proceed and click `WITHDRAW`.
 
-![](../.gitbook/assets/pic-8.png)
+![](../.gitbook/assets/user_handbook_withdraw_exp.png)
 
-On the `ETHi Vault`, only ETH could be withdrawn. Enter the desired amount of ETHi and click `WITHDRAW`.
+To demonstrate, we will withdraw 40000 USDi into USDC. Withdrawal steps are illustrated by the three screenshots below: 
 
-![](../.gitbook/assets/withdraw\_eth.PNG)
+**Figure 1:** Set the USDi amount to 40000 and select USDC as the stablecoin type before hitting `WITHDRAW`.
+
+![](../.gitbook/assets/user_handbook_withdraw_process.png)
+
+**Figure 2:** After hitting `WITHDRAW` the METAMASK window appears, displaying details such as the estimated gas fee for confirmation. 
+
+![](../.gitbook/assets/user_handbook_withdraw_confirmation.png)
+
+**Figure 3:** After confirming on the details, you will be redirected to the withdrawal main page. You can then check to confirm whether withdrawal was successful by referring to the updated USDi balance. 
+
+![](../.gitbook/assets/user_handbook_withdraw_complete.png)
+
+By hitting the `Switch to ETHi` tab, users will be directed to the ETHi Vault page for ETH withdrawal.
+
+![](../.gitbook/assets/user_handbook_switchtoETHi_w.png)
+
+The figure below illustrates the ETHi page for withdrawal:
+
+![](../.gitbook/assets/user_handbook_ETHi_w.png)
 
 **Exchanged**: Exchange function enablement. Each strategy in the BOC uses different stablecoins. Money is always withdrawn according to the strategy APY from low to high. If a non-USDT strategy is obtained, the stable currency of the corresponding strategy will be returned, e.g., if Yearn LUSD is obtained, LUSD will be returned and if the exchange is closed, the corresponding value of LUSD will be returned to your account. If redemption is enabled, the Slippage parameter needs to be set.
 
 ### Withdrawal Advanced Parameters
 
-![](<../.gitbook/assets/advancesetting.png>)
+![](<../.gitbook/assets/user_handbook_advancedPara.png>)
 
 The advanced setup parameters are:
 
@@ -66,13 +111,17 @@ The advanced setup parameters are:
 
 ### Adding USDi and ETHi to your wallet
 
-If the USDi is not shown on your wallet, you are required to add it manually by simply clicking on the `+` sign next to your USDi balance and press `Add Token`. You will then be able to view you USDi balance on your metamask wallet.
+If the USDi tokens deposited are not visible in your wallet, you will be required to import the tokens manually. As illustrated in the figure below, hit the `+` sign followed by `Add Token`.
+
+![](../.gitbook/assets/user_handbook_addtoken_manual.png)
+
+See here for detailed tutorials:
 
 {% embed url="https://www.youtube.com/embed/53kB-HakZCk" %}
 
 Analogously, ETHi can also be added to the wallet by following the same procedure.
 
-![](<../.gitbook/assets/addtoken\_ethi.png>)
+![](<../.gitbook/assets/user_handbook_add_token_manual_ETHi.png>)
 
 ## Dashboard
 
