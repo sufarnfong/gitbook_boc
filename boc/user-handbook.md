@@ -1,12 +1,12 @@
 # User Handbook
 
-Here is a quick guide on interacting and investing with the BOC platform. To complete the investment in BOC, we first start off from the user investment page. Go to the [home page](https://bankofchain.io/#/) and click on the `LAUNCH APP` button. You will now be directed to the main page of the APP.
+Here is a quick guide on interacting and investing with the BoC platform. To complete the investment in BoC, we first start off from the user investment page. Go to the [home page](https://bankofchain.io/#/) and click on the `LAUNCH APP` button. You will now be directed to the main page of the APP.
 
 ![](<../.gitbook/assets/user_handbook_LaunchApp1.png>)
 
 ## Wallet Connection
 
-We can interact with BOC through [wallets](../more/appendix.md#wallet). The APP is compatible with [MetaMask](https://metamask.io/) and [WalletConnect](https://walletconnect.com/). By clicking on the `CONNECT WALLET` button, your wallet could be connected. 
+We can interact with BoC through [wallets](../more/appendix.md#wallet). The APP is compatible with [MetaMask](https://metamask.io/) and [WalletConnect](https://walletconnect.com/). By clicking on the `CONNECT WALLET` button, your wallet could be connected. 
 
 ![](<../.gitbook/assets/user_handbook_ConnectWallet.png>)
 
@@ -18,13 +18,13 @@ If your wallet has been successfully connected, your wallet address will appear 
 
 ### Cross-chain Bridge
 
-BOC provides two [cross-chain bridge](../more/appendix.md#bridge) options, which are the Polygon Bridge and the BNB Bridge, to fulfil the demand of cross-chain operations.
+BoC provides two [cross-chain bridge](../more/appendix.md#bridge) options, which are the Polygon Bridge and the BNB Bridge, to fulfil the demand of cross-chain operations.
 
 ![](<../.gitbook/assets/user_handbook_bridge.png>)
 
 ### Switch Chain
 
-At present, BOC works on Ethereum, BNB Chain and Polygon. If chain switching is required, this could be carried out by clicking on `NETWORKS` to select the desired chain to be switched to.
+At present, BoC works on Ethereum, BNB Chain and Polygon. If chain switching is required, this could be carried out by clicking on `NETWORKS` to select the desired chain to be switched to.
 
 ![](<../.gitbook/assets/user_handbook_network.png>)
 
@@ -51,7 +51,7 @@ To demonstrate, we will deposit 10000 USDT, 20000 USDC and 30000 DAI into the pr
 
 ![](<../.gitbook/assets/user_handbook_deposit_confirmation.png>)
 
-After confirming on the details, you shall be redirected to the deposit main page. If the stablecoins have been successfully deposited into the Vault, your current balance of each stablecoin should be updated and displayed as shown. The BOC protocol will allocate your funds into third-party protocols based on the fund allocation rules, which prioritizes liquidity pool of higher yields and adjusts automatically to ensure the most cost-efficient position. During this allocation process, your USDi ticket balance will be shown on-screen. 
+After confirming on the details, you shall be redirected to the deposit main page. If the stablecoins have been successfully deposited into the Vault, your current balance of each stablecoin should be updated and displayed as shown. The BoC protocol will allocate your funds into third-party protocols based on the fund allocation rules, which prioritizes liquidity pool of higher yields and adjusts automatically to ensure the most cost-efficient position. During this allocation process, your USDi ticket balance will be shown on-screen. 
 
 **Figure 4:** USDi ticket balance during fund allocation.
 
@@ -97,7 +97,7 @@ The figure below illustrates the ETHi page for withdrawal:
 
 ![](../.gitbook/assets/user_handbook_ETHi_w.png)
 
-**Exchanged**: Exchange function enablement. Each strategy in the BOC uses different stablecoins. Money is always withdrawn according to the strategy APY from low to high. If a non-USDT strategy is obtained, the stable currency of the corresponding strategy will be returned, e.g., if Yearn LUSD is obtained, LUSD will be returned and if the exchange is closed, the corresponding value of LUSD will be returned to your account. If redemption is enabled, the Slippage parameter needs to be set.
+**Exchanged**: Exchange function enablement. Each strategy in the BoC uses different stablecoins. Money is always withdrawn according to the strategy APY from low to high. If a non-USDT strategy is obtained, the stable currency of the corresponding strategy will be returned, e.g., if Yearn LUSD is obtained, LUSD will be returned and if the exchange is closed, the corresponding value of LUSD will be returned to your account. If redemption is enabled, the Slippage parameter needs to be set.
 
 ### Withdrawal Advanced Parameters
 
@@ -134,7 +134,7 @@ From the [dashboard](../more/appendix.md#dashboard) you could obtain the next re
 The data presented are described as follows:
 
 1. On-chain Vault lock-up amount, read from the subgraph interface.
-2. The number of investment users, read from the subgraph interface.
+2. The number of investment users, read from the subgraph nterface.
 3. APY for the last 30 days based on net worth.
 4. Proportion of protocol funds, queried from the subgraph interface.
 5. The total assets of each strategy, read the contract interface.
@@ -143,7 +143,7 @@ The data presented are described as follows:
 8. Strategy Address.
 9. Vault operation records (of recent activities), displayed with the blockchain browser.
 
-BOC subgraph:
+BoC subgraph:
 
 * ETH: [https://api.thegraph.com/subgraphs/name/bankofchain/boc-subgraph-eth](https://api.thegraph.com/subgraphs/name/bankofchain/boc-subgraph-eth)
 * BNB: [https://api.thegraph.com/subgraphs/name/bankofchain/boc-subgraph-bsc](https://api.thegraph.com/subgraphs/name/bankofchain/boc-subgraph-bsc)
