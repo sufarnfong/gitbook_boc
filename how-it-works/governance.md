@@ -18,7 +18,7 @@ The maximum supply of BOC tokens is 1 billion. Tokenholders will receive a BOC m
 
 ![](../.gitbook/assets/TokenDistribution.png)
 
-| **Team**                                                                                         | **20.00%**  | **200M** |
+| **Team** *                                                                                        | **20.00%**  | **200M** |
 | ------------------------------------------------------------------------------------------------ | ----------- | -------- |
 | Technology Team                                                                                  | 10.00%      | 100M     |
 | Sales & Marketing                                                                                | 2.00%       | 20M      |
