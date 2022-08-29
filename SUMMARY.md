@@ -1,6 +1,6 @@
 # Table of contents
 
-## 📚 BOC
+## 📚BOC
 
 * [Introduction to BOC](README.md)
 * [User Handbook](boc/user-handbook.md)
