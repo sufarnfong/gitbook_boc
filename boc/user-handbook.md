@@ -2,17 +2,17 @@
 
 Here is a quick guide to interact and invest with the BOC platform. To complete the investment in BOC, we first start off on the user investment page. Go to the [home page](https://bankofchain.io/#/) and click on the `LAUNCH APP` button. You will now be directed to the main page of the APP.
 
-![](<../.gitbook/assets/launchapp.png>)
+![](../.gitbook/assets/launchapp.png)
 
 ## Wallet Connection
 
-We can interact with BOC through [wallets](../more/appendix.md#wallet). The APP is compatible with [MetaMask](https://metamask.io/) and [WalletConnect](https://walletconnect.com/). By clicking on the `CONNECT WALLET` button, your wallet could be connected. 
+We can interact with BOC through [wallets](../more/appendix.md#wallet). The APP is compatible with [MetaMask](https://metamask.io/) and [WalletConnect](https://walletconnect.com/). By clicking on the `CONNECT WALLET` button, your wallet could be connected.
 
-![](<../.gitbook/assets/connectwallet.png>)
+![](<../.gitbook/assets/connectwallet (1).png>)
 
 After connecting your wallet, you can see the USDT balance in your account.
 
-![](<../.gitbook/assets/pic-4.png>)
+![](../.gitbook/assets/pic-4.png)
 
 ## Parameter Settings
 
@@ -20,25 +20,25 @@ After connecting your wallet, you can see the USDT balance in your account.
 
 BOC provides two [cross-chain bridge](../more/appendix.md#bridge) options, which are the Polygon Bridge and the BNB Bridge, to fulfill the demand of cross-chain operations.
 
-![](<../.gitbook/assets/chainbridge.png>)
+![](<../.gitbook/assets/chainbridge (1).png>)
 
 ### Switch Chain
 
 At present, BOC works on Ethereum, BNB Chain and Polygon. If chain switching is required, this could be carried out by clicking on `NETWORKS` to select the desired chain to be switched to.
 
-![](<../.gitbook/assets/networkchange.png>)
+![](../.gitbook/assets/networkchange.png)
 
 ## Investment and Redemption
 
 ### Deposit
 
-Once your wallet has been successfully connected, you can deposit by selecting the desired vault, either the `Vault for USDi` or the `Vault for ETHi`. On the `USDi Vault` under the `DEPOSIT` tab, we have the stablecoins to be used (USDT, UTDC & DAI). By entering the desired amount for each and clicking on `DEPOSIT`, depositing is hence completed. 
+Once your wallet has been successfully connected, you can deposit by selecting the desired vault, either the `Vault for USDi` or the `Vault for ETHi`. On the `USDi Vault` under the `DEPOSIT` tab, we have the stablecoins to be used (USDT, UTDC & DAI). By entering the desired amount for each and clicking on `DEPOSIT`, depositing is hence completed.
 
-![](<../.gitbook/assets/pic-7.png>)
+![](../.gitbook/assets/pic-7.png)
 
 As on the `ETHi Vault`, you could only invest ETH by entering the desired amount and clicking on `DEPOSIT`.
 
-![](<../.gitbook/assets/depositpage\_eth.PNG>)
+![](<../.gitbook/assets/depositpage\_eth (1).PNG>)
 
 The main difference between the `ETHi Vault` and the `USDi Vault` is that the `ETHi Vault` has a gas fee estimation.
 
@@ -56,7 +56,7 @@ On the `ETHi Vault`, only ETH could be withdrawn. Enter the desired amount of ET
 
 ### Withdrawal Advanced Parameters
 
-![](<../.gitbook/assets/advancesetting.png>)
+![](../.gitbook/assets/advancesetting.png)
 
 The advanced setup parameters are:
 
@@ -72,7 +72,7 @@ If the USDi is not shown on your wallet, you are required to add it manually by 
 
 Analogously, ETHi can also be added to the wallet by following the same procedure.
 
-![](<../.gitbook/assets/addtoken\_ethi.png>)
+![](../.gitbook/assets/addtoken\_ethi.png)
 
 ## Dashboard
 
@@ -80,7 +80,7 @@ From the [dashboard](../more/appendix.md#dashboard) you could obtain the next re
 
 [https://dashboard.bankofchain.io](https://dashboard.bankofchain.io)
 
-![](<../.gitbook/assets/dashboard.jpg>)
+![](../.gitbook/assets/dashboard.jpg)
 
 The data presented are described as follows:
 
@@ -104,7 +104,7 @@ BOC subgraph:
 
 Take SushiUsdcUsdtStrategy as an example, enter the strategy details page as shown in the figure:
 
-![](<../.gitbook/assets/detail.jpg>)
+![](<../.gitbook/assets/detail (1).jpg>)
 
 The data presented are described as follows:
 
@@ -127,7 +127,7 @@ The data presented are described as follows:
 
 Enter the personal investment analysis page to see the personal investment income.
 
-![](<../.gitbook/assets/personalpage.jpg>) 
+![](<../.gitbook/assets/personalpage (1).jpg>)
 
 The data presented are described as follows:
 
