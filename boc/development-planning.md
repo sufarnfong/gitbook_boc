@@ -2,34 +2,34 @@
 
 ## Roadmap
 
-[x] **May 2022:**   
+**Q1\_2022:**
 
-1. [x] Friend & Family Testing was launched.   
+* [x] Friend & Family Testing was launched.
+* [x] 3 chains were made available: Ethereum, BNB Chain, and Polygon.
 
-2. [x] 3 chains were made available: Ethereum, BNB Chain, and Polygon.  
+**Q2\_2022:**
 
-[x] **June 2022:**   
+* [x] BOC USDi and ETHi farming mechanisms were completed.
 
-1. [x] BOC USDi and ETHi farming mechanisms were completed. 
+**Q4\_2022:**
 
-2. [x] New blockchains were explored (Avalanche, Solana, Fantom etc.). 
+* [ ] External audit
 
-**July 2022:**  
+**Q1\_2023:**
 
-1. Alt-coins farming through lending (Sushi,Yearn, Convex etc.).
+* [ ] New blockchains were explored (Avalanche, Solana, Fantom etc.).
+* [ ] Governance token will be released.
 
-2. Smart contract insurance will be provided.  
+**Q2\_2023:**
 
-3. Governance token will be released.
+* [ ] Alt-coins farming through lending (Sushi,Yearn, Convex etc.).
+* [ ] Smart contract insurance will be provided.
 
-**August 2022 and further:**  
+**FUTURE AND BEYOND**
 
-1. BOC will operate as a personal bank DeB. 
-
-2. DeB will become a payment solution. 
-
-3. Institutional services will be provided. 
-
+* [ ] BOC will operate as a personal bank DeB.
+* [ ] DeB will become a payment solution.
+* [ ] Institutional services will be provided.
 
 ## Future Planning
 

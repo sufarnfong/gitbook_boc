@@ -1,11 +1,11 @@
-# Contributors
+# Contributions
 
 One of the keystones of decentralized environments is the community. At BOC we encourage all our members to contribute to the project, as we believe that everyone has valuable skills that can help BOC to improve each day. This section is to mention all members in our contributor's community:
 
-| NAME        | ASSIGNED TASKS                         |
-| ----------- | ----------------------------------- |
-| [Kadibia Ikevude](https://twitter.com/Mr_kadibia)| Public Relations Tasks|
-| [Olatayo](https://twitter.com/AasaTahir) | Discord Setup |
-| [Nicolas]() | Documentation translation |
-| [Leo]() | Documentation translation |
-| [Su Farn]() | Discord Moderation |
+| NAME                                               | ASSIGNED TASKS            |
+| -------------------------------------------------- | ------------------------- |
+| [Kadibia Ikevude](https://twitter.com/Mr\_kadibia) | Public Relations Tasks    |
+| [Olatayo](https://twitter.com/AasaTahir)           | Discord Setup             |
+| [Nicolas](contributions.md)                        | Documentation translation |
+| [Leo](contributions.md)                            | Documentation translation |
+| [Su Farn](contributions.md)                        | Discord Moderation        |
