@@ -1,5 +1,5 @@
 ---
-cover: .gitbook/assets/photo_2022-08-24_16-06-33.jpg
+cover: .gitbook/assets/Gitbook - Profile header photo.jpg
 coverY: 0
 ---
 
