@@ -191,4 +191,9 @@ The data presented are described as follows:
 6. Daily USDi amount.
 7. Monthly income.
 
-## Withdrawal of funds from alpha version UI.
+## Withdrawal of funds from BoC Alpha version UI.
+
+On September 2022 BoC Beta version will be deployed. This mean that USDi holders will need to withdraw all their funds from BoC Alpha version and redeposit on BoC beta version. Here is a tutorial on how to withdraw all your funds from BoC Alpha version.
+
+{% embed url="https://www.youtube.com/watch?feature=youtu.be&v=QSfJgT8k6u0" %}
+
