@@ -21,11 +21,12 @@
 
 ## ⚙ More
 
-* [Glossary](more/appendix.md)
 * [FAQs](more/faqs.md)
-* [References](more/references.md)
+* [Glossary](more/appendix.md)
+* [Branding Assets](more/branding-assets.md)
 * [Volunteering](more/volunteering.md)
 * [Contributions](more/contributions.md)
-* [Contact Information](more/contact-information.md)
 * [Disclaimer](more/disclaimer.md)
+* [References](more/references.md)
+* [Contact Information](more/contact-information.md)
 * [APP](https://bankofchain.io/#/)
