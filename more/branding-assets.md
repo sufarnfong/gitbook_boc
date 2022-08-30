@@ -103,7 +103,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/03 BoC . horizontal . light.svg" %}
 
-#### 04. filled round gradient icon
+#### 04. Filled round gradient icon
 
 <figure><img src="../.gitbook/assets/04 filled round icon . gradient small (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -113,7 +113,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/04 filled round icon . gradient.svg" %}
 
-#### 04. filled round dark icon
+#### 04. Filled round dark icon
 
 <figure><img src="../.gitbook/assets/04 filled round icon . dark small.png" alt=""><figcaption></figcaption></figure>
 
@@ -123,7 +123,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/04 filled round icon . dark.svg" %}
 
-#### 04. filled round light icon
+#### 04. Filled round light icon
 
 <figure><img src="../.gitbook/assets/04 filled round icon . light small.png" alt=""><figcaption><p>Click above to view light icon</p></figcaption></figure>
 
@@ -133,7 +133,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/04 filled round icon . light.svg" %}
 
-#### 05. outlined round gradient icon
+#### 05. Outlined round gradient icon
 
 <figure><img src="../.gitbook/assets/05 outlined round icon . gradient small.png" alt=""><figcaption></figcaption></figure>
 
@@ -143,7 +143,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/05 outlined round icon . gradient (1).svg" %}
 
-#### 05. outlined round dark icon
+#### 05. Outlined round dark icon
 
 <figure><img src="../.gitbook/assets/05 outlined round icon . dark small (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -153,7 +153,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/05 outlined round icon . dark.svg" %}
 
-#### 05. outlined round light icon
+#### 05. Outlined round light icon
 
 <figure><img src="../.gitbook/assets/05 outlined round icon . light small.png" alt=""><figcaption><p>Click above to view light icon</p></figcaption></figure>
 
@@ -163,7 +163,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/05 outlined round icon . light.svg" %}
 
-#### 06. filled square gradient icon
+#### 06. Filled square gradient icon
 
 <figure><img src="../.gitbook/assets/06 filled square icon . gradient small (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -173,7 +173,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/06 filled square icon . gradient.svg" %}
 
-#### 06. filled square dark icon
+#### 06. Filled square dark icon
 
 <figure><img src="../.gitbook/assets/06 filled square icon . dark small.png" alt=""><figcaption></figcaption></figure>
 
@@ -183,7 +183,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/06 filled square icon . dark.svg" %}
 
-#### 06. filled square light icon
+#### 06. Filled square light icon
 
 <figure><img src="../.gitbook/assets/06 filled square icon . light small (1).png" alt=""><figcaption><p>Click above to view light icon</p></figcaption></figure>
 
@@ -193,7 +193,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/06 filled square icon . light.svg" %}
 
-#### 07. outlined square gradient icon
+#### 07. Outlined square gradient icon
 
 <figure><img src="../.gitbook/assets/07 outlined square icon . gradient small (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -203,7 +203,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/07 outlined square icon . gradient.svg" %}
 
-#### 07. outlined square dark icon
+#### 07. Outlined square dark icon
 
 <figure><img src="../.gitbook/assets/07 outlined square icon . dark small.png" alt=""><figcaption></figcaption></figure>
 
@@ -213,7 +213,7 @@ Download full brand pack
 
 {% file src="../.gitbook/assets/07 outlined square icon . dark.svg" %}
 
-#### 07. outlined square light icon
+#### 07. Outlined square light icon
 
 <figure><img src="../.gitbook/assets/07 outlined square icon . light small.png" alt=""><figcaption><p>Click above to view light icon</p></figcaption></figure>
 
