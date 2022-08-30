@@ -72,3 +72,153 @@ Download full brand pack
 {% file src="../.gitbook/assets/02 horizontal . light small.png" %}
 
 {% file src="../.gitbook/assets/02 horizontal . light.svg" %}
+
+#### 03. Bank of Chain horizontal gradient logo
+
+<figure><img src="../.gitbook/assets/03 BoC . horizontal . gradient small.png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/03 BoC . horizontal . gradient large.png" %}
+
+{% file src="../.gitbook/assets/03 BoC . horizontal . gradient small (1).png" %}
+
+{% file src="../.gitbook/assets/03 BoC . horizontal . gradient.svg" %}
+
+#### 03. Bank of Chain horizontal dark logo
+
+<figure><img src="../.gitbook/assets/03 BoC . horizontal . dark small.png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/03 BoC . horizontal . dark large.png" %}
+
+{% file src="../.gitbook/assets/03 BoC . horizontal . dark small (1).png" %}
+
+{% file src="../.gitbook/assets/03 BoC . horizontal . dark.svg" %}
+
+#### 03. Bank of Chain horizontal light logo
+
+<figure><img src="../.gitbook/assets/03 BoC . horizontal . light small.png" alt=""><figcaption><p>Click above to view light logo</p></figcaption></figure>
+
+{% file src="../.gitbook/assets/03 BoC . horizontal . light large.png" %}
+
+{% file src="../.gitbook/assets/03 BoC . horizontal . light small (1).png" %}
+
+{% file src="../.gitbook/assets/03 BoC . horizontal . light.svg" %}
+
+#### 04. filled round gradient icon
+
+<figure><img src="../.gitbook/assets/04 filled round icon . gradient small (1).png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/04 filled round icon . gradient large.png" %}
+
+{% file src="../.gitbook/assets/04 filled round icon . gradient small.png" %}
+
+{% file src="../.gitbook/assets/04 filled round icon . gradient.svg" %}
+
+#### 04. filled round dark icon
+
+<figure><img src="../.gitbook/assets/04 filled round icon . dark small.png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/04 filled round icon . dark large.png" %}
+
+{% file src="../.gitbook/assets/04 filled round icon . dark small (1).png" %}
+
+{% file src="../.gitbook/assets/04 filled round icon . dark.svg" %}
+
+#### 04. filled round light icon
+
+<figure><img src="../.gitbook/assets/04 filled round icon . light small.png" alt=""><figcaption><p>Click above to view light icon</p></figcaption></figure>
+
+{% file src="../.gitbook/assets/04 filled round icon . light large.png" %}
+
+{% file src="../.gitbook/assets/04 filled round icon . light small (1).png" %}
+
+{% file src="../.gitbook/assets/04 filled round icon . light.svg" %}
+
+#### 05. outlined round gradient icon
+
+<figure><img src="../.gitbook/assets/05 outlined round icon . gradient small.png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/05 outlined round icon . gradient large (1).png" %}
+
+{% file src="../.gitbook/assets/05 outlined round icon . gradient small (1).png" %}
+
+{% file src="../.gitbook/assets/05 outlined round icon . gradient (1).svg" %}
+
+#### 05. outlined round dark icon
+
+<figure><img src="../.gitbook/assets/05 outlined round icon . dark small (1).png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/05 outlined round icon . dark large.png" %}
+
+{% file src="../.gitbook/assets/05 outlined round icon . dark small.png" %}
+
+{% file src="../.gitbook/assets/05 outlined round icon . dark.svg" %}
+
+#### 05. outlined round light icon
+
+<figure><img src="../.gitbook/assets/05 outlined round icon . light small.png" alt=""><figcaption><p>Click above to view light icon</p></figcaption></figure>
+
+{% file src="../.gitbook/assets/05 outlined round icon . light large.png" %}
+
+{% file src="../.gitbook/assets/05 outlined round icon . light small (1).png" %}
+
+{% file src="../.gitbook/assets/05 outlined round icon . light.svg" %}
+
+#### 06. filled square gradient icon
+
+<figure><img src="../.gitbook/assets/06 filled square icon . gradient small (1).png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/06 filled square icon . gradient large.png" %}
+
+{% file src="../.gitbook/assets/06 filled square icon . gradient small.png" %}
+
+{% file src="../.gitbook/assets/06 filled square icon . gradient.svg" %}
+
+#### 06. filled square dark icon
+
+<figure><img src="../.gitbook/assets/06 filled square icon . dark small.png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/06 filled square icon . dark large.png" %}
+
+{% file src="../.gitbook/assets/06 filled square icon . dark small (1).png" %}
+
+{% file src="../.gitbook/assets/06 filled square icon . dark.svg" %}
+
+#### 06. filled square light icon
+
+<figure><img src="../.gitbook/assets/06 filled square icon . light small (1).png" alt=""><figcaption><p>Click above to view light icon</p></figcaption></figure>
+
+{% file src="../.gitbook/assets/06 filled square icon . light large.png" %}
+
+{% file src="../.gitbook/assets/06 filled square icon . light small.png" %}
+
+{% file src="../.gitbook/assets/06 filled square icon . light.svg" %}
+
+#### 07. outlined square gradient icon
+
+<figure><img src="../.gitbook/assets/07 outlined square icon . gradient small (1).png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/07 outlined square icon . gradient large.png" %}
+
+{% file src="../.gitbook/assets/07 outlined square icon . gradient small.png" %}
+
+{% file src="../.gitbook/assets/07 outlined square icon . gradient.svg" %}
+
+#### 07. outlined square dark icon
+
+<figure><img src="../.gitbook/assets/07 outlined square icon . dark small.png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../.gitbook/assets/07 outlined square icon . dark large.png" %}
+
+{% file src="../.gitbook/assets/07 outlined square icon . dark small (1).png" %}
+
+{% file src="../.gitbook/assets/07 outlined square icon . dark.svg" %}
+
+#### 07. outlined square light icon
+
+<figure><img src="../.gitbook/assets/07 outlined square icon . light small.png" alt=""><figcaption><p>Click above to view light icon</p></figcaption></figure>
+
+{% file src="../.gitbook/assets/07 outlined square icon . light large.png" %}
+
+{% file src="../.gitbook/assets/07 outlined square icon . light small (1).png" %}
+
+{% file src="../.gitbook/assets/07 outlined square icon . light.svg" %}
