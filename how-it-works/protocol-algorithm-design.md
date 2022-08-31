@@ -12,8 +12,8 @@ BOC provides the [USD Stablecoins Farming](https://github.com/Francisco-Rua/boc\
    “Withdraw” - Users can `withdraw` USDi which consists of the three major stablecoins at their convenience through the BOC protocol. By default, they will be returned according to the proportion of the three major stablecoins in the [Vault](../more/appendix.md#vaults) at that time, or they can specify a certain currency to be returned.
 2. After the Vault receives the stablecoin, `queryTokenPrice` queries the price of the user's transfer of the [stablecoin](../more/appendix.md#stablecoin) through an external oracle. When the price returned by the [oracle](../more/appendix.md#oracle) is higher than 1 USD, it is calculated at 1 USD, whereas while it is lower than 1 USD, it is calculated at the price of the oracle.
 3. Based on the calculated value, `mint/burn` will [mint/burn](../more/appendix.md#burnmint) an equivalent value of USDi tickets.
-4. The [Keeper](../more/appendix.md#keeper) module reaches the trigger condition of `doHardWork` and triggers `doHardWork`.
-5. After the Keeper trigger `doHardWork` the vault allocates the funds and exchange the USDi (burn) tickets for USDi (mint)
+4. The [Keeper](../more/appendix.md#keeper) module reaches the trigger condition `doHardWork` and triggers `doHardWork`.
+5. After the Keeper trigger `doHardWork` the vault allocates the funds and exchanges the USDi (burn) tickets for USDi (mint)
 6. Vault calls the aggregate exchange module `swapTokenToWants`.
 7. The aggregated exchange module `swapTokens` completes the exchange.
 8. Vault receives the targetted currency exchanged by the aggregate exchange module.
@@ -23,12 +23,12 @@ BOC provides the [USD Stablecoins Farming](https://github.com/Francisco-Rua/boc\
 12. Harvester triggers each strategy to execute `harvest`.
 13. Each strategy executes `claimRewards` to collect mining.
 14. Each strategy transfers mining coins `transferRewards` to Harvester.
-15. Harvester sells miner `sellRewards` into stablecoins through aggregated exchange.
+15. Harvester sells miners `sellRewards` into stablecoins through the aggregated exchange.
 16. Harvester `sendProfitToVault` transfers stablecoins into Vault.
 17. The Keeper module reaches the `rebase` trigger condition and triggers the `rebase`.
 18. Vault calls `changeTotalSupply` to issue additional USDi.
 19. Vault collects 20% of the yield, which is transferred to the `Treasury`.
-20. The [treasury](../more/appendix.md#daos-treasury) will benefit users from using `buyback` to repurchase the BOC governance token.
+20. The [treasury](../more/appendix.md#daos-treasury) will benefit users by using `buyback` to repurchase the BOC governance token.
 
 ### Mint & Burn rules
 
@@ -52,7 +52,7 @@ The current price from Chainlink is:
 
 ![](../.gitbook/assets/mint.png)
 
-Now, Alice decides to `burn` the USDi to withdraw her stablecoins. She has 299 USDi now and when she burns depending on the proportion of USDT/USDC/DAI of the Vault. The burning smart contract will distribute the same proportion the USDi on each stablecoin. In this case when we redeem there is slightly less USDT on the Vault, so the distribution will be 99 of them for USDT, 100 for DAI, and the rest 100 for USDC (assuming that the current price from Chainlink remains unchanged).
+Now, Alice decides to `burn` the USDi to withdraw her stablecoins. She has 299 USDi now and when she burns depending on the proportion of USDT/USDC/DAI of the Vault. The burning smart contract will distribute the same proportion of the USDi on each stablecoin. In this case when we redeem there is slightly less USDT on the Vault, so the distribution will be 99 of them for USDT, 100 for DAI, and the rest 100 for USDC (assuming that the current price from Chainlink remains unchanged).
 
 The rule of burning is opposite to that of minting: the transaction price is 1 USD when the price from Chainlink is less than 1 USD. Otherwise, the transaction price is equal to the price from Chainlink.
 
@@ -74,15 +74,60 @@ The numbers in the chart here are only numerical examples for a better understan
 
 ### USDi Ticket
 
-<figure><img src="../.gitbook/assets/starting point.JPG" alt=""><figcaption></figcaption></figure>
+In the Alpha version, the first allocation fee for every deposit will be shared out by all users in the vault, depending on their proportion of the amount deposited. However, this analogously indicates that the first allocation fee of one user will also be borne by all other users including those who have previously deposited into the vault. So, the Beta version will include a new concept "USDi Ticket"  which is designed as a buffer that avoids USDi holders from being affected by new deposits on the protocol. Let's see both scenarios for a better explanation:&#x20;
 
-<figure><img src="../.gitbook/assets/t1.JPG" alt=""><figcaption></figcaption></figure>
+To simplify the situation for easier understanding:
 
-<figure><img src="../.gitbook/assets/t12 (1).JPG" alt=""><figcaption></figcaption></figure>
+* Assume that the users only deposit in USDC
+* The price on Chainlink is now `1 USDC = 1 USD`.&#x20;
+* The vault is currently having only one user (James) who holds 100k USDi.&#x20;
+* The allocation fee is 10% to look better at the impacts (in reality is less than 1%).
+
+#### Alpha version logic (without USDi ticket).
+
+We have James, he is holding at the moment  `T=0` $ 100,000 USDi being USDi a fully pegged to USD (1 USDi = 1 USD), so his total assets on USD is $100,00 USD.
+
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>Starting point T=0 (Alpha version).</p></figcaption></figure>
+
+Yesterday, Alice deposited 100,000 USDC as well, while Bob deposited 10,000 USDC. So, the vault will mint 110,000 USDi and they will be receiving 100,000 USDi and 10,000 USDi respectively.&#x20;
+
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>Alice and Bob deposit new funds on BoC protocol (Alpha version).</p></figcaption></figure>
+
+The keeper will call the funds allocation when the [conditions](protocol-algorithm-design.md#allocation) are met and the vault will allocate the fund on the strategies selected by the keeper. For this feed will be needed to pay on the 3rt party protocols to complete the allocation, this fee will be taken from the USDi collateral, causing a de-pegging.
+
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>Allocation of the funds T=1 (Alpha version). </p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+As we can see in the table, the fund allocation decreases the USDi collateral causing a de-pegging of it vs USD where James' assets have been affected by Alices' and Bob's deposit.
+
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>User's assets after allocation.</p></figcaption></figure>
+
+#### Beta version logic (with USDi ticket).
+
+The Beta version is incorporated USDi ticket functions as a buffer for the dispatching of the USDi. It could also be understood as a parallel USDi. After depositing stablecoins into the vault,  the user holds USDi tickets until the fund allocation has been completed by the protocol, and then only USDi will be distributed to the user. This allows the first allocation fees to be transparent and visible, which is the difference between the USDi tickets held by the user and the USDi distributed afterward.
+
+Again, we have James, he is holding at the moment  `T=0` $ 100,000 USDi being USDi a fully pegged to USD (1 USDi = 1 USD), so his total assets on USD is $100,00 USD.
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Starting point T=0 (Beta version).</p></figcaption></figure>
+
+In this situation, Alice deposited 100,000 USDC as well, while Bob deposited 10,000 USDC. So, on the Beta version, the vault will mint 110,000 **USDi Tickets** and they will be receiving 100,000 USDi and 10,000 USDi respectively.&#x20;
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Alice and Bob deposit new funds on BoC protocol (Beta version).</p></figcaption></figure>
+
+The keeper will call the funds allocation when the [conditions](protocol-algorithm-design.md#allocation) are met and the vault will allocate the fund on the strategies selected by the keeper. For this feed will be needed to pay on the 3rt party protocols to complete the allocation, this fee will be taken from the USDi collateral, causing a de-pegging.
+
+<figure><img src="../.gitbook/assets/t12 (1).JPG" alt=""><figcaption><p>Allocation of the funds T=1 (Beta version). </p></figcaption></figure>
+
+After the fund's allocation, the vault will exchange the USDi Tickets (burn) for USDi (mint).
 
 <figure><img src="../.gitbook/assets/t122.JPG" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/t3.JPG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+As we can see in the table, the fund allocation decreases the USDi Ticket collateral causing a de-pegging of it vs USD but USDi collateral remains untouched and fully pegged to USD, soJames' assets have not been affected by Alices' and Bob's deposit.
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Harvest
 
