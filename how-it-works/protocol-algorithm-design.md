@@ -6,7 +6,7 @@ BOC provides the [USD Stablecoins Farming](https://github.com/Francisco-Rua/boc\
 
 ### Process Description
 
-![](../.gitbook/assets/pic-2.png)
+<figure><img src="../.gitbook/assets/Diagrama sin título.drawio.png" alt=""><figcaption></figcaption></figure>
 
 1. “Deposit” - The BOC protocol supports users with the `deposit` function - to deposit the three major stablecoins (USDT, USDC, DAI) in any desired combination and amount. BOC also allows minting of USDi of the corresponding value to be returned to the user.\
    “Withdraw” - Users can `withdraw` USDi which consists of the three major stablecoins at their convenience through the BOC protocol. By default, they will be returned according to the proportion of the three major stablecoins in the [Vault](../more/appendix.md#vaults) at that time, or they can specify a certain currency to be returned.
@@ -76,13 +76,13 @@ The numbers in the chart here are only numerical examples for a better understan
 
 <figure><img src="../.gitbook/assets/starting point.JPG" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/t1 (1).JPG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/t1.JPG" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/t12.JPG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/t12 (1).JPG" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/t122.JPG" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/t3 (1).JPG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/t3.JPG" alt=""><figcaption></figcaption></figure>
 
 ### Harvest
 
