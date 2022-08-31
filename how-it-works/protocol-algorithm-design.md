@@ -101,11 +101,18 @@ The keeper will call the funds allocation when the [conditions](protocol-algorit
 
 As we can see in the table, the fund allocation decreases the USDi collateral causing a de-pegging of it vs USD where James' assets have been affected by Alices' and Bob's deposit.
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>User's assets after allocation.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>User's assets after allocation (Alpha version). </p></figcaption></figure>
 
 #### Beta version logic (with USDi ticket).
 
 The Beta version is incorporated USDi ticket functions as a buffer for the dispatching of the USDi. It could also be understood as a parallel USDi. After depositing stablecoins into the vault,  the user holds USDi tickets until the fund allocation has been completed by the protocol, and then only USDi will be distributed to the user. This allows the first allocation fees to be transparent and visible, which is the difference between the USDi tickets held by the user and the USDi distributed afterward.
+
+We simplify again the situation for easier understanding:
+
+* Assume that the users only deposit in USDC
+* The price on Chainlink is now `1 USDC = 1 USD`.&#x20;
+* The vault is currently having only one user (James) who holds 100k USDi.&#x20;
+* The allocation fee is 10% to look better at the impacts (in reality is less than 1%).
 
 Again, we have James, he is holding at the moment  `T=0` $ 100,000 USDi being USDi a fully pegged to USD (1 USDi = 1 USD), so his total assets on USD is $100,00 USD.
 
@@ -121,13 +128,13 @@ The keeper will call the funds allocation when the [conditions](protocol-algorit
 
 After the fund's allocation, the vault will exchange the USDi Tickets (burn) for USDi (mint).
 
-<figure><img src="../.gitbook/assets/t122.JPG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/t122.JPG" alt=""><figcaption><p>USDi ticket exchange (Beta Version).</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 As we can see in the table, the fund allocation decreases the USDi Ticket collateral causing a de-pegging of it vs USD but USDi collateral remains untouched and fully pegged to USD, soJames' assets have not been affected by Alices' and Bob's deposit.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>User's assets after allocation (Beta version). </p></figcaption></figure>
 
 ### Harvest
 
