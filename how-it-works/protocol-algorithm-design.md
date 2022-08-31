@@ -72,7 +72,7 @@ Chainlink prices:
 
 The numbers in the chart here are only numerical examples for a better understanding of the rules of minting and burning in BOC. In reality, the fluctuation of USDi is much smaller, indicating that users will never encounter such possible loss. In fact, the possible loss here will be less than 0.01%. The objectives of these rules are to avoid arbitrage and to protect the protocol's vault.
 
-### USDi Ticket
+### USDi Ticket logic.
 
 In the Alpha version, the first allocation fee for every deposit will be shared out by all users in the vault, depending on their proportion of the amount deposited. However, this analogously indicates that the first allocation fee of one user will also be borne by all other users including those who have previously deposited into the vault. So, the Beta version will include a new concept "USDi Ticket"  which is designed as a buffer that avoids USDi holders from being affected by new deposits on the protocol. Let's see both scenarios for a better explanation:&#x20;
 
@@ -132,7 +132,7 @@ After the fund's allocation, the vault will exchange the USDi Tickets (burn) for
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-As we can see in the table, the fund allocation decreases the USDi Ticket collateral causing a de-pegging of it vs USD but USDi collateral remains untouched and fully pegged to USD, soJames' assets have not been affected by Alices' and Bob's deposit.
+As we can see in the table, the fund allocation decreases the USDi Ticket collateral causing a de-pegging of it vs USD but USDi collateral remains untouched and fully pegged to USD, so, James' assets have not been affected by Alices' and Bob's deposit.
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>User's assets after allocation (Beta version). </p></figcaption></figure>
 
