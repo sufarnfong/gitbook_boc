@@ -1,4 +1,4 @@
-# Governance
+# 审计与治理
 
 BOC是一个颠覆性的区块链创新协议，旨在改变加密投资行业的生态系统，它将成为资产贷款人和投资运营商之间的桥梁。BOC的应用领域极为广泛，希望能创造一个全新的、互联的加密投资世界。
 
@@ -6,16 +6,16 @@ BOC是一个颠覆性的区块链创新协议，旨在改变加密投资行业�
 
 目前，BOC的治理是通过Gnosis多签实现共同管理。后续将会把治理权转移到DAO。DAO计划将根据以下方向进行不断迭代：
 
-1. DAO使用 治理论坛Habor 和 Snapshot 进行链下投票和链上智能合约的执行提议。 点击加入：   
-BOC [Snapshot](https://snapshot.org/#/bankofchain.eth)  
-BOC [Habor](https://governance.bankofchain.io/)
-2. [治理代币](../more/appendix.md#%E6%B2%BB%E7%90%86%E5%B8%81governance-token)正在开发中。
+1. DAO使用 治理论坛Habor 和 Snapshot 进行链下投票和链上智能合约的执行提议。 点击加入：\
+   BOC [Snapshot](https://snapshot.org/#/bankofchain.eth)\
+   BOC [Habor](https://governance.bankofchain.io/)
+2. [治理代币](../more/appendix.md#治理币governance-token)正在开发中。
 
 ### 代币经济学
 
 BOC计划发行代币10亿枚。代币持有者将根据持有比例获得BOC管理费用收入。代币锁定后可以参与治理并共享收益。具体的代币拟按以下4部分发放：团队、投资者、社区以及预留部分。
 
-![](<../.gitbook/assets/%E7%AE%A1%E7%90%86%E4%BB%A3%E5%B8%81%E5%88%86%E9%85%8D.png>)
+![](../.gitbook/assets/管理代币分配.png)
 
 | **团队（第一年10%，第二年20%，第三年30%，第四年40%）**  | **20.0%** | **2亿**   |
 | ------------------------------------ | --------- | -------- |

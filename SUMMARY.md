@@ -15,7 +15,10 @@
 * [协议模块](how-it-works/protocol-components.md)
 * [协议算法设计](how-it-works/protocol-algorithm-design.md)
 * [安全与风险](how-it-works/security-risk.md)
-* [审计与治理](how-it-works/governance.md)
+
+## 🪙 审计与治理
+
+* [审计与治理](shen-ji-yu-zhi-li/governance.md)
 
 ## ⚙ 更多
 
