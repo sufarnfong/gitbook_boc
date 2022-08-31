@@ -4,7 +4,6 @@
 
 * [BOC介绍](README.md)
 * [如何使用BOC](boc/user-handbook.md)
-* [开发规划](boc/development-planning.md)
 
 ## 🛣 路线图
 
