@@ -12,7 +12,12 @@
 ## 🧱 Protocol mechanisms
 
 * [Protocol Components](how-it-works/protocol-components.md)
-* [Protocol Algorithm Design](how-it-works/protocol-algorithm-design.md)
+* [Protocol Algorithm Design](protocol-mechanisms/protocol-algorithm-design/README.md)
+  * [USDi Ticket](protocol-mechanisms/protocol-algorithm-design/protocol-algorithm-design.md)
+  * [Burn & Mint rules](protocol-mechanisms/protocol-algorithm-design/protocol-algorithm-design-1.md)
+  * [Harvest](protocol-mechanisms/protocol-algorithm-design/protocol-algorithm-design-2.md)
+  * [Rebase](protocol-mechanisms/protocol-algorithm-design/protocol-algorithm-design-3.md)
+  * [Fund allocation](protocol-mechanisms/protocol-algorithm-design/protocol-algorithm-design-4.md)
 * [Security Risks](how-it-works/security-risk.md)
 
 ## 🪙 Governance
