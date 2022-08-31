@@ -1,19 +1,23 @@
 # Table of contents
 
-## BOC
+## 📚 BOC
 
 * [BOC介绍](README.md)
 * [如何使用BOC](boc/user-handbook.md)
 * [开发规划](boc/development-planning.md)
 
-## 协议机制
+## 🛣 路线图
+
+* [开发规划](lu-xian-tu/development-planning.md)
+
+## 🧱 协议机制
 
 * [协议模块](how-it-works/protocol-components.md)
 * [协议算法设计](how-it-works/protocol-algorithm-design.md)
 * [安全与风险](how-it-works/security-risk.md)
 * [审计与治理](how-it-works/governance.md)
 
-## 更多
+## ⚙ 更多
 
 * [附录](more/appendix.md)
 * [常见问题 (FAQs)](more/faqs.md)
