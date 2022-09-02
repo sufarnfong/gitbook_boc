@@ -135,11 +135,11 @@ Download full brand pack
 
 #### 05. Outlined round gradient icon
 
-<figure><img src="../.gitbook/assets/05 outlined round icon . gradient small (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/05 outlined round icon . gradient small (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% file src="../.gitbook/assets/05 outlined round icon . gradient large (1).png" %}
 
-{% file src="../.gitbook/assets/05 outlined round icon . gradient small (1) (1).png" %}
+{% file src="../.gitbook/assets/05 outlined round icon . gradient small (1) (1) (2).png" %}
 
 {% file src="../.gitbook/assets/05 outlined round icon . gradient (1).svg" %}
 
