@@ -2,8 +2,8 @@
 
 ## 📚 BOC
 
-* [BOC介绍](README.md)
-* [如何使用BOC](boc/user-handbook.md)
+* [BoC介绍](README.md)
+* [如何使用BoC](boc/user-handbook.md)
 
 ## 🛣 路线图
 
@@ -21,8 +21,9 @@
 
 ## ⚙ 更多
 
-* [附录](more/appendix.md)
 * [常见问题 (FAQs)](more/faqs.md)
+* [附录](more/appendix.md)
+* [BoC志愿者](more/Contributions.md)
+* [免责声明](geng-duo/mian-ze-sheng-ming.md)
 * [参考文献](more/references.md)
-* [BOC志愿者](more/Contributions.md)
 * [联系我们](more/intro.md)

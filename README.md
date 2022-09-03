@@ -3,15 +3,15 @@ cover: .gitbook/assets/Gitbook - Profile header photo-2.jpg
 coverY: 0
 ---
 
-# BOC介绍
+# BoC介绍
 
-[BOC](https://v1.bankofchain.io/#/)（Bank Of Chain）是帮助普通投资者获取链上“无风险”保本理财的一款[去中心化金融](more/appendix.md#去中心化金融defi)[协议](more/appendix.md#协议protocol)。
+[BoC](https://v1.bankofchain.io/#/)（Bank Of Chain）是帮助普通投资者获取链上“无风险”保本理财的一款[去中心化金融](more/appendix.md#去中心化金融defi)[协议](more/appendix.md#协议protocol)。
 
-BOC平台连接加密生态系统内诸多协议，例如[AMM](more/appendix.md#自动做市商amm)、[借贷协议](more/appendix.md#借贷协议lending-protocol)、[收益聚合器等](more/appendix.md#收益聚合器yield-aggregators)(详情参见[Dashboard](https://dashboard-v1.bankofchain.io/#/))。通过接入高质量低风险的协议[策略](more/appendix.md#策略strategy)，BOC能实现其APY比其他类似的美元管理基金高出4-5%。
+BoC平台连接加密生态系统内诸多协议，例如[AMM](more/appendix.md#自动做市商amm)、[借贷协议](more/appendix.md#借贷协议lending-protocol)、[收益聚合器等](more/appendix.md#收益聚合器yield-aggregators)(详情参见[Dashboard](https://dashboard-v1.bankofchain.io/#/))。通过接入高质量低风险的协议[策略](more/appendix.md#策略strategy)，BoC能实现其APY比其他类似的美元管理基金高出4-5%。
 
-对于加密行业的新人来说，BOC是进入数字资产投资回报生态系统的最佳渠道。作为一键复合理财平台，BOC将为行业带来新的革命。
+对于加密行业的新人来说，BoC是进入数字资产投资回报生态系统的最佳渠道。作为一键复合理财平台，BoC将为行业带来新的革命。
 
-## 为什么要开发BOC
+## 为什么要开发BoC
 
 现有的[DeFi](more/appendix.md#去中心化金融defi)协议存在如下问题：
 
@@ -34,11 +34,11 @@ BOC平台连接加密生态系统内诸多协议，例如[AMM](more/appendix.md#
 4. 同协议多个资金池的投入资金，不能超过总投资资产的30% 。
 5. 定期进行收益评估，在调仓收益大于调仓成本时，对资金进行优化配置。
 
-## 为何BOC与众不同
+## 为何BoC与众不同
 
-BOC是首个去中心化银行(DeB)，用户存放其加密资产，BOC的智能合约连接加密生态众多协议实现分散投资，以创造接近“无风险”的长期稳定收益。
+BoC是首个去中心化银行(DeB)，用户存放其加密资产，BOC的智能合约连接加密生态众多协议实现分散投资，以创造接近“无风险”的长期稳定收益。
 
-BOC与线下银行非常类似:
+BoC与线下银行非常类似:
 
 1. 用户交互：
    * 与线下银行一样，用户只有仅存取两项操作，无需进行[收割](more/appendix.md#收割-harvest)、兑换、调仓等复杂操作及支付费用。
@@ -53,12 +53,12 @@ BOC与线下银行非常类似:
    * 所有存入资产均是有息的。
    * 所有代币可随时存取。
 
-与其他DeFi协议相比，BOC的竞争力体现在：
+与其他DeFi协议相比，BoC的竞争力体现在：
 
 1. 安全：
    * 所用稳定币的发行规模均超过10亿美元。
    * 所用区块链的锁仓量已超过50亿美元。
-   * BOC通过第三方严格审计。
+   * BoC通过第三方严格审计。
    * 不使用第三方[跨链桥](more/appendix.md#跨链桥bridge)。
    * 报价基于[Chainlink](https://chain.link/)。
 2. 风控：
@@ -73,12 +73,12 @@ BOC与线下银行非常类似:
    * 进行外汇收益套利，并根据汇率和收益波动自动增减杠杆。
    * 设置复杂做市及借贷策略参数。
 
-综上所述，BOC与市场上的类似产品相比，它在易用性、安全性、风控能力和智能投资方面，将带来新市场增长和行业革命。
+综上所述，BoC与市场上的类似产品相比，它在易用性、安全性、风控能力和智能投资方面，将带来新市场增长和行业革命。
 
-|       竞品名称       |     [BOC](https://bankofchain.io)     |    [Yearn](http://yearn.finance/)   |     [OUSD](https://www.ousd.com/)     | [Aladdin DAO](https://aladdin.club/) | [enzyme](https://enzyme.finance/) |                     [Harvest](https://harvest.finance/)                    |        [beefy](https://beefy.finance/)        |                [alpha](https://alphafinance.io/)               | [yield app](https://www.yield.app/) |
+|       竞品名称       |     [BoC](https://bankofchain.io)     |    [Yearn](http://yearn.finance/)   |     [OUSD](https://www.ousd.com/)     | [Aladdin DAO](https://aladdin.club/) | [enzyme](https://enzyme.finance/) |                     [Harvest](https://harvest.finance/)                    |        [beefy](https://beefy.finance/)        |                [alpha](https://alphafinance.io/)               | [yield app](https://www.yield.app/) |
 | :--------------: | :-----------------------------------: | :---------------------------------: | :-----------------------------------: | :----------------------------------: | :-------------------------------: | :------------------------------------------------------------------------: | :-------------------------------------------: | :------------------------------------------------------------: | :---------------------------------: |
 |        分类        |                 DeFi银行                |                收益聚合器                |                 算法稳定币                 |                 收益聚合器                |               链上资产管理              |                                    收益聚合器                                   |                     收益聚合器                     |                              收益聚合器                             |                DeFi银行               |
-|       竞品介绍       | BOC是帮助普通投资者获取链上近“零风险”保本理财的一款去中心化金融协议。 | Yearn Finance是区块链上的收益聚合器，由YFI持有人治理。 | Origin Dollar（OUSD）是在Ethereum上推出的稳定币。 |     AladdinDAO协议通过群体智慧优化DeFi资产分配。    |       Enzyme可以快速高效自定义构建投资策略。      | Harvest Finance是Ethereum、BNB Chain和Polygon上的收益聚合平台，使用户的资产在DeFi生态系统中获得最大收益。 | Beefy Finance是多链收益聚合器，使用户的资产在DeFi生态系统中获得最大收益。 | Alpha Finance Lab是一个跨链DeFi产品生态系统。Alpha Homora是第一款产品，是一种杠杆挖矿协议。 |    Yield App 是一个链接传统金融和去中心金融的桥梁。    |
+|       竞品介绍       | BoC是帮助普通投资者获取链上近“零风险”保本理财的一款去中心化金融协议。 | Yearn Finance是区块链上的收益聚合器，由YFI持有人治理。 | Origin Dollar（OUSD）是在Ethereum上推出的稳定币。 |     AladdinDAO协议通过群体智慧优化DeFi资产分配。    |       Enzyme可以快速高效自定义构建投资策略。      | Harvest Finance是Ethereum、BNB Chain和Polygon上的收益聚合平台，使用户的资产在DeFi生态系统中获得最大收益。 | Beefy Finance是多链收益聚合器，使用户的资产在DeFi生态系统中获得最大收益。 | Alpha Finance Lab是一个跨链DeFi产品生态系统。Alpha Homora是第一款产品，是一种杠杆挖矿协议。 |    Yield App 是一个链接传统金融和去中心金融的桥梁。    |
 |        支持链       |       Ethereum、BNB Chain、Polygon      |           Ethereum、Fantom           |                Ethereum               |               Ethereum               |              Ethereum             |                         Ethereum、BNB Chain、Polygon                         |           BNB Chain、Arbitrum、Fantom等          |                  Ethereum、BNB Chain、Avalanche                  |         Ethereum 、BNB Chain         |
 | 锁仓量（截止2022年3月8日） |                  3.1万                 |                30.5亿                |                1.5582亿                |                 576万                 |              2.2931亿              |                                   2.2225亿                                  |                    10.215亿                    |                             8.278亿                             |               5.1271亿               |
 |       治理代币       |                   暂无                  |                 YFI                 |                  OGN                  |                  ALD                 |                MLN                |                                    FARM                                    |                      BIFI                     |                              ALPHA                             |                 YLD                 |
