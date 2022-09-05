@@ -164,7 +164,7 @@ Polygon：[https://api.thegraph.com/subgraphs/name/bankofchain/boc-subgraph-mati
 7. 策略操作资产变动（币本位）。
 8. 策略总资产（币本位）。
 9. 策略操作日期。
-10. 策略位置详情。
+10. 策略资产分布详情。
 
 ## 个人投资分析页
 
