@@ -12,7 +12,11 @@
 ## 🧱 协议机制
 
 * [协议模块](how-it-works/protocol-components.md)
-* [协议算法设计](how-it-works/protocol-algorithm-design.md)
+* [协议算法设计](xie-yi-ji-zhi/protocol-algorithm-design/README.md)
+  * [铸造(Mint)/销毁(Burn)规则](xie-yi-ji-zhi/protocol-algorithm-design/zhu-zao-mint-xiao-hui-burn-gui-ze.md)
+  * [收割(Harvest)](xie-yi-ji-zhi/protocol-algorithm-design/shou-ge-harvest.md)
+  * [Rebase](xie-yi-ji-zhi/protocol-algorithm-design/rebase.md)
+  * [资金调配](xie-yi-ji-zhi/protocol-algorithm-design/zi-jin-tiao-pei.md)
 * [安全与风险](how-it-works/security-risk.md)
 
 ## 🪙 审计与治理
