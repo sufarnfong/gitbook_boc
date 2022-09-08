@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-08T15:43:43.914Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="d4YEn9U8B53Qg0HRS3c3" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-08T16:43:45.188Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="KzKvrwzXd98snYcbw4j9" version="20.2.8" type="github">
   <diagram id="_vFJqaGQAh5Z3tcA5GTo" name="Página-1">
-    <mxGraphModel dx="782" dy="371" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="626" dy="297" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -55,7 +55,7 @@
         <mxCell id="jvoHZDlcRhFGuNJNGTSo-141" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/finance-152/64/1-128.png" parent="O2b2hehz6xSfP6omrJzt-7" vertex="1">
           <mxGeometry x="213" y="138" width="128" height="128" as="geometry" />
         </mxCell>
-        <mxCell id="jvoHZDlcRhFGuNJNGTSo-142" value="USDi 抵押数额&lt;br&gt;$ 210,000 USDC&lt;br&gt;&lt;br&gt;USDi 流通量&lt;br&gt;$ 210,000&lt;br&gt;&lt;br&gt;USDi 值&lt;br&gt;$ 1.00" style="rounded=1;whiteSpace=wrap;html=1;" parent="O2b2hehz6xSfP6omrJzt-7" vertex="1">
+        <mxCell id="jvoHZDlcRhFGuNJNGTSo-142" value="USDi 抵押数额&lt;br&gt;$ 199,000 USDC&lt;br&gt;&lt;br&gt;USDi 流通量&lt;br&gt;$ 199,000&lt;br&gt;&lt;br&gt;USDi 值&lt;br&gt;$ 1.00" style="rounded=1;whiteSpace=wrap;html=1;" parent="O2b2hehz6xSfP6omrJzt-7" vertex="1">
           <mxGeometry y="112" width="172" height="180" as="geometry" />
         </mxCell>
         <mxCell id="dI04j9mY4SL1QF9_-TwJ-97" value="&lt;b style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;BoC&#39;s Vault&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fontSize=14;" parent="O2b2hehz6xSfP6omrJzt-7" vertex="1">
