@@ -4,6 +4,8 @@
 
 Here is a quick guide on interacting and investing with the BoC platform. To complete the investment in BoC, we first start off from the user investment page. Go to the [home page](https://bankofchain.io/#/) and click on the `LAUNCH APP` button. You will now be directed to the main page of the APP.
 
+<figure><img src="../.gitbook/assets/user_handbook_LaunchApp1.png" alt=""><figcaption></figcaption></figure>
+
 ### Wallet Connection
 
 We can interact with BoC through [wallets](../more/appendix.md#wallet). The APP is compatible with [MetaMask](https://metamask.io/) and [WalletConnect](https://walletconnect.com/). By clicking on the `CONNECT WALLET` button, your wallet could be connected.
@@ -40,21 +42,21 @@ To demonstrate, we will deposit 10000 USDT, 20000 USDC and 30000 DAI into the pr
 
 **Figure 1:** Enter the desired amount for each type of stablecoins.
 
-![](../.gitbook/assets/user\_handbook\_deposit\_exp.png)
+![Figure 1](../.gitbook/assets/user\_handbook\_deposit\_exp.png)
 
-**Figure 2:** After hitting the `DEPOSIT` button, we will proceed to the next step, which is to obtain the USDi ticket and to reconfirm the deposit amounts.
+**Figure 2:** After hitting the `DEPOSIT` button, proceed to the next step to obtain the USDi ticket and to reconfirm the deposit amounts.&#x20;
 
-![](../.gitbook/assets/user\_handbook\_est\_USDi\_ticket.png)
+![Figure 2](../.gitbook/assets/user\_handbook\_est\_USDi\_ticket.png)
 
 **Figure 3:** After hitting `CONTINUE`, the METAMASK window appears, displaying the approved amount, protocol address and other related details for confirmation. This process repeats for each stablecoins (USDT, USDC and DAI). Figure 3 here only displays that of USDT.
 
-![](../.gitbook/assets/user\_handbook\_deposit\_confirmation.png)
+![Figure 3](../.gitbook/assets/user\_handbook\_deposit\_confirmation.png)
 
 After confirming on the details, you shall be redirected to the deposit main page. If the stablecoins have been successfully deposited into the Vault, your current balance of each stablecoin should be updated and displayed as shown. The BoC protocol will allocate your funds into third-party protocols based on the fund allocation rules, which prioritizes liquidity pool of higher yields and adjusts automatically to ensure the most cost-efficient position. During this allocation process, your USDi ticket balance will be shown on-screen.
 
 **Figure 4:** USDi ticket balance during fund allocation.
 
-![](../.gitbook/assets/user\_handbook\_deposit\_completed.png)
+![Figure 4](../.gitbook/assets/user\_handbook\_deposit\_completed.png)
 
 After the fund allocation, the protocol exchanges the USDi ticket for USDi. After deducting the first allocation fee, USDi will then be distributed into your account, with the balance now viewable.
 
@@ -78,15 +80,15 @@ To demonstrate, we will withdraw 40000 USDi into USDC. Withdrawal steps are illu
 
 **Figure 1:** Set the USDi amount to 40000 and select USDC as the stablecoin type before hitting `WITHDRAW`.
 
-![](../.gitbook/assets/user\_handbook\_withdraw\_process.png)
+![Figure 1](../.gitbook/assets/user\_handbook\_withdraw\_process.png)
 
 **Figure 2:** After hitting `WITHDRAW` the METAMASK window appears, displaying details such as the estimated gas fee for confirmation.
 
-![](../.gitbook/assets/user\_handbook\_withdraw\_confirmation.png)
+![Figure 2](../.gitbook/assets/user\_handbook\_withdraw\_confirmation.png)
 
 **Figure 3:** After confirming on the details, you will be redirected to the withdrawal main page. You can then check to confirm whether withdrawal was successful by referring to the updated USDi balance.
 
-![](../.gitbook/assets/user\_handbook\_withdraw\_complete.png)
+![Figure 3](../.gitbook/assets/user\_handbook\_withdraw\_complete.png)
 
 By hitting the `Switch to ETHi` tab, users will be directed to the ETHi Vault page for ETH withdrawal.
 
@@ -196,4 +198,3 @@ The data presented are described as follows:
 In September 2022, the BoC Beta version will be deployed, indicating that USDi holders will be required to withdraw all of their funds from the BoC Alpha version and redeposit into the BoC Beta version. Here is the tutorial on how to withdraw your funds from the BoC Alpha version.
 
 {% embed url="https://www.youtube.com/watch?feature=youtu.be&v=QSfJgT8k6u0" %}
-
