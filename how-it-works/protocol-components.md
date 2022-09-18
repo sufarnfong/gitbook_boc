@@ -1,20 +1,14 @@
-# Protocol Components
+# 协议模块
 
 ## 区块链选择
 
-BOC选择兼容[EVM](../more/appendix.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%99%9A%E6%8B%9F%E6%9C%BAevm)的区块链，目前已经对接Ethereum、BNB Chain和Polygon链。
+BOC选择兼容[EVM](../more/appendix.md#以太坊虚拟机evm)的区块链，目前已经对接Ethereum、BNB Chain和Polygon链。
 
 ### Ethereum
 
 [**以太坊**](https://ethereum.org/en/)是一个去中心化的开源的有智能合约功能的公共区块链平台。以太币是以太坊的原生加密货币。
 
 以太坊的概念在2013至2014年间由程序员Vitalik Buterin受比特币启发后首次提出，意为“下一代加密货币与去中心化应用平台”。以太坊在2014年通过ICO众筹得以开始发展。
-
-### BNB Chain
-
-[**币安智能链**](https://www.binance.com/zh-CN)是一条兼容[以太坊虚拟机](../more/appendix.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%99%9A%E6%8B%9F%E6%9C%BAevm)、与币安链并行的区块链。通过引入[权益权威证明（PoSA）](../more/appendix.md#%E6%9D%83%E7%9B%8A%E6%9D%83%E5%A8%81%E8%AF%81%E6%98%8E-posa)[共识机制](../more/appendix.md#%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6-consensus-mechanism)，BNB Chain创建了一个允许节点、代币持有者、开发者和用户都能够从区块链中获益的生态系统。
-
-2022年2月15日，币安交易所发布消息，原币安智能链更名为BNB Chain。BNB是币安交易所的平台币，以及币安智能链的生态代币。
 
 ### Polygon
 
@@ -24,11 +18,11 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ## 稳定币选择
 
-为避免数字货币价格大幅度波动产生的心理恐惧，并引发做市资金的[无偿损失](../more/appendix.md#%E6%97%A0%E5%81%BF%E6%8D%9F%E5%A4%B1-impermanent-loss)，BOC协议只针对[稳定币](../more/appendix.md#%E7%A8%B3%E5%AE%9A%E5%B8%81stablecoin)资产，且仅限于由法币提供足额抵押或由蓝筹数字资产提供超额抵押生成的稳定币。稳定币需要满足以下条件：
+为避免数字货币价格大幅度波动产生的心理恐惧，并引发做市资金的[无偿损失](../more/appendix.md#无偿损失-impermanent-loss)，BOC协议只针对[稳定币](../more/appendix.md#稳定币stablecoin)资产，且仅限于由法币提供足额抵押或由蓝筹数字资产提供超额抵押生成的稳定币。稳定币需要满足以下条件：
 
 1. 其发行者需通过严格审核。
 2. 具有保险。
-3. 为减少[预言机](../more/appendix.md#%E9%A2%84%E8%A8%80%E6%9C%BA-oracle)攻击， 稳定币报价必须基于[Chainlink](https://chain.link/)而不是协议本身。
+3. 为减少[预言机](../more/appendix.md#预言机-oracle)攻击， 稳定币报价必须基于[Chainlink](https://chain.link/)而不是协议本身。
 4. 规模大于5亿美元/20万ETH。
 
 目前挑选出的策略稳定币种有：DAI、USDC、USDT、BUSD、USDP、TUSD、LUSD。
@@ -63,29 +57,28 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ## 协议策略选择
 
-当选定稳定币后，BOC挑选的[策略](../more/appendix.md#%E7%AD%96%E7%95%A5strategy)将只使用到这些稳定币，且策略需要满足以下条件：
+当选定稳定币后，BOC挑选的[策略](../more/appendix.md#策略strategy)将只使用到这些稳定币，且策略需要满足以下条件：
 
 * 无提取费。
 * 无入场费。
 * 无锁定期（部分策略存在锁定期，短时间内无法取回资金）。
 * 无投资限额（部分策略对资金有限额）。
 * 所有的协议均经过严格审计，避免代码漏洞造成的损失。
-* 为避免[嵌套代币](../more/appendix.md#%E5%B5%8C%E5%A5%97%E4%BB%A3%E5%B8%81nested-tokens)、[乐高组合](../more/appendix.md#%E4%B9%90%E9%AB%98%E5%BC%8F%E7%BB%84%E5%90%88-lego-combination)产生的连锁性系统风险，接入的聚合理财协议需要有长期的安全运营记录，并得到社区投票许可。
+* 为避免[嵌套代币](../more/appendix.md#嵌套代币nested-tokens)、[乐高组合](../more/appendix.md#乐高式组合-lego-combination)产生的连锁性系统风险，接入的聚合理财协议需要有长期的安全运营记录，并得到社区投票许可。
 * 为避免市场波动导致损失，暂不接入通过提供风险服务获取资金回报的协议，暂不通过杠杆放大资金回报。
-* 首批接入的[DEX](../more/appendix.md#%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E4%BA%A4%E6%98%93%E6%89%80-dex)和[借贷协议](../more/appendix.md#%E5%80%9F%E8%B4%B7%E5%8D%8F%E8%AE%AElending-protocol)均为各区块链上的首选一线协议，并有良好的安全运营记录。
+* 首批接入的[DEX](../more/appendix.md#去中心化交易所-dex)和[借贷协议](../more/appendix.md#借贷协议lending-protocol)均为各区块链上的首选一线协议，并有良好的安全运营记录。
 * 协议提供资金链内择优分配服务，该分配兼具回报最大化及资金风险分散两项原则。
 
 目前挑选出的协议主要有：
 
 * Ethereum：Convex、DODO、SushiSwap、Balancer等。
-* BNB Chain：dForce、Synapse、Venus、DODO、Belt、Pancakeswap、Alpaca等。
 * Polygon：DODO、Synapse、Quickswap、Balancer、Aave、Curve、SushiSwap等。
 
 ### Aave
 
 [**Aave**](https://app.aave.com/)是一个开源的去中心化借贷协议, 为用户提供存款和借贷服务。借贷双方用户的存款利率与贷款利率根据平台借款量和存款量计算得到，并且平台采用Chainlink预言机保证抵押物价格的公平性。
 
-根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Aave的总资金锁仓量约为117.9亿美元，DeFi应用[锁仓量](../more/appendix.md#%E9%94%81%E4%BB%93%E9%87%8F%E6%80%BB%E9%94%81%E5%AE%9A%E4%BB%B7%E5%80%BC-tvl)排名第2名。
+根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Aave的总资金锁仓量约为117.9亿美元，DeFi应用[锁仓量](../more/appendix.md#锁仓量总锁定价值-tvl)排名第2名。
 
 ### Curve
 
@@ -107,7 +100,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### Balancer
 
-[**Balancer**](https://balancer.fi/)是部署在以太坊上的去中心化交易所。Balancer使用[自动做市商]协议(appendix#自动做市商amm)，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
+[**Balancer**](https://balancer.fi/)是部署在以太坊上的去中心化交易所。Balancer使用\[自动做市商]协议(appendix#自动做市商amm)，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Balancer的总资金锁仓量约为21.9亿美元，DeFi应用锁仓量排名第6名。
 
@@ -125,7 +118,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### DODO
 
-[**DODO**](https://app.dodoex.io/)是一个去中心化交易所，它使用独创的[主动做市商（PMM）](../more/appendix.md#%E4%B8%BB%E5%8A%A8%E5%81%9A%E5%B8%82%E5%95%86-pmm)算法为Web3资产提供高效的链上流动性，让每个人都能轻松地发行和交易Web3资产。DODO既自己提供流动性，也聚合其它交易所的流动性。这使得DODO可以提供全网较好好的价格。
+[**DODO**](https://app.dodoex.io/)是一个去中心化交易所，它使用独创的[主动做市商（PMM）](../more/appendix.md#主动做市商-pmm)算法为Web3资产提供高效的链上流动性，让每个人都能轻松地发行和交易Web3资产。DODO既自己提供流动性，也聚合其它交易所的流动性。这使得DODO可以提供全网较好好的价格。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，DODO的总资金锁仓量约为4.77千万美元，DeFi应用锁仓量排名第52名。
 
@@ -192,35 +185,6 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 | [ConvexAaveStrategy](https://etherscan.io/address/0x7f3bd67d7366dbc6b149f606cfa9c8fcdb72d9e2)           | [Curve.fi aDAI/aUSDC/aUSDT Pool](https://etherscan.io/address/0xDeBF20617708857ebe4F679508E7b7863a8A8EeE)                                                                                              |
 | [YearnEarnTusdStrategy](https://etherscan.io/address/0x5c09ab7a2e09cc0f1d2e7f7ed189a7477c8e9623)        | [yearn yTUSD Token](https://etherscan.io/address/0x73a052500105205d34Daf004eAb301916DA8190f)                                                                                                           |
 | [GUniUsdcDai100Strategy](https://etherscan.io/address/0x6488b7756e4338d73b85c61a67ca33921be59c88)       | [Gelato Uniswap DAI/USDC LP](https://etherscan.io/address/0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e)                                                                                                  |
-
-### BNB Chain
-
-| BOC合约                                                                                             | 第三方协议合约                                                                                                                                                                                                     |
-| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Vault](https://bscscan.com/address/0x76609c83dD684F0D4c0F0c9849db0a1b5a96CAB2)                   |                                                                                                                                                                                                             |
-| [PancakeDaiBusdStrategy](https://bscscan.com/address/0x3fa2b30bfa5816b115b648d42955d3c3cb7bc368)  | [PancakeSwap Router v2](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E)、[PancakeSwap Main Staking Contract](https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E) |
-| [PancakeTusdBusdStrategy](https://bscscan.com/address/0x3c87c8a62bc56b9663a256999c5aa333ce459857) | [PancakeSwap Router v2](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E)、[PancakeSwap Main Staking Contract](https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E) |
-| [PancakeUsdcBusdStrategy](https://bscscan.com/address/0x05898f26ebfb39de28c55a7dc3d2ff062aa8defa) | [PancakeSwap Router v2](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E)、[PancakeSwap Main Staking Contract](https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E) |
-| [PancakeUsdcUsdtStrategy](https://bscscan.com/address/0x06695568007119a0f79720cb0ad481c9ce640e9c) | [PancakeSwap Router v2](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E)、[PancakeSwap Main Staking Contract](https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E) |
-| [PancakeUsdtBusdStrategy](https://bscscan.com/address/0xeccc75f9e1ba708c25202c744ea61dc93dc9a2f0) | [PancakeSwap Router v2](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E)、[PancakeSwap Main Staking Contract](https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E) |
-| [AlpacaTusdStrategy](https://bscscan.com/address/0x7983b99faf9854d82bbd100302defff4f6fd9b51)      | [ibTUSD](https://bscscan.com/address/0x3282d2a151ca00BfE7ed17Aa16E42880248CD3Cd)                                                                                                                            |
-| [AlpacaUsdtStrategy](https://bscscan.com/address/0x568dced4cb4114359854f052fc5b776f6c6d12dc)      | [ibUSDT](https://bscscan.com/address/0x158Da805682BdC8ee32d52833aD41E74bb951E59)                                                                                                                            |
-| [AlpacaBusdStrategy](https://bscscan.com/address/0x8178f4a3c7acc168cba50c8a70b4de8b63d6d892)      | [ibBUSD](https://bscscan.com/address/0x7C9e73d4C71dae564d41F78d56439bB4ba87592f)                                                                                                                            |
-| [VenusTusdStrategy](https://bscscan.com/address/0x175724af9ec5e3e7b71934d31b5db4f8c4146db4)       | [vTUSD](https://bscscan.com/address/0x08CEB3F4a7ed3500cA0982bcd0FC7816688084c3)                                                                                                                             |
-| [VenusUsdtStrategy](https://bscscan.com/address/0x21b31dc834588f81d2ae3fe64f3ce3c5bdbd070d)       | [VUSDT](https://bscscan.com/address/0xfD5840Cd36d94D7229439859C0112a4185BC0255)                                                                                                                             |
-| [VenusUsdcStrategy](https://bscscan.com/address/0x1623cb1cd01e01d0dff7e5091197a8e261fb5596)       | [vUSDC](https://bscscan.com/address/0xecA88125a5ADbe82614ffC12D0DB554E2e2867C8)                                                                                                                             |
-| [VenusDaiStrategy](https://bscscan.com/address/0xc0ce366cedbe7ba63036820c72c1ea7bccd8963f)        | [vDAI](https://bscscan.com/address/0x334b3eCB4DCa3593BCCC3c7EBD1A1C1d1780FBF1)                                                                                                                              |
-| [VenusBusdStrategy](https://bscscan.com/address/0x65ab000d3474dcd0fa347935dba68f0dda354c88)       | [vBUSD](https://bscscan.com/address/0x95c78222B3D6e262426483D42CfA53685A67Ab9D)                                                                                                                             |
-| [Belt4BeltStrategy](https://bscscan.com/address/0xa59d8ff6c63eefc8001c8d5501bde62fca564bc6)       | [beltPair](https://bscscan.com/address/0xF6e65B33370Ee6A49eB0dbCaA9f43839C1AC04d5)、[MasterBelt](https://bscscan.com/address/0xD4BbC80b9B102b77B21A06cb77E954049605E6c1)                                     |
-| [DodoBusdUsdcStrategy](https://bscscan.com/address/0x466cc0484a2077b769420bec7b0620bba5ffebd1)    | [DODO](https://bscscan.com/address/0x6064DBD0fF10BFeD5a797807042e9f63F18Cfe10)                                                                                                                              |
-| [DodoBusdUsdtStrategy](https://bscscan.com/address/0xd1f9f90492ad3fccf0f1772be9f0a6bdaed27e84)    | [DODO](https://bscscan.com/address/0xBe60d4c4250438344bEC816Ec2deC99925dEb4c7)                                                                                                                              |
-| [DForceLendBusdStrategy](https://bscscan.com/address/0x5960f21b3e388f4435ad61cb6b74440cb93de232)  | [iBUSD](https://bscscan.com/address/0x5511b64Ae77452C7130670C79298DEC978204a47)                                                                                                                             |
-| [DForceLendDaiStrategy](https://bscscan.com/address/0x1a235ea7fee8ed513c271d19f46d8a66c66aacbc)   | [iDAI](https://bscscan.com/address/0xAD5Ec11426970c32dA48f58c92b1039bC50e5492)                                                                                                                              |
-| [DForceLendUsdcStrategy](https://bscscan.com/address/0xdabf728c63e50c8655bd591200cdaed850270f97)  | [iUSDC](https://bscscan.com/address/0xAF9c10b341f55465E8785F0F81DBB52a9Bfe005d)                                                                                                                             |
-| [DForceLendUsdtStrategy](https://bscscan.com/address/0xf0565751ed9cf38763a34a695060536092b4aa2f)  | [iUSDT](https://bscscan.com/address/0x0BF8C72d618B5d46b055165e21d661400008fa0F)                                                                                                                             |
-| [Synapse4UStrategy](https://bscscan.com/address/0x1d63e9ef24a41582b003c3908b685fa9e9655e2b)       | [SwapFlashLoan](https://bscscan.com/address/0x28ec0B36F0819ecB5005cAB836F4ED5a2eCa4D13)、[Synapse MiniChef](https://bscscan.com/address/0x8F5BBB2BB8c2Ee94639E55d5F41de9b4839C1280)                          |
-| [StargateBusdStrategy](https://bscscan.com/address/0xed85deb92eef641ee051de880eb907ab9c074fb3)    | [LayerZero](https://bscscan.com/address/0xed85deb92eef641ee051de880eb907ab9c074fb3)                                                                                                                         |
-| [StargateBusdStrategy](https://bscscan.com/address/0xdad19203c03027b1be5433a30c9071f4d34163ac)    | [LayerZero](https://bscscan.com/address/0xdad19203c03027b1be5433a30c9071f4d34163ac)                                                                                                                         |
 
 ### Polygon
 
