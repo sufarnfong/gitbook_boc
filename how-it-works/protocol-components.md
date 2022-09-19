@@ -2,7 +2,7 @@
 
 ## 区块链选择
 
-BOC选择兼容[EVM](../more/appendix.md#以太坊虚拟机evm)的区块链，目前已经对接Ethereum、BNB Chain和Polygon链。
+BoC选择兼容[EVM](../more/appendix.md#以太坊虚拟机evm)的区块链，目前已经对接Ethereum 和 Polygon链。
 
 ### Ethereum
 
@@ -18,7 +18,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ## 稳定币选择
 
-为避免数字货币价格大幅度波动产生的心理恐惧，并引发做市资金的[无偿损失](../more/appendix.md#无偿损失-impermanent-loss)，BOC协议只针对[稳定币](../more/appendix.md#稳定币stablecoin)资产，且仅限于由法币提供足额抵押或由蓝筹数字资产提供超额抵押生成的稳定币。稳定币需要满足以下条件：
+为避免数字货币价格大幅度波动产生的心理恐惧，并引发做市资金的[无偿损失](../more/appendix.md#无偿损失-impermanent-loss)，BoC协议只针对[稳定币](../more/appendix.md#稳定币stablecoin)资产，且仅限于由法币提供足额抵押或由蓝筹数字资产提供超额抵押生成的稳定币。稳定币需要满足以下条件：
 
 1. 其发行者需通过严格审核。
 2. 具有保险。
@@ -41,23 +41,23 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### BUSD
 
-[**Binance USD**](https://www.binance.com/en/busd)（BUSD）是Binance和Paxos合作推出的新的稳定币，它以1:1的锚定美元。
+[**Binance USD**](https://www.binance.com/en/busd)（BUSD）是Binance和Paxos合作推出的新的稳定币，它以 1:1 的锚定美元。
 
 ### USDP
 
-[**Pax Dollar**](https://paxos.com/usdp/)（USDP）是一种法定抵押的稳定币，它以1:1的锚定美元。
+[**Pax Dollar**](https://paxos.com/usdp/)（USDP）是一种法定抵押的稳定币，它以 1:1 的锚定美元。
 
 ### TUSD
 
-[**TrueUSD**](https://www.trusttoken.com)（TUSD）是由Trusttoken发行的一种稳定币，它以1:1的锚定美元。
+[**TrueUSD**](https://www.trusttoken.com)（TUSD）是由Trusttoken发行的一种稳定币，它以 1:1 的锚定美元。
 
 ### LUSD
 
-[**LUSD**](https://www.liquity.org/)是由Liquity协议发行的一种稳定币，它以1:1的锚定美元。
+[**LUSD**](https://www.liquity.org/)是由 Liquity 协议发行的一种稳定币，它以 1:1 的锚定美元。
 
 ## 协议策略选择
 
-当选定稳定币后，BOC挑选的[策略](../more/appendix.md#策略strategy)将只使用到这些稳定币，且策略需要满足以下条件：
+当选定稳定币后，BoC挑选的[策略](../more/appendix.md#策略strategy)将只使用到这些稳定币，且策略需要满足以下条件：
 
 * 无提取费。
 * 无入场费。
@@ -124,25 +124,13 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### dForce
 
-[**dForce**](https://dforce.network/)致力于构建一个集成、互通的开放式金融协议和货币协议矩阵，包括借贷协议（全球流动性池、生息市场）、资产类协议（多货币稳定币、合成资产等）流动性协议（交易聚合器、自动做市商）三大类。
+**dForce** 致力于构建一个集成、互通的开放式金融协议和货币协议矩阵，包括借贷协议（全球流动性池、生息市场、资产类协议（多货币稳定币、合成资产等）流动性协议（交易聚合器、自动做市商）三大类。
 
-截止2022年3月30日，dForce的总资金锁仓量约为1.54千万美元，DeFi应用锁仓量排名第69名。
+截止于2022年3月30日，dForce的总资金锁仓量约为1.54千万美元，DeFi应用锁仓量排名第69名。
 
 ### Synapse
 
 [**Synapse**](https://synapseprotocol.com/landing)是一个跨链的去中心化交易所和去中心化金融生态系统。该协议结合了新的代币、高收益流动性矿池、跨链桥等，为用户创造了无缝的去中心化金融体验。Synapse由原BNB Chain上的匿名跨链流动性协议Nerve Finance升级更名而来。
-
-### Venus
-
-[**Venus**](https://app.venus.io/dashboard)是BNB Chain上的一个合成稳定币驱动的去中心化金融系统，它是一个加密货币的借贷解决方案。Venus的独特之处在于它在加密货币的生态系统中推行了自己的合成稳定币VAI。XVS是平台治理代币。
-
-### Pancakeswap
-
-[**Pancakeswap**](https://pancakeswap.finance/)是BNB Chain上的去中心化交易所。用户可以通过向平台提供流动性赚取做市收益，通过质押来赚取Cake代币。
-
-### Alpaca
-
-[**Alpaca**](https://app.alpacafinance.org/lend)是BNB Chain上最大的杠杆借贷协议，其本质是一个为去中心化做市商提供服务的衍生品和货币市场。做市商可以通过Alpaca协议撬动更大的做市本金，提升自己做市的绝对收益；出借人则可以通过出借资金获得出借利息。对于去中心化交易所来说，Alpaca为其提供了流动性，通过连接借款人（做市商）和贷方来提高其资本效率。由于通过Alpaca借贷挖矿会使用到杠杆，所以用户在挖矿的同时也是一个做空做多资产的过程。Alpaca实际上提供的是借贷+杠杆服务，目前主要的场景在自动化做市商交易平台的流动性挖矿。
 
 ## 预言机选择
 
