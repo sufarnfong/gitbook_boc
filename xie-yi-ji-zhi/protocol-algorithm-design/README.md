@@ -35,7 +35,9 @@ BOC目前提供 **USD耕种理财** 和 **ETH耕种理财**。
 
 ETH耕种理财机制目前与USD耕种理财机制一样，唯一区别是EHT理财耕种的抵押凭证为EHTi。
 
-
+{% content-ref url="usdi-ticket.md" %}
+[usdi-ticket.md](usdi-ticket.md)
+{% endcontent-ref %}
 
 {% content-ref url="zhu-zao-mint-xiao-hui-burn-gui-ze.md" %}
 [zhu-zao-mint-xiao-hui-burn-gui-ze.md](zhu-zao-mint-xiao-hui-burn-gui-ze.md)
