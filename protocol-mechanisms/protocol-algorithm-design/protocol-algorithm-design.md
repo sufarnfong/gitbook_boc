@@ -9,7 +9,7 @@ To simplify the situation for easier understanding:
 * The vault is currently having only one user (James) who holds 100k USDi.
 * The allocation fee is 10% to have more significant impacts on the figures (In reality would be less than 1%, normally around 0.03%).
 
-### Alpha version logic (without USDi ticket).
+### Alpha version logic (without USDi Ticket).
 
 At `T=0`, We have James, who is holding at the moment $ 100,000 USDi, having USDi to be fully pegged to USD (1 USDi = 1 USD), so his total assets in USD is $100,000 USD.
 
@@ -39,6 +39,10 @@ As we can see in the table, the fund allocation decreases the USDi collateral ca
 
 The Beta version is incorporated with the USDi Ticket which functions as a buffer for the dispatching of the USDi. It could also be understood as a parallel USDi. After depositing stablecoins into the vault, the user holds USDi Tickets until the fund allocation has been completed by the protocol, and then only USDi will be distributed to the user. This allows the first allocation fees to be transparent and visible, which is the difference between the USDi tickets held by the user and the USDi distributed afterward.
 
+$$
+First Allocation Fees = USDi( tickets) held -(USDi) distributed
+$$
+
 We simplify again the situation for easier understanding:
 
 * Assume that the users only deposit in USDC.
@@ -58,13 +62,13 @@ In this situation, Alice deposited 100,000 USDC as well, while Bob deposited 10,
 
 <figure><img src="../../.gitbook/assets/Diagram6_Beta.png" alt=""><figcaption><p>Diagram 6: Alice and Bob deposit new funds on the BoC protocol (Beta version).</p></figcaption></figure>
 
-The keeper will call the funds allocation when the [conditions](protocol-algorithm-design.md#allocation) are met and the vault will allocate the funds on the strategies selected by the keeper. For this fees will be needed to pay the third-party protocols to complete the allocation, this fees will be taken from the USDi collateral, causing de-pegging.
+The keeper will call the funds allocation when the [conditions](protocol-algorithm-design.md#allocation) are met and the vault will allocate the funds on the strategies selected by the keeper. For this fees will be needed to pay the third-party protocols to complete the allocation, this fees will be taken from the USDi Ticket collateral, causing de-pegging.
 
 <figure><img src="../../.gitbook/assets/Digram7_Beta.png" alt=""><figcaption><p>Diagram 7: Allocation of the funds T=1 (Beta version).</p></figcaption></figure>
 
 After the funds allocation, the vault will exchange the USDi Tickets (burn) for USDi (mint).
 
-<figure><img src="../../.gitbook/assets/Diagram8_Beta.png" alt=""><figcaption><p>Diagram 8: USDi ticket exchange (Beta version).</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Diagram8_Beta.png" alt=""><figcaption><p>Diagram 8: USDi Ticket exchange (Beta version).</p></figcaption></figure>
 
 As we can see in the table, the fund allocation decreases the USDi Ticket collateral causing a de-pegging of it vs the USD, however the USDi collateral remains unaffected and fully pegged to USD, so James' assets have not been affected by Alices' and Bob's deposit.
 
