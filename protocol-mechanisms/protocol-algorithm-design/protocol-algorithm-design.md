@@ -23,7 +23,7 @@ Yesterday, Alice deposited 100,000 USDC as well, while Bob deposited 10,000 USDC
 
 Alice and Bob deposit new funds into the BoC protocol (Alpha version).
 
-<figure><img src="../../.gitbook/assets/Diagram2_Alpha (1).png" alt=""><figcaption><p>Diagram 2: USDi minted to users.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Diagram2_Alpha (2).png" alt=""><figcaption><p>Diagram 2: USDi minted to users.</p></figcaption></figure>
 
 The keeper will call the funds allocation when the [conditions](protocol-algorithm-design.md#allocation) are met and the vault will allocate the funds on the strategies selected by the keeper. For this fees will be needed to pay the third-party protocols to complete the allocation. This fee will be taken from the USDi collateral, causing de-pegging.
 
@@ -56,9 +56,9 @@ Again at `T=0`, we have James, who is holding at the moment $ 100,000 USDi havin
 
 In this situation, Alice deposited 100,000 USDC as well, while Bob deposited 10,000 USDC. Thus, on the Beta version, the vault will mint 110,000 **USDi Tickets** and they will be receiving 100,000 USDi Tickets and 10,000 USDi Tickets respectively.
 
-<figure><img src="../../.gitbook/assets/Table4_Beta.png" alt=""><figcaption><p>Table 4: T=1 (Beta version)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Table4_Beta (1).png" alt=""><figcaption><p>Table 4: T=1 (Beta version)</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Diagram6_Beta (1).png" alt=""><figcaption><p>Diagram 6: Alice and Bob deposit new funds on the BoC protocol (Beta version).</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Diagram6_Beta.png" alt=""><figcaption><p>Diagram 6: Alice and Bob deposit new funds on the BoC protocol (Beta version).</p></figcaption></figure>
 
 The keeper will call the funds allocation when the [conditions](protocol-algorithm-design.md#allocation) are met and the vault will allocate the funds on the strategies selected by the keeper. For this fees will be needed to pay the third-party protocols to complete the allocation, this fees will be taken from the USDi Ticket collateral, causing de-pegging.
 
@@ -68,12 +68,10 @@ The keeper will call the funds allocation when the&#x20;
 
 After the funds allocation, the vault will exchange the USDi Tickets (burn) for USDi (mint).
 
-<figure><img src="../../.gitbook/assets/Diagram8_Beta.png" alt=""><figcaption><p>Diagram 8: USDi ticket exchange (Beta version).</p></figcaption></figure>
-
 <figure><img src="../../.gitbook/assets/Diagram8_Beta (1).png" alt=""><figcaption><p>Diagram 8: USDi ticket exchange (Beta version).</p></figcaption></figure>
 
 As we can see in the table, the fund allocation decreases the USDi Ticket collateral causing a de-pegging of it vs the USD, however the USDi collateral remains unaffected and fully pegged to USD, so James' assets have not been affected by Alices' and Bob's deposit.
 
-<figure><img src="../../.gitbook/assets/Diagram9_Beta (1).png" alt=""><figcaption><p>Diagram 9: User's assets after allocation (Beta version).</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Diagram9_Beta.png" alt=""><figcaption><p>Diagram 9: User's assets after allocation (Beta version).</p></figcaption></figure>
 
 In conclusion, the main function of **USDi Tickets** is to **solve the over-dispatching of USDi** (without deducting the first allocation fee). It also **allows transparency of the first allocation fee** to be borne by every user individually.&#x20;
