@@ -1,5 +1,19 @@
 # 收割(Harvest)
 
+`HarvestTrigger` 将每日被触发以确定是否满足`harvest`条件。这两个条件为：
+
+1. 超过最大时间间隔。
+2. 满足`harvest` 规则：
+
+$$
+Profit \times 20\% > harvest cost
+$$
+
+若满足上述任一条件，该策略则能执行`harvest`：
+
+1. &#x20;执行收益转移 Harvester（针对有收益生产且达到收益销售阈值的策略）
+2. 从该策略中报告当前资产。
+
 ### Harvest
 
 | 设置参数                                                                     | Ethereum      | Polygon       |
