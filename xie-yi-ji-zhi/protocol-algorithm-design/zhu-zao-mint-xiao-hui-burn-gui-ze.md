@@ -1,7 +1,5 @@
 # 铸造(Mint)/销毁(Burn)规则
 
-### 铸造(Mint)/销毁(Burn)流程示意图
-
 <figure><img src="../../.gitbook/assets/Mint_USDi_T_zh.png" alt=""><figcaption><p>图1：BoC vault 在用户投入稳定币后铸造USDi Ticket</p></figcaption></figure>
 
 上图为用户存入稳定币并`mint`出等价的USDi Ticket的规则流程图。
@@ -14,7 +12,7 @@
 * 1 DAI = 0.99 USD
 * 1 USDC = 1.00 USD
 
-根据**BoC铸造`mint`规则**：
+根据**BoC铸造规则**：
 
 则最终用户能`mint`出300 USDi Ticket ：
 
