@@ -2,7 +2,7 @@
 
 ## Incorporated Blockchains
 
-BOC protocol is designed to be compatible with [Ethereum Virtual Machine (EVM)](../more/appendix.md#ethereum-virtual-machine-evm). In fact, BOC is connected with Ethereum, BNB Chain and Polygon chain.
+BoC protocol is designed to be compatible with [Ethereum Virtual Machine (EVM)](../more/appendix.md#ethereum-virtual-machine-evm). In fact, BoC is connected with Ethereum and Polygon chain.
 
 ### Ethereum
 
@@ -11,12 +11,6 @@ BOC protocol is designed to be compatible with [Ethereum Virtual Machine (EVM)](
 The concept of Ethereum was first proposed between 2013 and 2014 by the programmer Vitalik Buterin after being inspired by Bitcoin as "the next generation of cryptocurrency and decentralized application platform". Ethereum's development started through the ICO crowdfunding in 2014.
 
 Ethereum is also known as the "second-generation blockchain platform", second only to Bitcoin.
-
-### BNB
-
-[**Binance Smart Chain**](https://www.bnbchain.world/en) (formerly called the BSC) is a blockchain compatible with the Ethereum Virtual Machine (EVM) in parallel to the Binance Chain. It is a cutting-edge project in the crypto asset industry. By introducing the Proof of Stake Authority (PoSA) consensus mechanism, BNB creates a validating ecosystem that allows nodes, token holders, developers and users to enjoy the full benefits of the blockchain, such as having higher performance and an abundance of innovation space.
-
-On February 15, 2022, the cryptocurrency exchange Binance announced that the original Binance Smart Chain (BSC) would be renamed as BNB Chain. BNB is the Binance Exchange platform cryptocurrency that powers the BNB Chain Ecosystem, and is one of the world’s most popular utility tokens.
 
 ### Polygon
 
@@ -28,7 +22,7 @@ To avoid psychological fear caused by the fluctuations of digital currency value
 
 Stablecoins need to meet the following conditions:
 
-* The corresponding issuers should pass the due diligence check of BOC. 
+* The corresponding issuers should pass the due diligence check of BOC.
 * Algorithmic stablecoins are strictly prohibited.
 * Insurance is available.
 * Stablecoin quotes must be based on ChainLink.
@@ -80,7 +74,6 @@ After selecting a stablecoin, its corresponding strategies should meet the follo
 The following are the selected protocols at present:
 
 * in Ethereum: Convex, DODO, SushiSwap, Balancer, etc.
-* in BNB Chain: DForce, Synapse, Venus, DODO, Belt, Pancakeswap, Alpaca, etc.
 * in Polygon: DODO, Synapse, Quickswap, Balancer, Aave, Curve, SushiSwap, etc.
 
 ### Aave
@@ -125,20 +118,6 @@ The following are the selected protocols at present:
 
 Synapse adopts cross-chain multi-party computation (MPC) validator and threshold signature scheme to support assets, smart contract calls, etc. Synapse connects different blockchains for easy and secure interoperability; developers can also build real cross-chain applications, including cross-chain DEXs, lending platforms, margin systems, derivatives markets, income aggregators, and more.
 
-### Venus
-
-[**Venus**](https://app.venus.io/dashboard) is a synthetic stablecoin-driven decentralized currency market system on the BNB Chain, providing users with cryptocurrency lending solutions without the need for any third-party custody of funds or centralized entities to exercise more control over the protocol.
-
-Borrowers on Venus can get instant loans in stablecoins after holding cryptocurrency. This enables users to obtain additional funds without selling their non-stablecoin digital assets. Moreover, lenders can deposit stablecoins (and other different cryptocurrencies) on the platform to earn passive income. What makes Venus unique is how it promotes its own synthetic stablecoin within the cryptocurrency ecosystem. The synthetic stablecoins can maintain stable long-term value without holding the real-world assets they are pegged to (such as through algorithms, ecosystem incentive schemes, or using other forms of collateral).
-
-### Pancakeswap
-
-[**Pancakeswap**](https://pancakeswap.finance/) is a decentralized exchange on BNB Chain. Users can earn market-making income by providing liquidity to the platform and earn Cake tokens by staking.
-
-### Alpaca
-
-[**Alpaca**](https://app.alpacafinance.org/lend) is the largest lending protocol on the BNB Chain that provides leveraged farms. Alpaca helps lenders earn income and provides borrowers with leveraged farm position loans with insufficient collateral, which maximizes the principal benefit of farmers' mining and can generate multiple returns.
-
 ## Incorporated Oracle
 
 Oracles are data sources that connect Ethereum to off-chain, real-world information in order for users to be able to query data in smart contracts. It allows certain smart contracts to respond to the uncertain external world, and it is the only way for smart contracts to interact with the outside world. It is also the interface between blockchain and the real world.
@@ -180,33 +159,6 @@ Oracles are data sources that connect Ethereum to off-chain, real-world informat
 | [ConvexAaveStrategy](https://etherscan.io/address/0x7f3bd67d7366dbc6b149f606cfa9c8fcdb72d9e2)           | [Curve.fi aDAI/aUSDC/aUSDT Pool](https://etherscan.io/address/0xDeBF20617708857ebe4F679508E7b7863a8A8EeE)                                                                                               |
 | [YearnEarnTusdStrategy](https://etherscan.io/address/0x5c09ab7a2e09cc0f1d2e7f7ed189a7477c8e9623)        | [yearn yTUSD Token](https://etherscan.io/address/0x73a052500105205d34Daf004eAb301916DA8190f)                                                                                                            |
 | [GUniUsdcDai100Strategy](https://etherscan.io/address/0x6488b7756e4338d73b85c61a67ca33921be59c88)       | [Gelato Uniswap DAI/USDC LP](https://etherscan.io/address/0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e)                                                                                                   |
-
-### BNB Chain
-
-| BOC Contract                                                                                      | 3rd Party Protocol Contract                                                                                                                                                                                 |
-| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Vault](https://bscscan.com/address/0x76609c83dD684F0D4c0F0c9849db0a1b5a96CAB2)                   |                                                                                                                                                                                                             |
-| [PancakeDaiBusdStrategy](https://bscscan.com/address/0x3fa2b30bfa5816b115b648d42955d3c3cb7bc368)  | [PancakeSwap Router v2](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E) [PancakeSwap Main Staking Contract](https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E) |
-| [PancakeTusdBusdStrategy](https://bscscan.com/address/0x3c87c8a62bc56b9663a256999c5aa333ce459857) | [PancakeSwap Router v2](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E) [PancakeSwap Main Staking Contract](https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E) |
-| [PancakeUsdcBusdStrategy](https://bscscan.com/address/0x05898f26ebfb39de28c55a7dc3d2ff062aa8defa) | [PancakeSwap Router v2](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E) [PancakeSwap Main Staking Contract](https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E) |
-| [PancakeUsdcUsdtStrategy](https://bscscan.com/address/0x06695568007119a0f79720cb0ad481c9ce640e9c) | [PancakeSwap Router v2](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E) [PancakeSwap Main Staking Contract](https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E) |
-| [PancakeUsdtBusdStrategy](https://bscscan.com/address/0xeccc75f9e1ba708c25202c744ea61dc93dc9a2f0) | [PancakeSwap Router v2](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E) [PancakeSwap Main Staking Contract](https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E) |
-| [AlpacaTusdStrategy](https://bscscan.com/address/0x7983b99faf9854d82bbd100302defff4f6fd9b51)      | [ibTUSD](https://bscscan.com/address/0x3282d2a151ca00BfE7ed17Aa16E42880248CD3Cd)                                                                                                                            |
-| [AlpacaUsdtStrategy](https://bscscan.com/address/0x568dced4cb4114359854f052fc5b776f6c6d12dc)      | [ibUSDT](https://bscscan.com/address/0x158Da805682BdC8ee32d52833aD41E74bb951E59)                                                                                                                            |
-| [AlpacaBusdStrategy](https://bscscan.com/address/0x8178f4a3c7acc168cba50c8a70b4de8b63d6d892)      | [ibBUSD](https://bscscan.com/address/0x7C9e73d4C71dae564d41F78d56439bB4ba87592f)                                                                                                                            |
-| [VenusTusdStrategy](https://bscscan.com/address/0x175724af9ec5e3e7b71934d31b5db4f8c4146db4)       | [vTUSD](https://bscscan.com/address/0x08CEB3F4a7ed3500cA0982bcd0FC7816688084c3)                                                                                                                             |
-| [VenusUsdtStrategy](https://bscscan.com/address/0x21b31dc834588f81d2ae3fe64f3ce3c5bdbd070d)       | [VUSDT](https://bscscan.com/address/0xfD5840Cd36d94D7229439859C0112a4185BC0255)                                                                                                                             |
-| [VenusUsdcStrategy](https://bscscan.com/address/0x1623cb1cd01e01d0dff7e5091197a8e261fb5596)       | [vUSDC](https://bscscan.com/address/0xecA88125a5ADbe82614ffC12D0DB554E2e2867C8)                                                                                                                             |
-| [VenusDaiStrategy](https://bscscan.com/address/0xc0ce366cedbe7ba63036820c72c1ea7bccd8963f)        | [vDAI](https://bscscan.com/address/0x334b3eCB4DCa3593BCCC3c7EBD1A1C1d1780FBF1)                                                                                                                              |
-| [VenusBusdStrategy](https://bscscan.com/address/0x65ab000d3474dcd0fa347935dba68f0dda354c88)       | [vBUSD](https://bscscan.com/address/0x95c78222B3D6e262426483D42CfA53685A67Ab9D)                                                                                                                             |
-| [Belt4BeltStrategy](https://bscscan.com/address/0xa59d8ff6c63eefc8001c8d5501bde62fca564bc6)       | [beltPair](https://bscscan.com/address/0xF6e65B33370Ee6A49eB0dbCaA9f43839C1AC04d5) [MasterBelt](https://bscscan.com/address/0xD4BbC80b9B102b77B21A06cb77E954049605E6c1)                                     |
-| [DodoBusdUsdcStrategy](https://bscscan.com/address/0x466cc0484a2077b769420bec7b0620bba5ffebd1)    | [DODO](https://bscscan.com/address/0x6064DBD0fF10BFeD5a797807042e9f63F18Cfe10)                                                                                                                              |
-| [DodoBusdUsdtStrategy](https://bscscan.com/address/0xd1f9f90492ad3fccf0f1772be9f0a6bdaed27e84)    | [DODO](https://bscscan.com/address/0xBe60d4c4250438344bEC816Ec2deC99925dEb4c7)                                                                                                                              |
-| [DForceLendBusdStrategy](https://bscscan.com/address/0x5960f21b3e388f4435ad61cb6b74440cb93de232)  | [iBUSD](https://bscscan.com/address/0x5511b64Ae77452C7130670C79298DEC978204a47)                                                                                                                             |
-| [DForceLendDaiStrategy](https://bscscan.com/address/0x1a235ea7fee8ed513c271d19f46d8a66c66aacbc)   | [iDAI](https://bscscan.com/address/0xAD5Ec11426970c32dA48f58c92b1039bC50e5492)                                                                                                                              |
-| [DForceLendUsdcStrategy](https://bscscan.com/address/0xdabf728c63e50c8655bd591200cdaed850270f97)  | [iUSDC](https://bscscan.com/address/0xAF9c10b341f55465E8785F0F81DBB52a9Bfe005d)                                                                                                                             |
-| [DForceLendUsdtStrategy](https://bscscan.com/address/0xf0565751ed9cf38763a34a695060536092b4aa2f)  | [iUSDT](https://bscscan.com/address/0x0BF8C72d618B5d46b055165e21d661400008fa0F)                                                                                                                             |
-| [Synapse4UStrategy](https://bscscan.com/address/0x1d63e9ef24a41582b003c3908b685fa9e9655e2b)       | [SwapFlashLoan](https://bscscan.com/address/0x28ec0B36F0819ecB5005cAB836F4ED5a2eCa4D13) [Synapse MiniChef](https://bscscan.com/address/0x8F5BBB2BB8c2Ee94639E55d5F41de9b4839C1280)                          |
 
 ### Polygon
 
