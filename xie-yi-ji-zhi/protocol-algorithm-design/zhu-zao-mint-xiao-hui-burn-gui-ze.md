@@ -14,7 +14,7 @@
 * 1 DAI = 0.99 USD
 * 1 USDC = 1.00 USD
 
-根据**BoC`mint`规则**：
+根据**BoC铸造`mint`规则**：
 
 则最终用户能`mint`出300 USDi Ticket ：
 
