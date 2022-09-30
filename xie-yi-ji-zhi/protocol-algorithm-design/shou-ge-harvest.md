@@ -6,7 +6,7 @@
 2. 满足`harvest` 规则：
 
 $$
-Profit \times 20\% > harvest cost
+Profit > harvest cost
 $$
 
 若满足上述任一条件，该策略则能执行`harvest`：
