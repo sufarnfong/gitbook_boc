@@ -2,41 +2,56 @@
 
 ### 铸造(Mint)/销毁(Burn)流程示意图
 
-<figure><img src="../../.gitbook/assets/mint.png" alt=""><figcaption><p>铸造 (Mint)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Mint_USDi_T_zh.png" alt=""><figcaption><p>图1：BoC vault 在用户投入稳定币后铸造USDi Ticket</p></figcaption></figure>
 
-上图为用户存入稳定币并`mint`出等价的USDi的规则流程图。
+上图为用户存入稳定币并`mint`出等价的USDi Ticket的规则流程图。
 
-用户将手中的三大稳定币（USDT、USDC、DAI）以任意组合、任意数量存入，根据当下预言机Chainlink的价格，铸造出等价的USDi作为抵押凭证。
+用户将手中的三大稳定币（USDT、USDC、DAI）以任意组合、任意数量存入，根据当下预言机Chainlink的价格，铸造出等价的USDi Ticket作为持有资金凭证。
 
 假设用户存入USDT, DAI和USDC各100，此时预言机的价格为：
 
-1 USDT = 1.01 USD\
-1 DAI = 0.99 USD\
-1 USDC = 1.00 USD
+* 1 USDT = 1.01 USD
+* 1 DAI = 0.99 USD
+* 1 USDC = 1.00 USD
 
-根据BOC的`mint`规则：预言机价格高于1USD时按1USD算，低于1USD时按预言机价格算。
+根据**BoC`mint`规则**：
 
-则最终用户能`mint`出299 USDi ：
+则最终用户能`mint`出300 USDi Ticket ：
 
-100 USDT = 100 x 1.00 = 100 USDi (预言机价格 > 1USD，按1USD算)\
-100 DAI = 100 x 0.99 = 99 USDi (预言机价格 < 1USD，按预言机价格算)\
-100 USDC = 100 x 1.00 = 100 USDi (预言机价格 = 1USD，按1USD算)
+* 100 USDT = 100 x 1.01 = 101 USDi Ticket
+* 100 DAI = 100 x 0.99 = 99 USDi Ticket
+* 100 USDC = 100 x 1.00 = 100 USDi Ticket
 
-<figure><img src="../../.gitbook/assets/burn.png" alt=""><figcaption><p>销毁 (Burn)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Mint_USDi_zh.png" alt=""><figcaption><p>图2：BoC 在把资金调配到第三方策略后销毁USDi Ticket，铸造USDi 并发行给用户</p></figcaption></figure>
 
-当用户取出池中稳定币时，需要提供并销毁(`burn`)手上的抵押凭证USDi。
+接着根据dohardwork策略算法,将用户存入的稳定币进行组合投资到相关策略里，根据本次投资后按策略的估值进行铸造出等价的USDi作为用户最终持有的投资凭证，并销毁其持有的USDi Ticket。
 
-BOC的销毁规则与铸造币时相反：预言机价格高于1USD时按预言机价格算，低于1USD时按1USD算。假设预言机价格不变。
+假设用户持有的300 USDi，对应投入的各100个USDT, DAI和USDC，经过doHardWork策略算法，将其投入到 Aura3PoolStrategy策略协议，其最终估值为299 USD(损失一般是由于策略投资会进行一定比例的币种兑换或是有的协议会收取入场费造成的)。那么用户最终能得到299 USDi，并将销毁其持有 300 USDi Ticket。
 
-用户销毁(`burn`)手中的299 USDi以取出其对应的稳定币 (假设用户将100 USDi用来取USDT, 99 USDi用来取DAI, 100 USDi用来取USDT)：
+<figure><img src="../../.gitbook/assets/Burn_USDi_zh (1).png" alt=""><figcaption><p>图3：销毁USDi</p></figcaption></figure>
 
-100 USDi = 100/1.01 = 99 USDT (预言机价格 > 1USD，按预言机价格算)\
-100 USDi = 100/1.00 = 100 DAI (预言机价格 < 1USD，按1USD算)\
-100 USDi = 100/1.00 = 100 USDC (预言机价格 = 1USD，按1USD算)
+当用户取出池中稳定币时，需要提供并销毁(burn)手上的投资凭证USDi。
 
-此机制的目的是保护协议，防止套利和预言机被攻击。
+根据**BoC销毁规则**：
 
-###
+$$
+当前USDi汇率 =\frac {当前vault总资产}{ 当前USDi总量}
+$$
 
+根据当前USDi的汇率，兑换出其相等价值的稳定币。兑换出来稳定币的价值是根据当下预言机Chainlink的价格来结算的。
 
+假如用户销毁(burn)手中的299 USDi以取出稳定币
 
+假设当前USDi的汇率是1.000，预言机的价格为：
+
+* 1 USDT = 1.01 USD
+* 1 DAI = 0.99 USD
+* 1 USDC = 1.00 USD
+
+若全部出的是USDT的话，那么数量为 $$\frac{299}{1.01} = 296.0396$$ USDT;
+
+若全部出的是DAI的话，那么数量为 $$\frac{299}{0.99}=302.0202$$ DAI;
+
+若全部出的是USDC的话，那么数量为$$\frac{299}{1.00}=299.0000$$ USDC;
+
+即兑换出来的稳定币的价值(根据当下预言机Chainlink的价格计算)等价于销毁其持有USDi的价值(销毁USDi数量$$\times$$当下USDi汇率)。
