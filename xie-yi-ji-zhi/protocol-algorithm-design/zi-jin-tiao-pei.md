@@ -153,7 +153,7 @@ $$
 
 #### DEX做市收益
 
-取标的合约LP的净值变化率。以在Curve中提供流动性收益为例，程序取过去一天内24小时之间两个区块高度getVirtualPrice()获得两个区块virtualPrice，计算出变化率并年化。
+取标的合约LP的净值变化率。以在Curve中提供流动性收益为例，程序取过去一天内24小时之间两个区块高度`getVirtualPrice()`获得两个区块virtualPrice，计算出变化率并年化。
 
 $$
 baseApr = \frac{endVirtualPrice - startVirtualPrice}{startVirtualPrice} \times 365
@@ -161,7 +161,7 @@ $$
 
 #### 借出利息收益
 
-取标的合约借贷率接口的值。以在DForce中提供借出收益为例，程序取过去一天内24小时之间两个区块高度getSupplyTokenData()获得两个区块借贷率值并年化。
+取标的合约借贷率接口的值。以在DForce中提供借出收益为例，程序取过去一天内24小时之间两个区块高度`getSupplyTokenData()`获得两个区块借贷率值并年化。
 
 $$
 baseApr = \frac{startSupplyTokenData[0]- endSupplyTokenData[0]}{2}
@@ -169,7 +169,7 @@ $$
 
 #### ETH2.0质押收益
 
-持有wstETH与rETH的协议策略将享有ETH2.0质押收益。以持有wstETH的协议策略为例，程序取过去一天内24小时之间两个区块高度stEthPerToken()获得两个区块净值变化并年化。
+持有wstETH与rETH的协议策略将享有ETH2.0质押收益。以持有wstETH的协议策略为例，程序取过去一天内24小时之间两个区块高度`stEthPerToken()`获得两个区块净值变化并年化。
 
 $$
 baseApr = \frac{endstEthPerToken - startstEthPerToken}{startstEthPerToken} \times 365
@@ -179,7 +179,7 @@ $$
 
 针对ConvexIronBank类协议（Convex），为了规避持有外汇币种的风险敞口，外汇将通过在IronBank协议抵押USDC借入。因此BoC需要支付一笔借入利息，收益为负。
 
-程序取Iron Bank外币合约过去一天内24小时之间两个区块高度的借贷率getBorrowInterest()，取均值后年化借入利息。
+程序取Iron Bank外币合约过去一天内24小时之间两个区块高度的借贷率`getBorrowInterest()`，取均值后年化借入利息。
 
 $$
 baseApr = -\frac{endBorrowInterest + startBorrowInterest}{2} \times oneDayBlocks \times 365
@@ -208,7 +208,7 @@ web3.0支持模拟调用合约的写方法得到返回结果，这是程序能�
 通过累加策略一日内操作时段间的收益计算当日基础收益，默认DEX做市收益实时发放，属于Realized APY。以在Curve中提供流动性收益为例，计算主要流程：
 
 1. 读取策略在一日范围内的操作：lend/withdraw/redeem/harvest。
-2. 通过Curve的getVirtualPrice()计算一日范围内每次操作段内的收益。
+2. 通过Curve的`getVirtualPrice()`计算一日范围内每次操作段内的收益。
 3. 累加每段收益后，与当日加权本金计算APR。
 
 #### 借出利息收益
