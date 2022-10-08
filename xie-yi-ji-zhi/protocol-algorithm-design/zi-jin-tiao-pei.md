@@ -4,20 +4,20 @@
 
 将第三方协议官方APY、每个策略投资/赎回所需要的gas、兑换滑点限制、[资金调配规则](../../more/appendix.md#资金分配规则)等作为调仓算法入参，输出待投资金应投资的策略以及金额。
 
-| 设置参数                                  | Ethereum     | BNB Chain    | Polygon      |
-| ------------------------------------- | ------------ | ------------ | ------------ |
-| 定时任务触发周期                              | 除周一外每天上午7:00 | 除周一外每天上午7:00 | 除周一外每天上午7:00 |
-| 成本收益计算周期X （投资X天的收益>=成本，则`doHardWork`） | 365天         | 365天         | 365天         |
+| 设置参数                                    | Ethereum     | Polygon      |
+| --------------------------------------- | ------------ | ------------ |
+| 定时任务触发周期                                | 除周一外每天上午7:00 | 除周一外每天上午7:00 |
+| 成本收益计算周期X （投资X天的收益 >= 成本，则`doHardWork`） | 365天         | 365天         |
 
 ### allocation
 
 与`doHardWork`相比，`allocation`多做了一步：将低APY策略的资金取出，然后再将第三方协议官方APY、每个策略投资/赎回所需要的gas、兑换滑点限制、[资金调配规则](../../more/appendix.md#资金分配规则)等作为调仓算法入参，输出应投资的策略以及待投金额。
 
-| 设置参数                                    | Ethereum       | BNB Chain      | Polygon        |
-| --------------------------------------- | -------------- | -------------- | -------------- |
-| 预调仓报告触发时机                               | 每周天doHardWork后 | 每周天doHardWork后 | 每周天doHardWork后 |
-| 定时任务触发周期                                | 每周一上午7:00      | 每周一上午7:00      | 每周一上午7:00      |
-| 成本收益计算周期X （调仓X天的收益>=成本，则可做`allocation`） | 30天            | 30天            | 30天            |
+| 设置参数                                      | Ethereum       | Polygon        |
+| ----------------------------------------- | -------------- | -------------- |
+| 预调仓报告触发时机                                 | 每周天doHardWork后 | 每周天doHardWork后 |
+| 定时任务触发周期                                  | 每周一上午7:00      | 每周一上午7:00      |
+| 成本收益计算周期X （调仓X天的收益 >= 成本，则可做`allocation`） | 30天            | 30天            |
 
 ### 资金调配算法
 
@@ -125,31 +125,100 @@ $$
 
 ### 公共参数配置
 
-| 设置参数                                  | Ethereum                 | BNB Chain | Polygon |
-| ------------------------------------- | ------------------------ | --------- | ------- |
-| 资金调配计算兑换滑点设置                          | 0.15%                    | 0.15%     | 0.15%   |
-| gas 配置 （包括策略存取款gas、兑换gas、`harvest`成本） | 0 (等资金量超过$500W后配置为实际gas) | 实际gas     | 实际gas   |
+| 参数设置                                  | Ethereum                 | Polygon |
+| ------------------------------------- | ------------------------ | ------- |
+| 资金调配计算兑换滑点设置                          | 0.15%                    | 0.15%   |
+| gas 配置 （包括策略存取款gas、兑换gas、`harvest`成本） | 0 (等资金量超过$500W后配置为实际gas) | 实际gas   |
+
+### 策略APY计算
+
+策略的收益主要有以下4种：
+
+* 矿币激励
+* DEX做市收益
+* 借出利息收益
+* ETH2.0质押收益
+
+特别的，针对ConvexIronBank类协议，BoC需要支付一笔借入利息，收益为负。
 
 ### 官方APY计算规则
 
-在资金调配时需要传入官方APY作为参考。官方APY的来源渠道有以下几种：vfat.tools、coingecko、zapper、Official APY、apy.vision Fee等。如果官方APY来源渠道未包含该协议策略的APY计算，BOC直接通过复刻协议策略的官方APY计算规则。
+#### 矿币收益
 
-一般而言，协议策略的官方APY由做市收益与矿币收益组成。以BOC已经对接的ConvexLusdStrategy策略为例，其APY由以下表格内容组成
+1. 分别获取开始区块、结束区块的池子的发矿速率、发矿的覆盖周期。
+2. 根据第一步的数据，算出一天内的平均发矿速率，进而算出该池一天能收到的矿币总数。
+3. 根据24小时内的加权totalSupply数量，算出奖励池的总本金。
+4. 用该池收到的矿币总价值，除以该池的总本金，并年化该收益即得到CRV奖励的APR。
+5. 将APR转换成APY。
 
-| 收益来源  | APR         | 是否复利 | 计算方式 | 数据来源                                                                                         |
-| ----- | ----------- | ---- | ---- | -------------------------------------------------------------------------------------------- |
-| 交易手续费 | 0.0024      | 否    | 接口获取 | [https://www.convexfinance.com/api/curve-apys](https://www.convexfinance.com/api/curve-apys) |
-| crv矿币 | 0.023523458 | 是    | 接口获取 | [https://www.convexfinance.com/api/curve-apys](https://www.convexfinance.com/api/curve-apys) |
-| cvx矿币 | 0.024132445 | 是    | 读取合约 | 按时间发放，一年矿币价格/池子总资产，得到APR                                                                     |
+#### DEX做市收益
 
-其中“是否复利”是指该收益来源是否可以复利。交易手续费是无法复利的，而矿币收益是可以不断复利，具体APR转换为APY的公示如下：
+取标的合约LP的净值变化率。以在Curve中提供流动性收益为例，程序取过去一天内24小时之间两个区块高度getVirtualPrice()获得两个区块virtualPrice，计算出变化率并年化。
 
 $$
-APY=(1+APR)^{periods}-1
+baseApr = \frac{endVirtualPrice - startVirtualPrice}{startVirtualPrice} \times 365
 $$
 
-​其中periods参数是利息发放周期。
+#### 借出利息收益
 
-### 策略实际APY计算规则
+取标的合约借贷率接口的值。以在DForce中提供借出收益为例，程序取过去一天内24小时之间两个区块高度getSupplyTokenData()获得两个区块借贷率值并年化。
 
-策略实际APY是以策略币本位收益进行计算。
+$$
+baseApr = \frac{startSupplyTokenData[0]- endSupplyTokenData[0]}{2}
+$$
+
+#### ETH2.0质押收益
+
+持有wstETH与rETH的协议策略将享有ETH2.0质押收益。以持有wstETH的协议策略为例，程序取过去一天内24小时之间两个区块高度stEthPerToken()获得两个区块净值变化并年化。
+
+$$
+baseApr = \frac{endstEthPerToken - startstEthPerToken}{startstEthPerToken} \times 365
+$$
+
+#### 借入利息
+
+针对ConvexIronBank类协议（Convex），为了规避持有外汇币种的风险敞口，外汇将通过在IronBank协议抵押USDC借入。因此BoC需要支付一笔借入利息，收益为负。
+
+程序取Iron Bank外币合约过去一天内24小时之间两个区块高度的借贷率getBorrowInterest()，取均值后年化借入利息。
+
+$$
+baseApr = -\frac{endBorrowInterest + startBorrowInterest}{2} \times oneDayBlocks \times 365
+$$
+
+### Verified APY计算规则
+
+BoC Verified APY包括Realized APY（已实现收益APY）和Unrealized APY（未实现收益APY）。程序每日定时任务生成昨日Verified APY：
+
+$$
+Verified APY = Realized APY + Unrealized APY
+$$
+
+#### 矿币收益
+
+策略矿币收益是通过执行`harvest()`方法收回。
+
+web3.0支持模拟调用合约的写方法得到返回结果，这是程序能得到Unrealized APY的基础。程序通过模拟计算每日起止区块下的`harvest()`方法得到策略本次harvest可收回的矿币种类及数量。
+
+目前策略的运营逻辑是在 UTC 22:00:00时间做harvest。无论策略当日是否做Harvest，策略每日都将存在Unrealized APY。这是因为在UTC 22:00:00\~UTC 23:59:59之间，在策略harvest后仍有未收回的收益，存在Unrealized APY。
+
+对于Unrealized APY的收益部分，由于实际未做卖矿动作，因此通过获取当前区块下矿币兑USD/ETH的汇率来预估计算当日APY，而在下次真正做卖矿时会回写更新矿币价格，并将Unrealized APY转化为确定的Realized APY。
+
+#### ​DEX做市收益
+
+通过累加策略一日内操作时段间的收益计算当日基础收益，默认DEX做市收益实时发放，属于Realized APY。以在Curve中提供流动性收益为例，计算主要流程：
+
+1. 读取策略在一日范围内的操作：lend/withdraw/redeem/harvest。
+2. 通过Curve的getVirtualPrice()计算一日范围内每次操作段内的收益。
+3. 累加每段收益后，与当日加权本金计算APR。
+
+#### 借出利息收益
+
+同DEX做市收益类似，程序通过累加策略一日内所有操作时段间的利息和与当日加权本金计算APR。默认利息是实时收取的，属于Realized APY。
+
+#### ETH2.0质押收益
+
+同DEX做市收益类似，程序通过累加策略一日内所有操作时段间的质押收益和与当日加权本金计算APR。默认质押收益是实时收取的，属于Realized APY。
+
+#### 借入利息
+
+同DEX做市收益类似，程序通过累加策略一日内所有操作时段间的借入利息和与当日加权本金计算APR。默认借入利息是实时收取的，属于Realized APY。

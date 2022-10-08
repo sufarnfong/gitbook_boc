@@ -22,7 +22,7 @@
 
 <figure><img src="../../.gitbook/assets/Mint_USDi_zh.png" alt=""><figcaption><p>图2：BoC 在把资金调配到第三方策略后销毁USDi Ticket，铸造USDi 并发行给用户</p></figcaption></figure>
 
-接着根据doHardWork策略算法,将用户存入的稳定币进行组合投资到相关策略里，根据本次投资后按策略的估值进行铸造出等价的USDi作为用户最终持有的投资凭证，并销毁其持有的USDi Ticket。
+接着根据dohardwork策略算法,将用户存入的稳定币进行组合投资到相关策略里，根据本次投资后按策略的估值进行铸造出等价的USDi作为用户最终持有的投资凭证，并销毁其持有的USDi Ticket。
 
 假设用户持有的300 USDi，对应投入的各100个USDT, DAI和USDC，经过doHardWork策略算法，将其投入到 Aura3PoolStrategy策略协议，其最终估值为299 USD(损失一般是由于策略投资会进行一定比例的币种兑换或是有的协议会收取入场费造成的)。那么用户最终能得到299 USDi，并将销毁其持有 300 USDi Ticket。
 
