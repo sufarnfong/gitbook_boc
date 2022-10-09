@@ -25,7 +25,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 3. 为减少[预言机](../more/appendix.md#预言机-oracle)攻击， 稳定币报价必须基于[Chainlink](https://chain.link/)而不是协议本身。
 4. 规模大于5亿美元/20万ETH。
 
-目前挑选出的策略稳定币种有：DAI、USDC、USDT、BUSD、USDP、TUSD、LUSD。
+目前挑选出的策略稳定币种有：DAI、USDC、USDT、BUSD、TUSD、LUSD、GUSD、SUSD。
 
 ### DAI
 
@@ -33,7 +33,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### USDC
 
-[**USD Coin**](https://www.centre.io/usdc)（USDC）是与美元挂钩的数字稳定币，可在以太坊，Stellar，Algorand，Hedera Hashgraph和Solana区块链上运行。截至2022年1月，流通中的USDC为452亿美元。
+[**USD Coin**](https://www.centre.io/usdc)（USDC）是与美元挂钩的数字稳定币，可在以太坊，Stellar，Algorand，Hedera Hashgraph和Solana区块链上运行。截至2022年8月31日，流通中的USDC为522亿美元。
 
 ### USDT
 
@@ -43,17 +43,21 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 [**Binance USD**](https://www.binance.com/en/busd)（BUSD）是Binance和Paxos合作推出的新的稳定币，它以 1:1 的锚定美元。
 
-### USDP
-
-[**Pax Dollar**](https://paxos.com/usdp/)（USDP）是一种法定抵押的稳定币，它以 1:1 的锚定美元。
-
 ### TUSD
 
-[**TrueUSD**](https://www.trusttoken.com)（TUSD）是由Trusttoken发行的一种稳定币，它以 1:1 的锚定美元。
+[**TrueUSD**](https://www.trusttoken.com)（TUSD）是由Trusttoken发行的一种稳定币，它以 1:1 锚定美元。
 
 ### LUSD
 
-[**LUSD**](https://www.liquity.org/)是由 Liquity 协议发行的一种稳定币，它以 1:1 的锚定美元。
+[**LUSD**](https://www.liquity.org/)是由 Liquity 协议发行的一种稳定币，它以 1:1 锚定美元。
+
+### GUSD
+
+&#x20;[**Gemini Dollar**](https://www.gemini.com/dollar) (GUSD) 是由Gemini 发行的一种稳定币，它以 1:1 锚定美元。
+
+### SUSD
+
+****[**SUSD**](https://synthetix.io/) 是由 Synthetix 协议发行的合成美元代币，它以 1:1 锚定美元。
 
 ## 协议策略选择
 
@@ -92,29 +96,67 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Convex的总资金锁仓量约为101亿美元，DeFi应用锁仓量排名第4名。
 
-### Uniswap
+以下分别展示优点特别的两个策略并进行详细说明：
 
-[**Uniswap**](https://uniswap.org/)是部署在以太坊上的去中心化交易所。Uniswap协议通过使用智能合约促进以太坊区块链上的加密货币之间的自动化交易。
+#### **ConvexIbUsdtUnderlyingStrategy**
 
-根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Uniswap的总资金锁仓量约为70.4亿美元，DeFi应用锁仓量排名第6名。
+**投资逻辑**
+
+**Deposited tokens:** USDT
+
+**Withdrawn tokens:** USDT
+
+为了规避持有外汇币种的风险敞口，外汇将通过在IronBank协议抵押USDT借入。
+
+**资金投入：**
+
+投入的USDT将被投到IronBank协议作为抵押物，保持75%左右的借贷率借入外币。然后将外币单币投入到Curve池中，再将从Curve池获得的lpToken质押到Convex协议中。
+
+**资金赎回：**
+
+从Curve池赎回ibForex，并偿还相同比例的债务赎回抵押物USDT。
+
+**decreaseBorrow：**
+
+当策略的借贷率超过80%时keeper将触发合约的`decreaseBorrow()`方法；
+
+* 当前的借贷率较低，则说明外汇的美元价值较低，策略将从Ironbank中继续借入ibForex并投入Curve中，再将从Curve池获得的lpToken质押到Convex协议中。
+
+#### **ConvexIbUsdcUnderlyingStrategy**
+
+**投资逻辑**
+
+**Deposited tokens:** USDC
+
+**Withdrawn tokens:** USDC
+
+为了规避持有外汇币种的风险敞口，外汇将通过在IronBank协议抵押USDC借入。
+
+**资金投入：**
+
+投入的USDC被分成两部分：
+
+* 部分1：占投入资金的40%，保持USDC不变。
+* 部分2：占投入资金的60%，投入到IronBank协议作为抵押物，借入价值60% \* 0.75 = 0.45的外汇（保持75%左右的借贷率）。
+
+然后将part1、part2组合投入到Curve池中，再将从Curve池获得的lpToken质押到Convex协议中。
+
+**资金赎回：**
+
+等比例从Curve池赎回两种币种：USDC、ibForex，并偿还相同比例的债务。若前面赎回的ibForex不够偿还债务，则将USDC在当前Curve池兑换成ibForex。偿还了等比例的债务后，从IronBank中抽取出等比例的抵押物，最终将USDC转给vault。
+
+**rebalance：**
+
+当策略的借贷率超过80%或低于60%时，keeper将触发合约的rebalance方法。
+
+* 若当前的借贷率较低，则说明外汇的美元价值较低，进一步说明Curve池中的ibForex较多，USDC较少，策略将抽出多余抵押物-USDC，直接将USDC单币投入到Curve池（投入池里较少的币，能获得的LP是偏多的）
+* 若当前的借贷率较高，则说明外汇的美元价值较高，进一步说明Curve池中的ibForex较少，USDC较多，策略将从Curve池中单币赎回USDC（单币赎回池中多的币种，能获得的数量偏多），将赎回的USDC投入到IronBank用于增加抵押物。但若整体的抵押率超过80%时，不再采用上述逻辑，而是按比例从Curve池中赎回双币，并将双币分别用于偿债和增加抵押物。
 
 ### Balancer
 
 [**Balancer**](https://balancer.fi/)是部署在以太坊上的去中心化交易所。Balancer使用\[自动做市商]协议(appendix#自动做市商amm)，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
 
 根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Balancer的总资金锁仓量约为21.9亿美元，DeFi应用锁仓量排名第6名。
-
-### SushiSwap
-
-[**SushiSwap**](https://app.sushi.com/swap)最初是Uniswap的分叉，以Uniswap的代码为基础构建而成，同时引入了一些关键差异，即流动性提供者的奖励以协议的原生代币SUSHI发放。与Uniswap不同，即使在停止提供流动性之后，SUSHI持有者仍能继续赚取收益。
-
-根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Sushiswap的总资金锁仓量约为16.8亿美元，DeFi应用锁仓量排名第11名。
-
-### Quickswap
-
-[**Quickswap**](https://quickswap.exchange/#/)是一个layer2的去中心化交易所，与Uniswap、Sushiswap相似，Quickswap使用自动做市商协议，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益，并且再次质押流动性代币来赚取收益。QUICK是Quickswap的治理代币。
-
-根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Quickswap的总资金锁仓量约为4.73亿美元，DeFi应用锁仓量排名第22名。
 
 ### DODO
 
@@ -128,9 +170,30 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 截止于2022年3月30日，dForce的总资金锁仓量约为1.54千万美元，DeFi应用锁仓量排名第69名。
 
-### Synapse
+### **UniswapV3**
 
-[**Synapse**](https://synapseprotocol.com/landing)是一个跨链的去中心化交易所和去中心化金融生态系统。该协议结合了新的代币、高收益流动性矿池、跨链桥等，为用户创造了无缝的去中心化金融体验。Synapse由原BNB Chain上的匿名跨链流动性协议Nerve Finance升级更名而来。
+**投资逻辑**
+
+**Deposited tokens:** ETH+rETH或稳定币对
+
+**Withdrawn tokens:** ETH+rETH或稳定币对
+
+**资金投入：**
+
+按池子里的比例投入对应的币对池。
+
+**资金赎回：**
+
+先从协议池里移除流动性，将获得的币对转给vault。
+
+**被动再平衡：**
+
+策略会设置两个Position：
+
+* Base Position：围绕当前价格根据base threshold对称下单。
+* Limit Position：略高于或低于当前价格根据limit threshold下单，该Position有助于策略重新平衡，使币对比例接近50:50。
+
+每24小时，keeper会调用rebalance方法，在运行时不会swap代币，而是根据更新的价格和代币余额调整Base Position与Limit Position。Limit Position和限价单一样贴近当前市场价，如果价格朝这个方向移动，第二头寸也会活跃起来，并获得交易手续费。
 
 ## 预言机选择
 
@@ -144,7 +207,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### Ethereum
 
-| BOC合约                                                                                                   | 第三方协议合约                                                                                                                                                                                                |
+| BoC合约                                                                                                   | 第三方协议合约                                                                                                                                                                                                |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [Vault](https://etherscan.io/address/0xd5C7A01E49ab534e31ABcf63bA5a394fF1E5EfAC)                        |                                                                                                                                                                                                        |
 | [Balancer3CrvStrategy](https://etherscan.io/address/0xa4bc7002d89ef7966c5b2fd70963eaa7a632bb19)         | [Balancer Vault](https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)                                                                                                              |
