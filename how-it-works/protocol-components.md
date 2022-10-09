@@ -239,7 +239,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### Polygon
 
-| BOC合约                                                                                                         | 第三方协议合约                                                                                                                                                                                                        |
+| BoC合约                                                                                                         | 第三方协议合约                                                                                                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Vault](https://polygonscan.com/address/0xd3feAe6c4fdfDE73Bd2fE99c8fE6944904DAA68A)                           |                                                                                                                                                                                                                |
 | [Curve3CrvStrategy](https://polygonscan.com/address/0x1f84a8c8c31674b89a4723521ead5a48579b8bf7)               | [Curve.fi Aave Pool](https://polygonscan.com/address/0x445FE580eF8d70FF569aB36e80c647af338db351)、[Curve.fi Aave Gauge](https://polygonscan.com/address/0x19793B454D3AfC7b454F206Ffe95aDE26cA6912c)             |
