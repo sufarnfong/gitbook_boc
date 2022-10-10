@@ -75,26 +75,24 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 目前挑选出的协议主要有：
 
-* Ethereum：Convex、DODO、SushiSwap、Balancer等。
-* Polygon：DODO、Synapse、Quickswap、Balancer、Aave、Curve、SushiSwap等。
+* Ethereum：Balancer、Convex、DODO、UniswapV2、UniswapV3等。
+* Polygon：Aave、Balancer、Curve、DODO等。
 
 ### Aave
 
 [**Aave**](https://app.aave.com/)是一个开源的去中心化借贷协议, 为用户提供存款和借贷服务。借贷双方用户的存款利率与贷款利率根据平台借款量和存款量计算得到，并且平台采用Chainlink预言机保证抵押物价格的公平性。
 
-根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Aave的总资金锁仓量约为117.9亿美元，DeFi应用[锁仓量](../more/appendix.md#锁仓量总锁定价值-tvl)排名第2名。
+### Aura
 
-### Curve
+[**Aura**](https://aura.finance/) Finance 是建立在 Balancer 系统之上的协议，通过 BAL 存款和 Aura 的原生代币的社会聚合，为 Balancer 流动性提供者和 BAL 质押者（进入 veBAL）提供最大的激励。
 
-[**Curve**](https://curve.fi/)是部署在以太坊上的去中心化交易所。Curve通过自动化做市商协议，专为以低手续费和滑点进行稳定币之间的交易而设计。它是一个去中心化的流动性聚合器，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
+### Balancer
 
-根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Curve的总资金锁仓量约为107.9亿美元，DeFi应用锁仓量排名第3名。
+[**Balancer**](https://balancer.fi/)是部署在以太坊上的去中心化交易所。Balancer使用\[自动做市商]协议(appendix#自动做市商amm)，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
 
 ### Convex
 
 [**Convex**](https://www.convexfinance.com/)是以太坊上一个致力于简化Curve使用流程的"CRV 质押和流动性挖矿一站式平台"。作为以太坊链上的收益聚合器，Convex旨在借助CVX代币，通过简单易用的界面，简化Curve和CRV锁定、质押的过程，并提高CRV持币者、流动性提供者的报酬，以此促进CRV生态系统发展。
-
-根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Convex的总资金锁仓量约为101亿美元，DeFi应用锁仓量排名第4名。
 
 以下分别展示优点特别的两个策略并进行详细说明：
 
@@ -152,25 +150,33 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 * 若当前的借贷率较低，则说明外汇的美元价值较低，进一步说明Curve池中的ibForex较多，USDC较少，策略将抽出多余抵押物-USDC，直接将USDC单币投入到Curve池（投入池里较少的币，能获得的LP是偏多的）
 * 若当前的借贷率较高，则说明外汇的美元价值较高，进一步说明Curve池中的ibForex较少，USDC较多，策略将从Curve池中单币赎回USDC（单币赎回池中多的币种，能获得的数量偏多），将赎回的USDC投入到IronBank用于增加抵押物。但若整体的抵押率超过80%时，不再采用上述逻辑，而是按比例从Curve池中赎回双币，并将双币分别用于偿债和增加抵押物。
 
-### Balancer
+### Curve
 
-[**Balancer**](https://balancer.fi/)是部署在以太坊上的去中心化交易所。Balancer使用\[自动做市商]协议(appendix#自动做市商amm)，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
-
-根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，Balancer的总资金锁仓量约为21.9亿美元，DeFi应用锁仓量排名第6名。
-
-### DODO
-
-[**DODO**](https://app.dodoex.io/)是一个去中心化交易所，它使用独创的[主动做市商（PMM）](../more/appendix.md#主动做市商-pmm)算法为Web3资产提供高效的链上流动性，让每个人都能轻松地发行和交易Web3资产。DODO既自己提供流动性，也聚合其它交易所的流动性。这使得DODO可以提供全网较好好的价格。
-
-根据[DeFi Pulse](https://www.defipulse.com/)的资料，截止2022年3月30日，DODO的总资金锁仓量约为4.77千万美元，DeFi应用锁仓量排名第52名。
+[**Curve**](https://curve.fi/)是部署在以太坊上的去中心化交易所。Curve通过自动化做市商协议，专为以低手续费和滑点进行稳定币之间的交易而设计。它是一个去中心化的流动性聚合器，任何人都可以将自己的资产添加到流动性资金池中，赚取做市收益。
 
 ### dForce
 
 **dForce** 致力于构建一个集成、互通的开放式金融协议和货币协议矩阵，包括借贷协议（全球流动性池、生息市场、资产类协议（多货币稳定币、合成资产等）流动性协议（交易聚合器、自动做市商）三大类。
 
-截止于2022年3月30日，dForce的总资金锁仓量约为1.54千万美元，DeFi应用锁仓量排名第69名。
+### DODO
 
-### **UniswapV3**
+[**DODO**](https://app.dodoex.io/)是一个去中心化交易所，它使用独创的[主动做市商（PMM）](../more/appendix.md#主动做市商-pmm)算法为Web3资产提供高效的链上流动性，让每个人都能轻松地发行和交易Web3资产。DODO既自己提供流动性，也聚合其它交易所的流动性。这使得DODO可以提供全网较好好的价格。
+
+### Lido
+
+Lido 是领先的流动性质押解决方案，它提供一种简单而安全的方式替用户的数字资产赚取利息。通过在 Lido 进行质押，用户的资产将保持流动性，并且可以在一系列 DeFi 应用程序中使用，从而获得额外收益。
+
+### RocketPool
+
+Rocket Pool 是首个 ETH2.0 Proof of Stake 协议，旨在为社区所有、去中心化、无需信任并与以太坊 2.0 中的质押兼容。它于 2016 年底首次构想，此后在 ETH2.0 开发的整个生命周期内进行了超过 5 次成功的公测。
+
+### Uniswap
+
+[**Uniswap**](https://uniswap.org/) 协议是一种点对点系统，旨在用于在以太坊区块链上交换加密货币（ERC-20 代币）。该协议被实现为一组持久的、不可升级的智能合约；旨在优先考虑审查阻力、安全性、自我监管，并在没有任何可选择性限制访问的可信中介的情况下运行。
+
+Uniswap 协议目前有三个版本。 [UniswapV1 ](https://docs.uniswap.org/protocol/V1/introduction)和 [UniswapV2 ](https://uniswap.org/blog/uniswap-v2)是开源的，并在 GPL 下获得许可。 [**UniswapV3**](https://uniswap.org/blog/uniswap-v3) 也是开源的，但稍作了修改。 Uniswap 的每个版本一旦部署，将永久运行，并具有 100% 的正常运行时间，前提是以太坊区块链持续存在。
+
+#### **UniswapV3**
 
 **投资逻辑**
 
@@ -194,6 +200,10 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 * Limit Position：略高于或低于当前价格根据limit threshold下单，该Position有助于策略重新平衡，使币对比例接近50:50。
 
 每24小时，keeper会调用rebalance方法，在运行时不会swap代币，而是根据更新的价格和代币余额调整Base Position与Limit Position。Limit Position和限价单一样贴近当前市场价，如果价格朝这个方向移动，第二头寸也会活跃起来，并获得交易手续费。
+
+### YearnV2
+
+****[**Yearn** ](https://v2.yearn.finance/)Finance 是 DeFi 的主要收益聚合器。为个人、DAO 和其他协议提供一种存放数字资产并获得收益的方式。 该协议由各种独立开发人员维护，并由 YFI 持有者管理。
 
 ## 预言机选择
 
