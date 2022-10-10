@@ -156,7 +156,7 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### dForce
 
-**dForce** 致力于构建一个集成、互通的开放式金融协议和货币协议矩阵，包括借贷协议（全球流动性池、生息市场、资产类协议（多货币稳定币、合成资产等）流动性协议（交易聚合器、自动做市商）三大类。
+****[**dForce** ](https://dforce.network/)致力于构建一个集成、互通的开放式金融协议和货币协议矩阵，包括借贷协议（全球流动性池、生息市场、资产类协议（多货币稳定币、合成资产等）流动性协议（交易聚合器、自动做市商）三大类。
 
 ### DODO
 
@@ -164,17 +164,17 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ### Lido
 
-Lido 是领先的流动性质押解决方案，它提供一种简单而安全的方式替用户的数字资产赚取利息。通过在 Lido 进行质押，用户的资产将保持流动性，并且可以在一系列 DeFi 应用程序中使用，从而获得额外收益。
+****[**Lido** ](https://lido.fi/)是领先的流动性质押解决方案，它提供一种简单而安全的方式替用户的数字资产赚取利息。通过在 Lido 进行质押，用户的资产将保持流动性，并且可以在一系列 DeFi 应用程序中使用，从而获得额外收益。
 
 ### RocketPool
 
-Rocket Pool 是首个 ETH2.0 Proof of Stake 协议，旨在为社区所有、去中心化、无需信任并与以太坊 2.0 中的质押兼容。它于 2016 年底首次构想，此后在 ETH2.0 开发的整个生命周期内进行了超过 5 次成功的公测。
+****[**RocketPool**](https://rocketpool.net/#header) 是首个 ETH2.0 Proof of Stake 协议，旨在为社区所有、去中心化、无需信任并与以太坊 2.0 中的质押兼容。它于 2016 年底首次构想，此后在 ETH2.0 开发的整个生命周期内进行了超过 5 次成功的公测。
 
 ### Uniswap
 
 [**Uniswap**](https://uniswap.org/) 协议是一种点对点系统，旨在用于在以太坊区块链上交换加密货币（ERC-20 代币）。该协议被实现为一组持久的、不可升级的智能合约；旨在优先考虑审查阻力、安全性、自我监管，并在没有任何可选择性限制访问的可信中介的情况下运行。
 
-Uniswap 协议目前有三个版本。 [UniswapV1 ](https://docs.uniswap.org/protocol/V1/introduction)和 [UniswapV2 ](https://uniswap.org/blog/uniswap-v2)是开源的，并在 GPL 下获得许可。 [**UniswapV3**](https://uniswap.org/blog/uniswap-v3) 也是开源的，但稍作了修改。 Uniswap 的每个版本一旦部署，将永久运行，并具有 100% 的正常运行时间，前提是以太坊区块链持续存在。
+Uniswap 协议目前有三个版本。 UniswapV1 和 [UniswapV2 ](https://uniswap.org/blog/uniswap-v2)是开源的，并在 GPL 下获得许可。 [**UniswapV3**](https://uniswap.org/blog/uniswap-v3) 也是开源的，但稍作了修改。 Uniswap 的每个版本一旦部署，将永久运行，并具有 100% 的正常运行时间，前提是以太坊区块链持续存在。
 
 #### **UniswapV3**
 
