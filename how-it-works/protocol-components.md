@@ -18,17 +18,17 @@ Ethereum is also known as the "second-generation blockchain platform", second on
 
 ## Incorporated Stablecoins
 
-To avoid psychological fear caused by the fluctuations of digital currency value and the losses of market-making funds, BOC has selected only stable currency assets([stablecoins](../more/appendix.md#stablecoin)), and is only limited to those with full [collateral](../more/appendix.md#collateral) provided by fiat currency or by stablecoins.
+To avoid psychological fear caused by the fluctuations of digital currency value and the losses of market-making funds, BoC has selected only stable currency assets([stablecoins](../more/appendix.md#stablecoin)), and is only limited to those with full [collateral](../more/appendix.md#collateral) provided by fiat currency or by stablecoins.
 
 Stablecoins need to meet the following conditions:
 
-* The corresponding issuers should pass the due diligence check of BOC.
+* The corresponding issuers should pass the due diligence check of BoC.
 * Algorithmic stablecoins are strictly prohibited.
 * Insurance is available.
 * Stablecoin quotes must be based on ChainLink.
 * Market capital has to be greater than $500 million / 200,000 ETH.
 
-The (currently) selected strategic stablecoins are: DAI, USDC, USDT, BUSD, USDP, TUSD, LUSD.
+The (currently) selected strategic stablecoins are: DAI, USDC, USDT, BUSD, TUSD, LUSD, GUSD, SUSD.
 
 ### DAI
 
@@ -36,27 +36,31 @@ The (currently) selected strategic stablecoins are: DAI, USDC, USDT, BUSD, USDP,
 
 ### USDC
 
-[**USD Coin**](https://www.centre.io/usdc) (USDC) is a digital stablecoin pegged to the U.S. dollar that operates on the Ethereum, Stellar, Algorand, Hedera Hashgraph, and Solana blockchains. As of January 2022, USDC in circulation is $45.2 billion.
+[**USD Coin**](https://www.centre.io/usdc) (USDC) is a digital stablecoin pegged to the U.S. dollar that operates on the Ethereum, Stellar, Algorand, Hedera Hashgraph, and Solana blockchains. As of 31st August 2022, USDC in circulation is $52.2 billion.&#x20;
 
 ### USDT
 
-[**USDT**](https://tether.to/en/), also known as USDT, is a controversial cryptocurrency issued by Tether Limited, which is controlled by the owners of Bitfinex. USDT is a stable currency. As being launched in 2014, USDT is a blockchain-based platform that digitally facilitates the use of fiat currencies.
+[**USDT**](https://tether.to/en/), also known as USDT, is a controversial cryptocurrency issued by Tether Limited, which is controlled by the owners of Bitfinex. USDT is a stable currency. As being launched in 2014, USDT is a blockchain-based platform that digitally facilitates the use of fiat currencies.&#x20;
 
 ### BUSD
 
 [**Binance USD**](https://www.binance.com/en/busd) (BUSD) is a new stablecoin launched by Binance and Paxos, which is pegged 1:1 to the US dollar.
 
-### USDP
-
-[**Pax Dollar**](https://paxos.com/usdp/) (USDP) is a fiat-collateralized stablecoin pegged 1:1 to the U.S. dollar.
-
 ### TUSD
 
-[**TrueUSD**](https://www.trusttoken.com) (TUSD) is a USD-pegged stablecoin issued by Trusttoken.
+[**TrueUSD**](https://www.trusttoken.com) (TUSD) is a stablecoin issued by Trusttoken, which is pegged 1:1 to the US dollar.
 
 ### LUSD
 
-[**LUSD**](https://www.liquity.org/) is a USD-pegged stablecoin issued by liquidity Protocol.
+[**LUSD**](https://www.liquity.org/) is a stablecoin issued by the Liquidity Protocol, which is pegged 1:1 to the US dollar.
+
+### GUSD
+
+****[**Gemini Dollar**](https://www.gemini.com/dollar) (GUSD) is a stablecoin issued by Gemini, which is pegged 1:1 to the US dollar.
+
+### SUSD
+
+[**SUSD** ](https://synthetix.io/)is a synthetic U.S. dollar token issued by the Synthetix protocol, which is pegged 1:1 to the U.S. dollar.&#x20;
 
 ## Protocol strategy selection
 
@@ -71,52 +75,137 @@ After selecting a stablecoin, its corresponding strategies should meet the follo
 * The first accessed DEX and lending protocol should be the preferred first-line protocols on every blockchain and also count with reliable safety operation records.
 * The protocol should allocate the funds intelligently, which always obeys two rules: maximizing yields and decentralizing capital risks.
 
-The following are the selected protocols at present:
+The following are the selected protocols at present:&#x20;
 
-* in Ethereum: Convex, DODO, SushiSwap, Balancer, etc.
-* in Polygon: DODO, Synapse, Quickswap, Balancer, Aave, Curve, SushiSwap, etc.
+* In Ethereum: Balancer, Convex, DODO, UniswapV2, UniswapV3, etc.
+* In Polygon: Aave, Balancer, Curve, DODO, etc.&#x20;
 
 ### Aave
 
-[**Aave**](https://app.aave.com/) is an open-source decentralized lending protocol that provides users with deposit and lending services. The deposit and loan interest rates of users on both sides of the borrower and the lenders are calculated by algorithms based on the platform's borrowing volume and deposit volume. The platform uses Chainlink's oracle to ensure fairness of the collateral price. According to the data of [DeFi Pulse](https://www.defipulse.com/), as of March 30, 2022, Aave's total fund lock-up volume was approximately US$11.79 billion, ranking second in the DeFi application lock-up volume.
+[**Aave**](https://app.aave.com/) is an open-source decentralized lending protocol that provides users with deposit and lending services. The deposit and loan interest rates of users on both sides of the borrower and the lenders are calculated by algorithms based on the platform's borrowing volume and deposit volume. The platform uses Chainlink's oracle to ensure fairness of the collateral price.&#x20;
 
-### Curve
+### Aura
 
-[**Curve**](https://curve.fi/) is a decentralized exchange deployed on Ethereum. Curve is designed for trading between stablecoins with low fees and slippage through an Automated Market Maker(AMM) protocol. It is a decentralized liquidity aggregator. Anyone can add their own assets into the liquidity pool to earn market-making benefits. According to the data of [DeFi Pulse](https://www.defipulse.com/), as of March 30, 2022, Curve's total fund lock-up volume was approximately US$10.79 billion, ranking third in the DeFi application lock-up volume.
-
-### Convex
-
-[**Convex**](https://www.convexfinance.com/) is a one-stop platform for CRV staking and liquidity mining on Ethereum that is dedicated to ease the use of Curve. As a yield aggregator on the Ethereum chain, Convex aims to use the CVX token to simplify the process of locking and staking Curve and CRV through an easy-to-use interface, and to improve the compensation of CRV token holders and liquidity providers. This facilitates the development of the CRV ecosystem. According to the data of [DeFi Pulse](https://www.defipulse.com/), as of March 30, 2022, Convex's total locked funds amounted to approximately $10.1 billion, ranking fourth in DeFi applications.
-
-### Uniswap
-
-[**Uniswap**](https://uniswap.org/) is a decentralized exchange deployed on Ethereum. The Uniswap protocol facilitates automated transactions between cryptocurrency tokens on the Ethereum blockchain through smart contracts. As of October 2020, Uniswap is estimated to be the largest decentralized exchange and the fourth largest cryptocurrency exchange by daily trading volume. According to the data of [DeFi Pulse](https://www.defipulse.com/), as of March 30, 2022, Uniswap's total locked funds amounted to around $7.04 billion, ranking sixth in DeFi applications.
+[**Aura**](https://aura.finance/) Finance is a protocol built on top of the Balancer system to provide maximum incentives to Balancer liquidity providers and BAL stakers (into veBAL) through social aggregation of BAL deposits and Aura’s native token.&#x20;
 
 ### Balancer
 
-[**Balancer**](https://balancer.fi/) is a [decentralized exchange](../more/appendix.md#decentralized-finance-defi) deployed on Ethereum. Balancer uses automatic market makers to achieve the function of decentralized transactions. Transaction users can choose trading pairs to trade and pay transaction fees, while liquidity providers can get a share of the fees. According to the data of [DeFi Pulse](https://www.defipulse.com/), as of March 30, 2022, Balancer's total fund lock-up volume was about 2.19 billion US dollars, ranking 6th in DeFi application lock-up volume.
+[**Balancer**](https://balancer.fi/) is a [decentralized exchange](../more/appendix.md#decentralized-finance-defi) deployed on Ethereum. Balancer uses automatic market makers to achieve the function of decentralized transactions. Transaction users can choose trading pairs to trade and pay transaction fees, while liquidity providers can get a share of the fees.&#x20;
 
-### SushiSwap
+### Convex
 
-[**SushiSwap**](https://app.sushi.com/swap) was originally a fork of Uniswap, built upon Uniswap's code, while introducing some key differences. One of the greatest difference is that rewards are issued in the form of SUSHI tokens. SushiSwap's liquidity providers are rewarded with the protocol's native token, SUSHI, which is also a governance token. Unlike Uniswap (UNI), SUSHI holders can continue to earn yields even after they cease to provide liquidity. According to [DeFi Pulse](https://www.defipulse.com/), as of March 30, 2022, among the rankings of centralized exchanges, Sushiswap's total lock-up volume of funds was approximately US$1.68 billion, ranking 11th in DeFi application lock-up volume.
+[**Convex**](https://www.convexfinance.com/) is a one-stop platform for CRV staking and liquidity mining on Ethereum that is dedicated to ease the use of Curve. As a yield aggregator on the Ethereum chain, Convex aims to use the CVX token to simplify the process of locking and staking Curve and CRV through an easy-to-use interface, and to improve the compensation of CRV token holders and liquidity providers. This facilitates the development of the CRV ecosystem.
 
-### Quickswap
+The following two strategies with specialities are highlighted and explained in detail as below:
 
-[**Quickswap**](https://quickswap.exchange/#/) is a layer2 decentralized exchange similar to Uniswap and Sushiswap, which also uses the AMM method. Anyone can invest money on Quickswap, provide liquidity, and earn income by staking liquidity tokens again. Quickswap's token, QUICK, is used as a governance token, and holders can submit proposals for changes to the protocol. According to the data of [DeFi Pulse](https://www.defipulse.com/), as of March 30, 2022, among the rankings of centralized exchanges, Quickswap's total locked funds amounted to around US$473 million, ranking 22nd among DeFi applications.
+#### **ConvexIbUsdtUnderlyingStrategy**
 
-### DODO
+**Investing logic**
 
-[**DODO**](https://app.dodoex.io/) is a decentralized trading platform that uses an original Proactive Market Maker (PMM) algorithm to provide efficient on-chain liquidity for Web3 assets, allowing everyone to issue and trade Web3 assets easily. DODO not only provides liquidity but also aggregates the liquidity of other exchanges. This allows DODO to offer the best prices on the entire network. According to the data of [DeFi Pulse](https://www.defipulse.com/), as of March 30, 2022, DODO's total fund lock-up volume was approximately US$47,700 million, ranking 52nd in DeFi application lock-up volume.
+**Deposited tokens**: USDT
+
+**Withdrawn tokens**: USDT
+
+In order to avoid the risk exposure of holding foreign exchange tokens, foreign exchange will be borrowed by mortgaging USDT in the IronBank protocol.
+
+**Fund investment**:&#x20;
+
+The invested USDT will be invested in the IronBank protocol as collateral, maintaining a borrowing rate of around 75% to borrow foreign tokens. The foreign token is then deposited as a single currency into the Curve pool, and the lpToken obtained from the Curve pool is then staked into the Convex protocol.
+
+**Fund redemption**:
+
+Redeem ibForex from the Curve pool and repay the same percentage of debt to redeem the USDT collateral.&#x20;
+
+**decreaseBorrow**:
+
+When the borrowing rate of the strategy exceeds 80%, the keeper will trigger the `decreaseBorrow()` method of the contract;
+
+* The current borrowing rate is low, indicating that the US Dollar value of foreign exchange is low. The strategy will continue to borrow ibForex from Ironbank and deposit into Curve, then staking the lpToken obtained from the Curve pool to the Convex protocol.
+
+#### **ConvexIbUsdcUnderlyingStrategy**
+
+**Investing logic**
+
+**Deposited tokens**: USDC
+
+**Withdrawn tokens**: USDC
+
+In order to avoid the risk exposure of holding foreign exchange tokens, foreign exchange will be borrowed by mortgaging USDC in the IronBank protocol.
+
+**Fund investment**:&#x20;
+
+The invested USDC is divided into two parts:
+
+* Part 1: Constituting 40% of the invested capital, keeping USDC unchanged
+* Part 2: Constituting 60% of the invested capital, and is deposited into the IronBank protocol as collateral, borrowing a foreign exchange worth $$60\% \times 0.75=0.45$$ maintaining a lending rate of around 75%).&#x20;
+
+Part 1 and Part 2 is then combined and deposited into the Curve pool, staking the lpToken obtained from the Curve pool into the Convex protocol.
+
+**Fund redemption**:
+
+Redeem the two tokens from the Curve pool in equal proportions: USDC, ibForex, and repay the debt proportionally. If the previously redeemed ibForex is insufficient to repay the debt, the USDC will be exchanged for ibForex in the current Curve pool. After repaying the debt in equal proportions, draw out that proportion of collateral from IronBank, and finally transfer the USDC to the vault.
+
+**rebalance**:
+
+When the borrowing rate of the strategy exceeds 80% or falls below 60%, the keeper will trigger the rebalance method of the contract.
+
+* If the current borrowing rate is lower, this indicates that the US Dollar value of foreign exchange is low, which further means that there are more ibForex and less USDC in the Curve pool. The strategy will draw out excess collateral - USDC, and directly deposit the  single currency USDC into the Curve pool (The less tokens you deposit into the pool, the more LP will be obtained).
+* If the current borrowing rate is high, this indicates that the US Dollar value of foreign exchange is high, which further means that there are less ibForex and more USDC in the Curve pool. The strategy will redeem the single currency USDC from the Curve pool (the more currencies in the single currency redemption pool, the amount that can be obtained will also be more) and the redeemed USDC is invested in IronBank to increase collateral. However, if the overall mortgage rate exceeds 80%, the above logic will no longer be applied, but dual currency will be redeemed from the Curve pool in proportion, and dual currency will also be used to repay debt and to increase collateral.
+
+### Curve
+
+[**Curve**](https://curve.fi/) is a decentralized exchange deployed on Ethereum. Curve is designed for trading between stablecoins with low fees and slippage through an Automated Market Maker(AMM) protocol. It is a decentralized liquidity aggregator. Anyone can add their own assets into the liquidity pool to earn market-making benefits.&#x20;
 
 ### dForce
 
-[**dForce**](https://dforce.network/) is committed to building an integrated and interoperable matrix of open financial protocols and currency protocols, including lending protocols (global liquidity pools, interest-earning markets), asset-based protocols (multi-currency stablecoins, synthetic assets, etc.), liquidity aggregators, Automatic Market Makers, etc. As of March 30, 2022, dForce's total lock-up volume of funds was approximately US$15,400, and DeFi applications ranked 69th in lock-up volume.
+[**dForce**](https://dforce.network/) is committed to building an integrated and interoperable matrix of open financial protocols and currency protocols, including lending protocols (global liquidity pools, interest-earning markets), asset-based protocols (multi-currency stablecoins, synthetic assets, etc.), liquidity aggregators, Automatic Market Makers, etc.&#x20;
 
-### Synapse
+### DODO
 
-[**Synapse**](https://synapseprotocol.com/landing) was upgraded and renamed from Nerve Finance, an anonymous cross-chain liquidity protocol on the original BNB Chain.
+[**DODO**](https://app.dodoex.io/) is a decentralized trading platform that uses an original Proactive Market Maker (PMM) algorithm to provide efficient on-chain liquidity for Web3 assets, allowing everyone to issue and trade Web3 assets easily. DODO not only provides liquidity but also aggregates the liquidity of other exchanges. This allows DODO to offer the best prices on the entire network.&#x20;
 
-Synapse adopts cross-chain multi-party computation (MPC) validator and threshold signature scheme to support assets, smart contract calls, etc. Synapse connects different blockchains for easy and secure interoperability; developers can also build real cross-chain applications, including cross-chain DEXs, lending platforms, margin systems, derivatives markets, income aggregators, and more.
+### Lido
+
+****[**Lido** ](https://lido.fi/)is the leading liquid staking solution - providing a simple and secure way to earn interest on your digital assets. By staking with Lido your assets remain liquid and can be used across a range of DeFi applications, earning extra yield.
+
+### RocketPool
+
+****[**RocketPool**](https://rocketpool.net/#header) is a first of its kind ETH2.0 Proof of Stake Protocol, designed to be community owned, decentralised, trustless and compatible with staking in Ethereum 2.0. It was first conceived in late 2016 and has since had over 5 successful public betas over the life span of ETH2.0 development.
+
+### Uniswap
+
+[**Uniswap**](https://uniswap.org/) protocol is a peer-to-peer system designed for exchanging cryptocurrencies (ERC-20 Tokens) on the Ethereum blockchain. The protocol is implemented as a set of persistent, non-upgradable smart contracts; designed to prioritize censorship resistance, security, self-custody, and to function without any trusted intermediaries who may selectively restrict access.&#x20;
+
+There are currently three versions of the Uniswap protocol. UniswapV1 and [UniswapV2 ](https://uniswap.org/blog/uniswap-v2)are open-source and licensed under GPL. [**UniswapV3** ](https://uniswap.org/blog/uniswap-v3)is open-source with slight modifications. Each version of Uniswap, once deployed, will function in perpetuity, with 100% uptime, provided the continued existence of the Ethereum blockchain.
+
+#### UniswapV3
+
+**Investing logic**
+
+**Deposited tokens**: ETH + rETH or stablecoin pairs
+
+**Withdrawn tokens**: ETH + rETH or stablecoin pairs
+
+**Fund investment**:&#x20;
+
+Invest in the corresponding token pair(s) pool according to the proportion in the pool.
+
+**Fund redemption**:
+
+Remove liquidity from the protocol pool, and transfer the obtained token pair(s) to the vault.
+
+**Passive rebalancing**:
+
+The strategy will set two Positions:
+
+* Base Position: Place an order symmetrically revolving the current price according to the base threshold
+* Limit Position: To place an order according to the limit threshold, either slightly higher or lower than the current price. This Position assists the strategy to rebalance, enabling the token pair's ratio to approach 50:50.&#x20;
+
+Every 24 hours, the keeper will call the rebalance method, which will not swap tokens at runtime, but will adjust the Base Position and Limit Position according to the updated price and token balance. The Limit Position is as close to the current market price as the limit order. If the price moves in this direction, the second position will also be active, receiving a transaction fee.
+
+### YearnV2
+
+****[**Yearn** ](https://v2.yearn.finance/)Finance is DeFi’s premier yield aggregator. Giving individuals, DAOs and other protocols a way to deposit digital assets and receive yield. The protocol is maintained by various independent developers and is governed by YFI holders.&#x20;
 
 ## Incorporated Oracle
 
@@ -130,7 +219,7 @@ Oracles are data sources that connect Ethereum to off-chain, real-world informat
 
 ### Ethereum
 
-| BOC Contract                                                                                            | 3rd Party Protocol Contract                                                                                                                                                                             |
+| BoC Contract                                                                                            | 3rd Party Protocol Contract                                                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Vault](https://etherscan.io/address/0xd5C7A01E49ab534e31ABcf63bA5a394fF1E5EfAC)                        |                                                                                                                                                                                                         |
 | [Balancer3CrvStrategy](https://etherscan.io/address/0xa4bc7002d89ef7966c5b2fd70963eaa7a632bb19)         | [Balancer Vault](https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)                                                                                                               |
@@ -162,7 +251,7 @@ Oracles are data sources that connect Ethereum to off-chain, real-world informat
 
 ### Polygon
 
-| BOC Contract                                                                                                  | 3rd Party Protocol Contract                                                                                                                                                                                    |
+| BoC Contract                                                                                                  | 3rd Party Protocol Contract                                                                                                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Vault](https://polygonscan.com/address/0xd3feAe6c4fdfDE73Bd2fE99c8fE6944904DAA68A)                           |                                                                                                                                                                                                                |
 | [Curve3CrvStrategy](https://polygonscan.com/address/0x1f84a8c8c31674b89a4723521ead5a48579b8bf7)               | [Curve.fi Aave Pool](https://polygonscan.com/address/0x445FE580eF8d70FF569aB36e80c647af338db351) [Curve.fi Aave Gauge](https://polygonscan.com/address/0x19793B454D3AfC7b454F206Ffe95aDE26cA6912c)             |

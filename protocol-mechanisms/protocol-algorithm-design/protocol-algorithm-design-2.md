@@ -17,10 +17,5 @@ If any of the above conditions are met, the strategy can perform `harvest`:
 | Set parameters                                                                                                                                                                                               | ETH               | Polygon           |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- | ----------------- |
 | Scheduled task trigger cycle                                                                                                                                                                                 | 22:00 daily (UTC) | 22:00 daily (UTC) |
-| The maximum time interval for triggering the strategy `harvest` (if the interval between the current `harvest` and the last `harvest` or the last `lend` is greater than this value, `harvest` must be done) | 3 days            | 1 day             |
-| The benefit-cost ratio factor X to trigger the strategy “harvest” ( if “harvest” profit >= cost\*X, “harvest” can be done.)                                                                                  | 5                 | 5                 |
-
-###
-
-####
-
+| The maximum time interval for triggering the `harvest` strategy (if the interval between the current `harvest` and the last `harvest` or the last `lend` is greater than this value, `harvest` must be done) | 3 days            | 1 day             |
+| The benefit-cost ratio factor $$X$$ to trigger strategy `harvest` (`harvest` profit >= cost$$\times X$$, then `harvest` can be done.)                                                                        | 5                 | 5                 |
