@@ -64,7 +64,7 @@ As on the ETHi Vault, you could only invest ETH by entering the desired amount a
 
 After successfully depositing and ensuring that your wallet remains connected, you are now prepared to withdraw your funds. For instance on the USDi Vault, there is an option to either withdraw a single type of stablecoin or mixed. You are also required to enter the desired amount of each stablecoin to withdraw or you could simply select `Max` to withdraw all funds. After all parameters were entered correctly, you then proceed and click `WITHDRAW`.
 
-To demonstrate, we will withdraw all USDi into USDC by selecting `MAX` and hit `WITHDRAW` :
+To demonstrate, we will withdraw all USDi into Mix tokens by selecting `MAX` and hit `WITHDRAW` :
 
 <figure><img src="../.gitbook/assets/user_handbook_withdraw_exp.png" alt=""><figcaption><p>Figure 12: Withdraw all USDi from BoC vault.</p></figcaption></figure>
 
