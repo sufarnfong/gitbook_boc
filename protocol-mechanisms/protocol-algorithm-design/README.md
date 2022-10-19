@@ -1,6 +1,6 @@
 # Protocol Algorithm Design
 
-BOC provides the [USD Stablecoins Farming](./#usd-stablecoins-farming-mechanism) and [ETH Farming](broken-reference).
+BoC provides the [USD Stablecoins Farming](./#usd-stablecoins-farming-mechanism) and [ETH Farming](broken-reference).
 
 ## USD Stablecoins Farming Mechanism
 
@@ -8,8 +8,8 @@ BOC provides the [USD Stablecoins Farming](./#usd-stablecoins-farming-mechanism)
 
 <figure><img src="../../.gitbook/assets/Diagrama sin título.drawio.png" alt=""><figcaption></figcaption></figure>
 
-1. **“Deposit”** - The BOC protocol supports users with the `deposit` function - to deposit the three major stablecoins (USDT, USDC, DAI) in any desired combination and amount. BOC also allows minting of USDi of the corresponding value to be returned to the user.\
-   **“Withdraw”** - Users can `withdraw` USDi which consists of the three major stablecoins at their convenience through the BOC protocol. By default, they will be returned according to the proportion of the three major stablecoins in the [Vault](../../more/appendix.md#vaults) at that time, or they can specify a certain currency to be returned.
+1. **“Deposit”** - The BoC protocol supports users with the `deposit` function - to deposit the three major stablecoins (USDT, USDC, DAI) in any desired combination and amount. BoC also allows minting of USDi of the corresponding value to be returned to the user.\
+   **“Withdraw”** - Users can `withdraw` USDi which consists of the three major stablecoins at their convenience through the BoC protocol. By default, they will be returned according to the proportion of the three major stablecoins in the [Vault](../../more/appendix.md#vaults) at that time, or they can specify a certain currency to be returned.
 2. After the Vault receives the stablecoin, `queryTokenPrice` queries the price of the user's transfer of the [stablecoin](../../more/appendix.md#stablecoin) through an external oracle. When the price returned by the [oracle](../../more/appendix.md#oracle) is higher than 1 USD, it is calculated at 1 USD, whereas while it is lower than 1 USD, it is calculated at the price of the oracle.
 3. Based on the calculated value, `mint/burn` will [mint/burn](protocol-algorithm-design-1.md) an equivalent value of USDi tickets.
 4. The [Keeper](../../more/appendix.md#keeper) module reaches the trigger condition `doHardWork` and triggers `doHardWork`.
