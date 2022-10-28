@@ -18,6 +18,7 @@
   * [收割(Harvest)](xie-yi-ji-zhi/protocol-algorithm-design/shou-ge-harvest.md)
   * [Rebase](xie-yi-ji-zhi/protocol-algorithm-design/rebase.md)
   * [资金调配](xie-yi-ji-zhi/protocol-algorithm-design/zi-jin-tiao-pei.md)
+  * [Risk On 策略](xie-yi-ji-zhi/protocol-algorithm-design/risk-on-ce-lve.md)
 * [安全与风险](how-it-works/security-risk.md)
 
 ## 🪙 审计与治理

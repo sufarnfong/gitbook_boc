@@ -59,6 +59,10 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 
 ****[**SUSD**](https://synthetix.io/) 是由 Synthetix 协议发行的合成美元代币，它以 1:1 锚定美元。
 
+{% hint style="info" %}
+支持那些币种是动态的，可以在协议部署后通过接口添加新的支持币种或移除旧的币种。
+{% endhint %}
+
 ## 协议策略选择
 
 当选定稳定币后，BoC挑选的[策略](../more/appendix.md#策略strategy)将只使用到这些稳定币，且策略需要满足以下条件：

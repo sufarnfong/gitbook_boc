@@ -33,7 +33,12 @@ BoC目前提供 **USD耕种理财** 和 **ETH耕种理财**。
 
 ### ETH理财
 
-ETH耕种理财机制目前与USD耕种理财机制一样，唯一区别是EHT理财耕种的抵押凭证为EHTi。
+USD稳定币耕种的抵押凭证为USDi；EHT理财耕种的抵押凭证则为EHTi。
+
+总的来说，ETH 耕种理财机制与 USD 稳定币耕种理财机制大致相同。但是有一些细微的差异，如下所示：
+
+1. &#x20;ETHi不是由Harvester进行统一收矿、复投，而是各个策略单独卖矿复投的。
+2. `queryTokenPrice`时，虽然币种都会依据Chainlink上的价格，但部分币种并没有chainlink的报价。在这种情况下，用的则是Uniswap-V3的TWAP的1小时的加权平均价格。
 
 {% content-ref url="usdi-ticket.md" %}
 [usdi-ticket.md](usdi-ticket.md)
