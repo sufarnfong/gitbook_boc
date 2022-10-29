@@ -59,3 +59,7 @@ USD稳定币耕种的抵押凭证为USDi；EHT理财耕种的抵押凭证则为E
 {% content-ref url="zi-jin-tiao-pei.md" %}
 [zi-jin-tiao-pei.md](zi-jin-tiao-pei.md)
 {% endcontent-ref %}
+
+{% content-ref url="risk-on-ce-lve.md" %}
+[risk-on-ce-lve.md](risk-on-ce-lve.md)
+{% endcontent-ref %}
