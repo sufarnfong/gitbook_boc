@@ -2,7 +2,7 @@
 
 ## 区块链选择
 
-BoC选择兼容[EVM](../more/appendix.md#以太坊虚拟机evm)的区块链，目前已经对接Ethereum 和 Polygon链。
+BoC选择兼容[EVM](../more/appendix.md#以太坊虚拟机evm)的区块链，目前已经对接Ethereum 链。
 
 ### Ethereum
 
@@ -62,6 +62,10 @@ Polygon于2017年在印度启动，最初的名称是Matic Network。2021年2月
 {% hint style="info" %}
 支持那些币种是动态的，可以在协议部署后通过接口添加新的支持币种或移除旧的币种。
 {% endhint %}
+
+## Keeper
+
+Keeper账户的私钥是由BoC团队掌握，属于比较中心化的设计。Keeper的授权是通过 `AccessControlProxy`来进行的，它可以授权给指定账户，也可以移除指定账户的权限。
 
 ## 协议策略选择
 
