@@ -2,12 +2,24 @@
 
 ### doHardWork
 
-The inputs into the position adjustment of the algorithm are the official [APY](../../more/appendix.md#annual-yield-apy) of the third-party protocol, the gas required for investment of each strategy, the limit of exchange [slippage](../../more/appendix.md#slippage), and the [rules of fund allocation](../../#fund-allocation-rules). Meanwhile, the strategy and amount of the funds to be invested are the outputs.
+The inputs into the [position adjustment](protocol-algorithm-design-4.md#undefined) of the algorithm are the official [APY](../../more/appendix.md#annual-yield-apy) of the third-party protocol, the gas required for investment of each strategy, the limit of exchange [slippage](../../more/appendix.md#slippage), and the [rules of fund allocation](../../#fund-allocation-rules). Meanwhile, the strategy and amount of the funds to be invested are the outputs.
 
 | Set parameters                                                                                           | ETH                     | Polygon                 |
 | -------------------------------------------------------------------------------------------------------- | ----------------------- | ----------------------- |
 | Scheduled Task Trigger Cycle                                                                             | 7 am daily besides Mon. | 7 am daily besides Mon. |
 | Cost-benefit Calculation Period X (If the profit of investment X days >= cost, “doHardwork” can be done) | 365 days                | 365 days                |
+
+### Position Adjustment
+
+The position adjusting process mainly includes the following steps:
+
+1. Invoke the optimal matching algorithm, allocate Vault funds, and issue a position adjustment report.
+2. Lock-up; users will not be able to perform investment and redemption operations at this time.
+3. According to the position adjustment report, perform the redeem operation on the strategy that needs to withdraw funds to return the funds to the Vault.
+4. Calculate the currencies (token type(s)) and the amount needed for strategies investments.
+5. Execute tokens swapping.
+6. Invest the funds (swapped tokens) into the strategies.
+7. Terminate the lock-up and complete the position adjustment.
 
 ### Allocation
 

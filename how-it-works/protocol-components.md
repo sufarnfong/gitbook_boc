@@ -2,7 +2,7 @@
 
 ## Incorporated Blockchains
 
-BoC protocol is designed to be compatible with [Ethereum Virtual Machine (EVM)](../more/appendix.md#ethereum-virtual-machine-evm). In fact, BoC is connected with Ethereum and Polygon chain.
+BoC protocol is designed to be compatible with [Ethereum Virtual Machine (EVM)](../more/appendix.md#ethereum-virtual-machine-evm). In fact, BoC is connected with the Ethereum chain.
 
 ### Ethereum
 
@@ -61,6 +61,14 @@ The (currently) selected strategic stablecoins are: DAI, USDC, USDT, BUSD, TUSD,
 ### SUSD
 
 [**SUSD** ](https://synthetix.io/)is a synthetic U.S. dollar token issued by the Synthetix protocol, which is pegged 1:1 to the U.S. dollar.&#x20;
+
+{% hint style="info" %}
+The supported tokens are dynamic. The new supported tokens can be added or old ones could be removed through the interface after the protocol has been deployed.
+{% endhint %}
+
+## Keeper
+
+The private key of the Keeper account is controlled by the team, which is a relatively centralized design. The authorization of the keeper is carried out through the `AccessControlProxy`, which can authorize the specified account or remove the authority of the specified account.
 
 ## Protocol strategy selection
 

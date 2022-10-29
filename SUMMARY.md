@@ -15,9 +15,10 @@
 * [Protocol Algorithm Design](protocol-mechanisms/protocol-algorithm-design/README.md)
   * [USDi Ticket](protocol-mechanisms/protocol-algorithm-design/protocol-algorithm-design.md)
   * [Mint & Burn rules](protocol-mechanisms/protocol-algorithm-design/protocol-algorithm-design-1.md)
-  * [Harvest](protocol-mechanisms/protocol-algorithm-design/protocol-algorithm-design-2.md)
+  * [Harvest](protocol-mechanisms/protocol-algorithm-design/harvest.md)
   * [Rebase](protocol-mechanisms/protocol-algorithm-design/protocol-algorithm-design-3.md)
   * [Fund allocation](protocol-mechanisms/protocol-algorithm-design/protocol-algorithm-design-4.md)
+  * [Risk On Strategy](protocol-mechanisms/protocol-algorithm-design/risk-on-strategy.md)
 * [Security Risks](how-it-works/security-risk.md)
 
 ## 🪙 Governance

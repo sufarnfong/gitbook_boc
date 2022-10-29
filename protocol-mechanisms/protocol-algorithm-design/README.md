@@ -28,11 +28,16 @@ BoC provides the [USD Stablecoins Farming](./#usd-stablecoins-farming-mechanism)
 17. The Keeper module reaches the `rebase` trigger condition and triggers the `rebase`.
 18. Vault calls `changeTotalSupply` to issue additional USDi.
 19. Vault collects 20% of the yield, which is transferred to the `Treasury`.
-20. The [treasury](../../more/appendix.md#daos-treasury) will benefit users by using `buyback` to repurchase the BOC governance token.
+20. The [treasury](../../more/appendix.md#daos-treasury) will benefit users by using `buyback` to repurchase the BoC governance token.
 
 ### ETH Farming Mechanism
 
-The mechanism of ETH farming is exactly the same as that of the USD stablecoins farming at present. The only difference is that the collateral of USD stablecoins is USDi, thus that of ETH is called ETHi.
+The collateral of USD stablecoins is USDi, whereas that of ETH is called ETHi.
+
+In general, the mechanism of ETH farming is almost the same as that of the USD stablecoins farming. However, there are still slight differences as listed below:&#x20;
+
+1. The Harvest mechanism of ETHi farming is slightly different; harvest and reallocations are not carried out uniformly by Harvester (as USDi Farming), instead each strategy is harvest and reallocated individually.&#x20;
+2. During `queryTokenPrice` , all tokens should follow the Chainlink price directly. However for ETHi farming, there will be cases where certain tokens involved are not priced on Chainlink, so instead the 1-hour weighted average price of that token on UniswapV3 TWAP will be used as reference.&#x20;
 
 
 
@@ -44,8 +49,8 @@ The mechanism of ETH farming is exactly the same as that of the USD stablecoins 
 [protocol-algorithm-design-1.md](protocol-algorithm-design-1.md)
 {% endcontent-ref %}
 
-{% content-ref url="protocol-algorithm-design-2.md" %}
-[protocol-algorithm-design-2.md](protocol-algorithm-design-2.md)
+{% content-ref url="harvest.md" %}
+[harvest.md](harvest.md)
 {% endcontent-ref %}
 
 {% content-ref url="protocol-algorithm-design-3.md" %}
@@ -56,3 +61,6 @@ The mechanism of ETH farming is exactly the same as that of the USD stablecoins 
 [protocol-algorithm-design-4.md](protocol-algorithm-design-4.md)
 {% endcontent-ref %}
 
+{% content-ref url="risk-on-strategy.md" %}
+[risk-on-strategy.md](risk-on-strategy.md)
+{% endcontent-ref %}
