@@ -18,11 +18,11 @@ Note: The risk on strategy is currently under development and optimization. The 
 
 ### Risk On Strategy Market Making Report
 
-1. $$Net Market Making Funds = Cumulative Invested Funds - Withdrawn Funds (Asset A)$$
+1. Net Market Making Funds = Cumulative Invested Funds - Withdrawn Funds (Asset A)&#x20;
 2. AAVE outstanding loan principal and interest (Asset B).
 3. AAVE collateralized fund (Asset A).
 4. Uniswap LP Token net value (valued in Asset A).
-5. Market making profit $$(4+3) - (2+1)$$.
+5. Market making profit = (AAVE collateralized fund + Uniswap LP Token net value) - (Net Market Making Funds + AAVE outstanding loan principle and interest) \[i.e., terms in no.(4 + 3) - (2 + 1)]&#x20;
 6. Calculate IRR (different from APY).
 
 Reserve 20% of the profits as the switch to enter Treasury.
