@@ -186,7 +186,7 @@ A software application or hardware cryptocurrency wallet that can hold a variety
 | PMM         | Proactive market makers             |
 | API         | Application Programming Interface   |
 | APY         | Annual percentage yield             |
-| BOC         | Bank Of Chain                       |
+| BoC         | Bank Of Chain                       |
 | DAO         | Distributed Autonomous Organization |
 | DAPP / dApp | Decentralized Application           |
 | DeFi        | Decentralized Finance               |
